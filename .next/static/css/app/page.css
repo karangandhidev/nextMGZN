@@ -1,0 +1,384 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./app/styles/main.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.heroContainer {
+  width: 100%;
+  display: flex;
+  background-color: #4f4138;
+  height: 100vh;
+  flex-direction: column;
+}
+.heroContainer .heroLogo {
+  position: absolute;
+  z-index: 20;
+  margin: 2.5rem 2rem;
+}
+.heroContainer .heroLogo .heroLogoImage {
+  width: 7.625rem;
+}
+@media only screen and (min-width: 768px) {
+  .heroContainer .heroLogo .heroLogoImage {
+    width: 15rem;
+    height: 15rem;
+    padding-left: 65px;
+    margin-top: -50px;
+  }
+  .heroContainer .heroImageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+.heroContainer .heroImageContainer .heroImage {
+  object-fit: cover;
+  content: url(/_next/static/media/heroBanner_mobile.2843b45a.svg);
+}
+@media only screen and (min-width: 768px) {
+  .heroContainer .heroImageContainer .heroImage {
+    content: url(/_next/static/media/headerBg.7b4a376a.svg);
+    height: 100vh;
+  }
+}
+.heroContainer .heroTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .heroContainer .heroTextContainer {
+    position: absolute;
+    top: 25rem;
+    padding-left: 5.9375rem;
+  }
+}
+.heroContainer .heroTextContainer .heroHeading {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 2rem;
+  width: calc(90% - 100px);
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .heroContainer .heroTextContainer .heroHeading {
+    font-size: 3.75rem;
+    text-align: start;
+    margin: 0;
+    width: 43.75rem;
+  }
+}
+.heroContainer .heroTextContainer .heroButton {
+  padding: 0.75rem 1.5rem;
+  background-color: #DD6545;
+  border-radius: 14px;
+  text-align: center;
+  border: none;
+}
+@media only screen and (min-width: 768px) {
+  .heroContainer .heroTextContainer .heroButton {
+    width: fit-content;
+  }
+}
+
+.whatWeDoContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.whatWeDoContainer h1.title {
+  margin-left: 1.25rem;
+}
+.whatWeDoContainer .title {
+  text-align: start;
+  font-weight: bold;
+  color: #4f4138;
+}
+.whatWeDoContainer .contentWrapper {
+  margin: 0 1.25rem;
+  overflow-wrap: anywhere;
+}
+@media only screen and (min-width: 768px) {
+  .whatWeDoContainer .contentWrapper {
+    margin: 0 5rem;
+  }
+}
+.whatWeDoContainer .contentWrapper .desktopView {
+  display: none;
+}
+.whatWeDoContainer .contentWrapper .mobileView {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 1.125rem;
+}
+@media only screen and (min-width: 768px) {
+  .whatWeDoContainer .contentWrapper .mobileView {
+    display: none;
+  }
+}
+.whatWeDoContainer .contentWrapper .mobileView .item {
+  display: flex;
+  flex-direction: column;
+}
+.whatWeDoContainer .contentWrapper .mobileView .item .icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #d1d5db;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.whatWeDoContainer .contentWrapper .mobileView .item .title {
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.whatWeDoContainer .contentWrapper .mobileView .item .desc {
+  margin-top: 1rem;
+}
+.whatWeDoContainer .showMoreButton {
+  width: 100%;
+  height: 100%;
+  margin-top: 3.125rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.whatWeDoContainer .showMoreButton .showMore {
+  background-color: #4f4138;
+  color: #fff;
+  padding: 0.5rem 2.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.goalContainer {
+  background-color: #DD6545;
+  width: 100%;
+  height: 100%;
+  margin-top: 5rem;
+  padding: 3rem 0;
+}
+.goalContainer .title {
+  margin: 0 1.5rem;
+  color: #ffffff;
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .goalContainer .title {
+    font-size: 4rem;
+  }
+}
+.goalContainer .description {
+  color: #ffffff;
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin: 0 1.5rem;
+  width: 66.6667%;
+}
+@media only screen and (min-width: 768px) {
+  .goalContainer .description {
+    font-size: 4rem;
+  }
+}
+.goalContainer .highlight {
+  color: #4f4138;
+  font-weight: extra-bold;
+  padding-top: 2rem;
+}
+
+.contactContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  background-color: #f9f9f9;
+}
+.contactContainer .header {
+  width: 100%;
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #4f4138;
+}
+.contactContainer .subheader {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #717171;
+}
+.contactContainer .contactWrapper {
+  height: 100%;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  width: 90%;
+  margin: 0 1.5rem;
+  flex-direction: column;
+  margin: 2.5rem auto;
+}
+@media only screen and (min-width: 768px) {
+  .contactContainer .contactWrapper {
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+}
+.contactContainer .contactWrapper .infoSection {
+  width: 100%;
+  background-color: #4f4138;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .contactContainer .contactWrapper .infoSection {
+    width: 33.3333%;
+  }
+}
+.contactContainer .contactWrapper .infoSection .title {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+.contactContainer .contactWrapper .infoSection .subtitle {
+  margin-top: 2.5rem;
+  font-size: 1.25rem;
+}
+.contactContainer .contactWrapper .infoSection .contactInfo {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.contactContainer .contactWrapper .infoSection .contactInfo .contactItem {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(1) {
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(1) {
+    justify-content: flex-start;
+  }
+}
+.contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(2) a {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(3) {
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(3) {
+    justify-content: flex-start;
+  }
+}
+.contactContainer .contactWrapper .infoSection .socialIcons {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .contactContainer .contactWrapper .infoSection .socialIcons {
+    justify-content: flex-start;
+  }
+}
+.contactContainer .contactWrapper .infoSection .socialIcons .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+.contactContainer .contactWrapper .formSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  color: #4f4138;
+}
+@media only screen and (min-width: 768px) {
+  .contactContainer .contactWrapper .formSection {
+    width: 66.6667%;
+    margin: 0 5rem;
+  }
+}
+.contactContainer .contactWrapper .formSection .form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contactContainer .contactWrapper .formSection .form .formGroup {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .contactContainer .contactWrapper .formSection .form .formGroup {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+}
+.contactContainer .contactWrapper .formSection .form .formGroup .formControl {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .contactContainer .contactWrapper .formSection .form .formGroup .formControl {
+    width: 90%;
+  }
+}
+.contactContainer .contactWrapper .formSection .form .formGroup .formControl label {
+  margin-bottom: 0.5rem;
+}
+.contactContainer .contactWrapper .formSection .form .formGroup .formControl input, .contactContainer .contactWrapper .formSection .form .formGroup .formControl textarea {
+  border-bottom: 1px solid #000000;
+  padding: 0.5rem;
+  outline: none;
+  border-color: transparent;
+}
+.contactContainer .contactWrapper .formSection .form .formGroup .formControl input:focus, .contactContainer .contactWrapper .formSection .form .formGroup .formControl textarea:focus {
+  border-bottom: 1px solid #000000;
+}
+@media only screen and (min-width: 768px) {
+  .contactContainer .contactWrapper .formSection .form .formGroup .messageControl {
+    width: 50%;
+  }
+}
+.contactContainer .contactWrapper .formSection .form .submitButton {
+  background-color: #DD6545;
+  color: #ffffff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 14px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.snap-start {
+  height: 100vh;
+  scroll-snap-align: start;
+}

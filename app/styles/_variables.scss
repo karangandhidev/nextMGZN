@@ -1,0 +1,20 @@
+@use 'sass:math';
+
+//COLORS
+$primaryBgColor: #4f4138;
+$buttonBgColor: #DD6545;
+$whiteColor: #ffffff;
+$grayBgColor: #d1d5db;
+$blackColor: #000000;
+$whiteColor2: #f9f9f9;
+$darkGreyColor: #717171;
+
+//WEIGHTS
+$regular: 400;
+$semi: 600;
+$bold: 700;
+ 
+//SIZES
+$base_font_size: 16px;
+$large: 1440px;//this should be the same as the max-width of your content
+$medium: ((math.div($base_font_size, $large))*100)+vw;

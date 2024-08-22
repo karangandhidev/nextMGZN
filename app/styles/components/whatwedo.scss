@@ -1,0 +1,113 @@
+.whatWeDoContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    h1.title {
+        margin-left: cRems(20px);
+    }
+    .title {
+        text-align: start;
+        font-weight: bold;
+        color: $primaryBgColor;
+        
+    }
+
+    .contentWrapper {
+        margin: 0 cRems(20px);
+        overflow-wrap: anywhere;
+
+        @include medium {
+            margin: 0 cRems(80px);
+        }
+
+        .desktopView {
+            display: none;
+
+            // @include medium {
+            //     display: grid;
+            //     grid-template-columns: repeat(4, 1fr);
+            //     gap: 1.25rem 1.25rem;
+            // }
+
+            // .item {
+            //     display: flex;
+            //     flex-direction: column;
+                
+            //     .icon {
+            //         width: 2.5rem;
+            //         height: 2.5rem;
+            //         background-color: $grayBgColor;
+            //         border-radius: 50%;
+            //         display: flex;
+            //         align-items: center;
+            //         justify-content: start;
+            //     }
+
+            //     .title {
+            //         margin-top: 2rem;
+            //         font-weight: bold;
+            //         font-size: 1.25rem;
+            //     }
+
+            //     .desc {
+            //         margin-top: 1rem;
+            //         margin-right: 5rem;
+            //     }
+            // }
+        }
+
+        .mobileView {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: cRems(48px) cRems(18px);
+
+            @include medium {
+                display: none;
+            }
+
+            .item {
+                display: flex;
+                flex-direction: column;
+
+                .icon {
+                    height: cRems(40px);
+                    width: cRems(40px);
+                    background-color: $grayBgColor;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                }
+
+                .title {
+                    margin-top: cRems(32px);
+                    font-weight: bold;
+                    font-size: cRems(20px);
+                }
+
+                .desc {
+                    margin-top: cRems(16px);
+                }
+            }
+        }
+    }
+
+        .showMoreButton {
+            width: 100%;
+            height: 100%;
+            margin-top: cRems(50px);
+            text-align: center;
+            font-size: cRems(16px);
+            font-weight: bold;
+
+            .showMore {
+                background-color: $primaryBgColor;
+                color: #fff;
+                padding: cRems(8px) cRems(40px);
+                border-radius: cRems(16px);
+                cursor: pointer;
+            }
+        }
+}
+
