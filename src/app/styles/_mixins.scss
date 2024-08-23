@@ -1,0 +1,29 @@
+@use 'sass:math';
+
+@function cRems($size, $base-size: $base_font_size) {
+    @return math.div($size, $base-size) * 1rem;
+}
+
+@mixin large {
+    @media only screen and (min-width: $large) {
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media only screen and (min-width: 640px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media only screen and (max-width: 639px) {
+        @content;
+    }
+}
+
+@mixin breakpoint($size) {
+    @media only screen and (max-width: $size) {
+        @content;
+    }
+}

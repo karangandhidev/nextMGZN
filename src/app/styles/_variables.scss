@@ -1,0 +1,42 @@
+@use 'sass:math';
+
+//COLORS
+$brownColor: #4f4138;
+$buttonBgColor: #DD6545;
+$whiteColor: #ffffff;
+$grayBgColor: #d1d5db;
+$blackColor: #000000;
+$whiteColor2: #f9f9f9;
+$darkGreyColor: #717171;
+
+//FONTS
+$InnovatorGrotesk: 'Innovator Grotesk';
+$OilvareBase: 'Oilvare Base';
+$OilvareBaseRegular: 'Oilvare Base Regular';
+
+//WEIGHTS
+$regular: 400;
+$semi: 600;
+$bold: 700;
+$thic: 800;
+$xtrathic: 800;
+ 
+//SIZES
+$base_font_size: 16px;
+$large: 1440px;
+$medium: ((math.div($base_font_size, $large))*100)+vw;
+
+@font-face {
+    font-family: 'Innovator Grotesk';
+    src: url('../../fonts/InnovatorGrotesk.otf');
+}
+
+@font-face {
+    font-family: 'Oilvare Base';
+    src: url('../../fonts/OilvareBase.ttf');
+}
+
+@font-face {
+    font-family: 'Oilvare Base Regular';
+    src: url('../../fonts/OilvareBaseRegular.ttf');
+}

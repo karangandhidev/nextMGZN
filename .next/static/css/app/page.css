@@ -1,155 +1,236 @@
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./app/styles/main.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.heroContainer {
-  width: 100%;
-  display: flex;
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./src/app/styles/main.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Innovator Grotesk";
+  src: url(/_next/static/media/InnovatorGrotesk.3ca2663e.otf);
+}
+@font-face {
+  font-family: "Oilvare Base";
+  src: url(/_next/static/media/OilvareBase.9c06d411.ttf);
+}
+@font-face {
+  font-family: "Oilvare Base Regular";
+  src: url(/_next/static/media/OilvareBaseRegular.82147692.ttf);
+}
+.heroPage-Container {
   background-color: #4f4138;
-  height: 100vh;
-  flex-direction: column;
+  position: relative;
 }
-.heroContainer .heroLogo {
+@media only screen and (min-width: 640px) {
+  .heroPage-Container .heroLogo-Container {
+    position: relative;
+  }
+}
+.heroPage-Container .heroLogo-Container .nextmgzn-logo {
+  width: 12.5rem;
+  height: 12.5rem;
+  position: relative;
+  z-index: 1;
+  margin: 2.1875rem 0 0 2.1875rem;
+}
+@media only screen and (min-width: 640px) {
+  .heroPage-Container .heroLogo-Container .nextmgzn-logo {
+    position: relative;
+    width: 14.375rem;
+    height: 14.375rem;
+    margin: 4.6875rem 0 0 4.6875rem;
+  }
+}
+.heroPage-Container .heroBanner {
+  src: none;
   position: absolute;
-  z-index: 20;
-  margin: 2.5rem 2rem;
+  top: 0;
+  height: 65vh;
+  width: 100vw;
 }
-.heroContainer .heroLogo .heroLogoImage {
-  width: 7.625rem;
-}
-@media only screen and (min-width: 768px) {
-  .heroContainer .heroLogo .heroLogoImage {
-    width: 15rem;
-    height: 15rem;
-    padding-left: 65px;
-    margin-top: -50px;
-  }
-  .heroContainer .heroImageContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+@media only screen and (max-width: 639px) {
+  .heroPage-Container .heroBanner {
+    left: 0;
   }
 }
-.heroContainer .heroImageContainer .heroImage {
-  object-fit: cover;
-  content: url(/_next/static/media/heroBanner_mobile.2843b45a.svg);
-}
-@media only screen and (min-width: 768px) {
-  .heroContainer .heroImageContainer .heroImage {
-    content: url(/_next/static/media/headerBg.7b4a376a.svg);
-    height: 100vh;
-  }
-}
-.heroContainer .heroTextContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-@media only screen and (min-width: 768px) {
-  .heroContainer .heroTextContainer {
+@media only screen and (min-width: 640px) {
+  .heroPage-Container .heroBanner {
     position: absolute;
-    top: 25rem;
-    padding-left: 5.9375rem;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 60vh;
   }
 }
-.heroContainer .heroTextContainer .heroHeading {
-  color: #ffffff;
-  font-weight: 800;
+.heroPage-Container .heroText-Container {
+  z-index: 3;
+  position: relative;
+  width: -webkit-fill-available;
+}
+@media only screen and (max-width: 639px) {
+  .heroPage-Container .heroText-Container {
+    position: absolute;
+    top: 65vh;
+    margin: 2.1875rem;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .heroPage-Container .heroText-Container {
+    margin: 4.6875rem;
+  }
+}
+.heroPage-Container .heroText-Container .heroHeading {
+  font-family: "Innovator Grotesk";
+  font-weight: 700;
   font-size: 2rem;
-  width: calc(90% - 100px);
-  text-align: center;
 }
-@media only screen and (min-width: 768px) {
-  .heroContainer .heroTextContainer .heroHeading {
+@media only screen and (min-width: 640px) {
+  .heroPage-Container .heroText-Container .heroHeading {
     font-size: 3.75rem;
-    text-align: start;
-    margin: 0;
-    width: 43.75rem;
   }
 }
-.heroContainer .heroTextContainer .heroButton {
-  padding: 0.75rem 1.5rem;
+.heroPage-Container .heroButton-Container {
+  display: block;
+  margin: 0 auto;
+}
+.heroPage-Container .heroButton-Container .heroButton {
+  color: white;
+  font-weight: 700;
   background-color: #DD6545;
-  border-radius: 14px;
+  font-family: "Innovator Grotesk";
+  border-radius: 1rem;
   text-align: center;
   border: none;
 }
-@media only screen and (min-width: 768px) {
-  .heroContainer .heroTextContainer .heroButton {
-    width: fit-content;
+@media only screen and (max-width: 639px) {
+  .heroPage-Container .heroButton-Container .heroButton {
+    width: 80vw;
+    margin-top: 3.125rem;
+    padding: 0.75rem 4rem;
+    font-size: 1.25rem;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .heroPage-Container .heroButton-Container .heroButton {
+    margin-top: 3.125rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
   }
 }
 
 .whatWeDoContainer {
-  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #f9f9f9;
+  min-height: 100vh;
 }
-.whatWeDoContainer h1.title {
-  margin-left: 1.25rem;
-}
-.whatWeDoContainer .title {
-  text-align: start;
-  font-weight: bold;
+.whatWeDoContainer .wwd-title {
+  text-align: left;
+  margin: 3.75rem 0 3.125rem 2.1875rem;
   color: #4f4138;
+  font-family: "Innovator Grotesk";
+  font-weight: 700;
 }
-.whatWeDoContainer .contentWrapper {
-  margin: 0 1.25rem;
+@media only screen and (min-width: 640px) {
+  .whatWeDoContainer .wwd-title {
+    font-size: 2.5rem;
+    margin: 7.5rem auto 5rem auto;
+  }
+}
+.whatWeDoContainer .wwdContent-Container {
+  margin: 0 2.1875rem;
   overflow-wrap: anywhere;
+  color: #000000;
 }
-@media only screen and (min-width: 768px) {
-  .whatWeDoContainer .contentWrapper {
+@media only screen and (min-width: 640px) {
+  .whatWeDoContainer .wwdContent-Container {
     margin: 0 5rem;
   }
 }
-.whatWeDoContainer .contentWrapper .desktopView {
-  display: none;
-}
-.whatWeDoContainer .contentWrapper .mobileView {
+.whatWeDoContainer .wwdContent-Container .wwd-Content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem 1.125rem;
   gap: 3rem 1.125rem;
+  margin-bottom: 6.25rem;
 }
-@media only screen and (min-width: 768px) {
-  .whatWeDoContainer .contentWrapper .mobileView {
-    display: none;
-  }
-}
-.whatWeDoContainer .contentWrapper .mobileView .item {
+.whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item {
   display: flex;
   flex-direction: column;
 }
-.whatWeDoContainer .contentWrapper .mobileView .item .icon {
-  height: 2.5rem;
-  width: 2.5rem;
+.whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-icon {
   background-color: #d1d5db;
   border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
+  height: 3.5rem;
+  width: 3.5rem;
 }
-.whatWeDoContainer .contentWrapper .mobileView .item .title {
+.whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-heading {
   margin-top: 2rem;
   font-weight: bold;
   font-size: 1.25rem;
 }
-.whatWeDoContainer .contentWrapper .mobileView .item .desc {
+.whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-info {
   margin-top: 1rem;
 }
-.whatWeDoContainer .showMoreButton {
+@media only screen and (min-width: 640px) {
+  .whatWeDoContainer .wwdContent-Container .wwd-Content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5rem 1.25rem;
+    gap: 5rem 1.25rem;
+  }
+  .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-info {
+    margin-right: 5rem;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .whatWeDoContainer .wwdContent-Container .wwd-desktopView {
+    display: none;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .whatWeDoContainer .wwdContent-Container .wwd-mobileView {
+    display: none;
+  }
+}
+.whatWeDoContainer .seeMore-Button {
   width: 100%;
   height: 100%;
-  margin-top: 3.125rem;
+  margin: 3.125rem 0;
+  margin-bottom: 6.25rem;
   text-align: center;
   font-size: 1rem;
-  font-weight: bold;
 }
-.whatWeDoContainer .showMoreButton .showMore {
+@media only screen and (min-width: 640px) {
+  .whatWeDoContainer .seeMore-Button {
+    margin-top: -3.125rem;
+  }
+}
+.whatWeDoContainer .seeMore-Button .seeMore {
   background-color: #4f4138;
-  color: #fff;
-  padding: 0.5rem 2.5rem;
+  color: #ffffff;
+  padding: 0.5rem 2rem;
   border-radius: 1rem;
+  border: none;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Innovator Grotesk";
+}
+@media only screen and (min-width: 640px) {
+  .whatWeDoContainer .mobile-Button {
+    display: none;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .whatWeDoContainer .desktop-Button {
+    display: none;
+  }
 }
 
 .goalContainer {
@@ -166,7 +247,7 @@
   font-weight: bold;
   text-align: center;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
   .goalContainer .title {
     font-size: 4rem;
   }
@@ -179,7 +260,7 @@
   margin: 0 1.5rem;
   width: 66.6667%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
   .goalContainer .description {
     font-size: 4rem;
   }
@@ -222,10 +303,14 @@
   flex-direction: column;
   margin: 2.5rem auto;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
   .contactContainer .contactWrapper {
     margin-top: 5rem;
     margin-left: 2.5rem;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .contactContainer .contactWrapper {
     flex-direction: row;
     margin: 0 auto;
   }
@@ -240,7 +325,7 @@
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
   .contactContainer .contactWrapper .infoSection {
     width: 33.3333%;
   }
@@ -267,7 +352,7 @@
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(1) {
   cursor: pointer;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(1) {
     justify-content: flex-start;
   }
@@ -281,7 +366,7 @@
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(3) {
   cursor: pointer;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(3) {
     justify-content: flex-start;
   }
@@ -291,7 +376,7 @@
   display: flex;
   justify-content: center;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
   .contactContainer .contactWrapper .infoSection .socialIcons {
     justify-content: flex-start;
   }
@@ -308,7 +393,7 @@
   gap: 3rem;
   color: #4f4138;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
   .contactContainer .contactWrapper .formSection {
     width: 66.6667%;
     margin: 0 5rem;
@@ -323,7 +408,7 @@
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
   .contactContainer .contactWrapper .formSection .form .formGroup {
     flex-direction: row;
     gap: 2.5rem;
@@ -335,7 +420,7 @@
   gap: 0.5rem;
   width: 100%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
   .contactContainer .contactWrapper .formSection .form .formGroup .formControl {
     width: 90%;
   }
@@ -352,7 +437,7 @@
 .contactContainer .contactWrapper .formSection .form .formGroup .formControl input:focus, .contactContainer .contactWrapper .formSection .form .formGroup .formControl textarea:focus {
   border-bottom: 1px solid #000000;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
   .contactContainer .contactWrapper .formSection .form .formGroup .messageControl {
     width: 50%;
   }
@@ -373,12 +458,36 @@ body {
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+.container {
+  height: 100vh;
   scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth; /* Smooth scrolling */
+  transition: scroll-snap-stop 5s ease-in-out; /* Smoothens the snap */
 }
 
-.snap-start {
-  height: 100vh;
+.section {
+  min-height: 100vh;
   scroll-snap-align: start;
+  scroll-snap-stop: always; /* Ensures the snap is always triggered */
+}
+
+.seeMore {
+  max-height: 100vh;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.seeMore.expanded {
+  max-height: none;
+}
+
+.seeMoreButton {
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.hiddenContent {
+  margin-top: 1rem;
+  overflow: hidden;
 }

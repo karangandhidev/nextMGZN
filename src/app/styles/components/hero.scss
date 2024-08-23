@@ -1,0 +1,86 @@
+.heroPage-Container {
+        background-color: $brownColor;
+        position: relative;
+    .heroLogo-Container {
+        @include tablets {
+            position: relative;
+        }
+        .nextmgzn-logo {
+            width: cRems(200px);
+            height: cRems(200px);
+            position: relative;
+            z-index: 1;
+            margin: cRems(35px) 0 0 cRems(35px);
+            @include tablets {
+                position: relative;
+                width: cRems(230px);
+                height: cRems(230px);
+                margin: cRems(75px) 0 0 cRems(75px);
+            }
+        }
+    }
+    .heroBanner {
+        src: none;
+        position: absolute;
+        top: 0;
+        height: 65vh;
+        width: 100vw;
+        @include mobile {
+            left: 0;
+        }
+        @include tablets {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 60vh;
+        }
+    }
+    .heroText-Container {
+        z-index: 3;
+        position: relative;
+        width: -webkit-fill-available;
+        @include mobile {
+            position: absolute;
+            top: 65vh;
+            margin: cRems(35px);
+        }
+        @include tablets {
+            margin: cRems(75px);
+        }
+        .heroHeading { 
+            font-family: 'Innovator Grotesk';
+            font-weight: $bold;
+            font-size: cRems(32px);
+            @include tablets {
+                font-size: cRems(60px);
+            }
+        }
+        
+    }
+    .heroButton-Container {
+        display: block;
+        margin: 0 auto;
+        .heroButton {
+            color: white;
+            font-weight: $bold;
+            background-color: $buttonBgColor;
+            font-family: 'Innovator Grotesk';
+            border-radius: cRems(16px);
+            text-align: center;                
+            border: none;
+            @include mobile {
+                width: 80vw;
+                margin-top: cRems(50px);
+                padding: cRems(12px) cRems(64px);
+                font-size: cRems(20px);
+                width: 100%;
+            }
+            @include tablets {
+                margin-top: cRems(50px);
+                font-size: cRems(24px);
+                padding: cRems(8px) cRems(32px);
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import 'mixins';
+@import 'variables';
+@import 'components/hero';
+@import 'components/whatwedo';
+@import 'components/goal';
+@import 'components/contactus';
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth; /* Smooth scrolling */
+  transition: scroll-snap-stop 5s ease-in-out; /* Smoothens the snap */
+}
+
+.section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always; /* Ensures the snap is always triggered */
+}
+
+.seeMore {
+  max-height: 100vh;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+
+  &.expanded {
+    max-height: none; 
+  }
+}
+
+.seeMoreButton {
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.hiddenContent {
+  margin-top: 1rem;
+  overflow: hidden;
+}
