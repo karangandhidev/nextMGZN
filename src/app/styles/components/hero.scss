@@ -1,6 +1,7 @@
 .heroPage-Container {
-        background-color: $brownColor;
-        position: relative;
+    min-height: 100%;
+    background-color: $brownColor;
+    position: relative;
     .heroLogo-Container {
         @include tablets {
             position: relative;

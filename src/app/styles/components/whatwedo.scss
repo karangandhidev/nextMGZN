@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     background-color: $whiteColor2;
-    min-height: 100vh;
+    min-height: 100%;
     .wwd-title {
         text-align: left;
         margin: cRems(60px) 0 cRems(50px) cRems(35px);
@@ -27,7 +27,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: cRems(48px) cRems(18px);
-            margin-bottom: cRems(100px);
+            margin-bottom: cRems(70px);
             .wwd-item {
                 display: flex;
                 flex-direction: column;
@@ -53,6 +53,7 @@
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: cRems(80px) cRems(20px);
+                margin-bottom: cRems(100px);
                 .wwd-item {                 
                     .wwd-icon {
                         width: cRems(64px);
@@ -79,7 +80,6 @@
     .seeMore-Button {
         width: 100%;
         height: 100%;
-        margin: cRems(50px) 0;
         margin-bottom: cRems(100px);
         text-align: center;
         font-size: cRems(16px);

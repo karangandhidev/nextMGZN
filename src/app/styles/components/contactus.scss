@@ -1,188 +1,275 @@
 .contactContainer {
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 5rem; 
-    background-color: $whiteColor2;
-    .header {
-        width: 100%;
-        margin-top: 5rem; 
-        text-align: center;
-        font-size: 2.25rem; 
-        font-weight: bold;
-        color: $brownColor;
-    }
-
-    .subheader {
-        margin-top: 1.5rem; 
-        text-align: center;
-        color: $darkGreyColor;
-    }
+    position: relative;
+    flex-direction: column; 
+    background-color: $lightGreyColor;
+    .text-Container{
+        width: 50%;
+        margin: 0 auto;
+        .header {
+            width: 100%;
+            margin-top: cRems(80px); 
+            text-align: center;
+            font-size: cRems(36px); 
+            font-weight: bold;
+            color: $brownColor;
+            @include tablets {
+                margin-top: cRems(50px); 
+            }
+        }
+        .subheader {
+            margin-top: cRems(24px); 
+            text-align: center;
+            color: $darkGreyColor;
+            @include tablets {
+                margin: cRems(24px) 0;
+            }
+        }
+    }    
 
     .contactWrapper {
-        @include tablets {
-            margin-top: 5rem; 
-            margin-left: 2.5rem;
-        }
         height: 100%;
         background-color: $whiteColor;
-        padding: 1rem; 
-        border-radius: 8px; 
+        padding: cRems(16px); 
+        border-radius: cRems(5px); 
         display: flex;
         width: 90%;
-        margin: 0 1.5rem; 
+        margin: 0 cRems(24px); 
         flex-direction: column;
-        margin: 2.5rem auto;
-
+        margin: cRems(40px) auto;
         @include tablets {
+            margin-top: cRems(80px); 
+            margin-left: cRems(40px);
+            min-height: 75vh;
             flex-direction: row;
             margin: 0 auto;
         }
-
         .infoSection {
             @include tablets {
                 width: 33.3333%;
+                text-align: left;
             }
             width: 100%;
             background-color: $brownColor;
             color: $whiteColor;
-            border-radius: 10px;
-            padding: 3rem;
+            border-radius: cRems(5px); 
+            padding: cRems(48px);
             text-align: center;
             display: flex;
             flex-direction: column;
-
             .title {
-                font-size: 2.25rem;
+                font-size: cRems(26px);
                 font-weight: bold;
             }
-
             .subtitle {
-                margin-top: 2.5rem;
-                font-size: 1.25rem;
+                margin-top: cRems(30px);
+                font-size: cRems(16px);
+                @include tablets {
+                    margin-top: cRems(20px);
+                }
             }
-
             .contactInfo {
-                margin-top: 3rem;
+                margin-top: cRems(48px);
                 display: flex;
                 flex-direction: column;
-                gap: 3rem;
-
+                gap: cRems(48px);
+                @include tablets {
+                    margin-top: cRems(80px);
+                }
                 .contactItem {
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
-                    gap: 1.25rem;
-
+                    gap: cRems(20px);
+                    @include tablets {
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        flex-direction: row;
+                    }
                     &:nth-child(1) {
                         cursor: pointer;
                         @include tablets {
                             justify-content: flex-start;
                         }
                     }
-
                     &:nth-child(2) {
                         a {
                             color: $whiteColor;
                             display: flex;
                             align-items: center;
-                            gap: 1.25rem;
+                            gap: cRems(20px);
+                            @include tablets {
+                                flex-direction: row;
+                            }
                         }
                     }
-
                     &:nth-child(3) {
                         cursor: pointer;
                         @include tablets {
-                            justify-content: flex-start;
+                            text-align: left;
                         }
+                    }
+                    .mail-tag {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .phone {
+                        fill: $whiteColor;
                     }
                 }
             }
-
             .socialIcons {
-                margin-top: 6rem;
+                margin-top: cRems(96px);
                 display: flex;
                 justify-content: center;
-
                 @include tablets {
+                    margin-top: cRems(176px);
                     justify-content: flex-start;
                 }
-
                 .icon {
-                    width: 1.5rem;
-                    height: 1.5rem;
-                    margin-right: 1rem;
+                    width: cRems(22px);
+                    height: cRems(22px);
+                    margin: 0 cRems(16px);
+                    background-color: $iconDarkGreyColor;
+                    border-radius: 50%;
+                    border: cRems(10px) solid $iconDarkGreyColor;
+                    &:hover {
+                        color: $iconDarkGreyColor;
+                        background-color: $whiteColor;
+                        border-color: $whiteColor;
+                    }
+                    @include tablets {
+                        margin: 0 cRems(16px) 0 0;
+                    }
                 }
             }
         }
 
         .formSection {
+            margin: 0 auto;
+            padding: cRems(40px) cRems(20px);
+            font-family: $InnovatorGrotesk;
             @include tablets {
-                width: 66.6667%;
-                margin: 0 5rem;
+                width: 50vw;
             }
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-            color: $brownColor;
-
             .form {
+              display: flex;
+              flex-direction: column;
+            }
+          
+            .formGroup {
                 display: flex;
+                justify-content: space-between;
                 flex-direction: column;
-                gap: 2rem;
-
-                .formGroup {
+                @include tablets {
+                    flex-direction: row;
+                    margin-bottom: cRems(30px);
+                }
+                .formControl {
+                    flex: 1;
                     display: flex;
                     flex-direction: column;
-
+                    margin-bottom: cRems(20px);
+                    &:focus-within label {
+                        color: $iconDarkGreyColor; 
+                    }
+                    &:last-child {
+                        @include tablets {
+                            margin-right: 0;
+                        }
+                    }
+                    label {
+                        font-size: cRems(16px);
+                        color: $grayBgColor;
+                        @include tablets {
+                            margin-bottom: cRems(10px);
+                        }
+                    }
+          
+                input, textarea {
+                    padding: cRems(10px);
+                    font-size: cRems(16px);
+                    font-family: $InnovatorGrotesk;
+                    color: $iconDarkGreyColor;
+                    border: none;
+                    border-bottom: 1px solid $grayBgColor;
+                    background-color: transparent;
+                    outline: none;
                     @include tablets {
-                        flex-direction: row;
-                        gap: 2.5rem;
+                        margin-right: cRems(50px);
                     }
-
-                    .formControl {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 0.5rem;
-                        width: 100%;
-
-                        @include tablets {
-                            width: 90%;
-                        }
-
-                        label {
-                            margin-bottom: 0.5rem;
-                        }
-
-                        input, textarea {
-                            border-bottom: 1px solid $blackColor;
-                            padding: 0.5rem;
-                            outline: none;
-                            border-color: transparent;
-
-                            &:focus {
-                                border-bottom: 1px solid $blackColor;
-                            }
-                        }
+                    &::placeholder {
+                        color: $grayBgColor;
                     }
-
-                    .messageControl {
-                        @include tablets {
-                            width: 50%;
-                        }
+                    &:focus {
+                        border-bottom-color: $iconDarkGreyColor;
                     }
                 }
+                }
+            }
 
-                .submitButton {
-                    background-color: $buttonBgColor;
-                    color: $whiteColor;
-                    padding: 0.5rem 1.5rem;
-                    border-radius: 14px;
-                    cursor: pointer;
+            .messageControl {
+                margin-bottom: cRems(30px);
+                @include tablets {
+                    margin-top: cRems(75px);
+                }
+                &:focus-within label {
+                    color: $iconDarkGreyColor;
+                }
+                label {
+                    font-size: cRems(16px);
+                    color: $grayBgColor;
+                    margin-bottom: cRems(10px);
+                }
+                textarea {
+                    width: 100%;
+                    padding: cRems(10px);
+                    font-size: cRems(16px);
+                    color: $iconDarkGreyColor;
                     border: none;
-                    font-weight: bold;
-                    font-size: 1rem;
+                    border-bottom: 1px solid $grayBgColor;
+                    background-color: transparent;
+                    font-family: $InnovatorGrotesk;
+                    outline: none;
+                    @include tablets {
+                        width: 95%;
+                    }
+                    &::placeholder {
+                        color: $grayBgColor;
+                    }
+                    &:focus {
+                        border-bottom-color: $iconDarkGreyColor;
+                    }
+                }
+            }
+            .buttonContainer {
+                position: relative;
+                .submitButton {
+                    padding: cRems(15px);
+                    font-size: cRems(16px);
+                    background-color: $brownColor;
+                    color: $whiteColor;
+                    border: none;
+                    cursor: pointer;
+                    letter-spacing: cRems(1px);
+                    border-radius: cRems(5px);
+                    @include mobile {
+                        width: 100%;
+                    }
+                    @include tablets {
+                        position: absolute;
+                        right: 0;
+                        margin-right: cRems(50px);
+                        border-radius: cRems(16px);
+                        padding: cRems(15px) cRems(48px);
+                        background-color: $buttonBgColor;
+                    }
+                    &:hover {
+                        background-color: lighten($buttonBgColor, 10%);
+                    }
                 }
             }
         }

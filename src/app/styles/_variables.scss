@@ -7,7 +7,9 @@ $whiteColor: #ffffff;
 $grayBgColor: #d1d5db;
 $blackColor: #000000;
 $whiteColor2: #f9f9f9;
+$lightGreyColor: #fbfbfb;
 $darkGreyColor: #717171;
+$iconDarkGreyColor:#262626;
 
 //FONTS
 $InnovatorGrotesk: 'Innovator Grotesk';
@@ -28,15 +30,15 @@ $medium: ((math.div($base_font_size, $large))*100)+vw;
 
 @font-face {
     font-family: 'Innovator Grotesk';
-    src: url('../../fonts/InnovatorGrotesk.otf');
+    src: url('../../assets/fonts/InnovatorGrotesk.otf');
 }
 
 @font-face {
     font-family: 'Oilvare Base';
-    src: url('../../fonts/OilvareBase.ttf');
+    src: url('../../assets/fonts/OilvareBase.ttf');
 }
 
 @font-face {
     font-family: 'Oilvare Base Regular';
-    src: url('../../fonts/OilvareBaseRegular.ttf');
+    src: url('../../assets/fonts/OilvareBaseRegular.ttf');
 }

@@ -14,6 +14,7 @@
   src: url(/_next/static/media/OilvareBaseRegular.82147692.ttf);
 }
 .heroPage-Container {
+  min-height: 100%;
   background-color: #4f4138;
   position: relative;
 }
@@ -120,7 +121,7 @@
   display: flex;
   flex-direction: column;
   background-color: #f9f9f9;
-  min-height: 100vh;
+  min-height: 100%;
 }
 .whatWeDoContainer .wwd-title {
   text-align: left;
@@ -150,7 +151,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem 1.125rem;
   gap: 3rem 1.125rem;
-  margin-bottom: 6.25rem;
+  margin-bottom: 4.375rem;
 }
 .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item {
   display: flex;
@@ -179,6 +180,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 5rem 1.25rem;
     gap: 5rem 1.25rem;
+    margin-bottom: 6.25rem;
   }
   .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-icon {
     width: 4rem;
@@ -201,7 +203,6 @@
 .whatWeDoContainer .seeMore-Button {
   width: 100%;
   height: 100%;
-  margin: 3.125rem 0;
   margin-bottom: 6.25rem;
   text-align: center;
   font-size: 1rem;
@@ -233,53 +234,69 @@
   }
 }
 
-.goalContainer {
+.goal-Component {
+  background-color: #f9f9f9;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goal-Component .goal-Container {
   background-color: #DD6545;
-  width: 100%;
-  height: 100%;
-  margin-top: 5rem;
-  padding: 3rem 0;
-}
-.goalContainer .title {
-  margin: 0 1.5rem;
-  color: #ffffff;
-  font-size: 2.25rem;
-  font-weight: bold;
-  text-align: center;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (min-width: 640px) {
-  .goalContainer .title {
-    font-size: 4rem;
+  .goal-Component .goal-Container {
+    height: 60vh;
+    justify-content: flex-start;
   }
 }
-.goalContainer .description {
-  color: #ffffff;
-  font-size: 2.25rem;
-  font-weight: bold;
-  margin-top: 3rem;
-  margin: 0 1.5rem;
-  width: 66.6667%;
+.goal-Component .goal-Container .goalText-Container {
+  margin: 0 2.1875rem;
+  font-family: "Innovator Grotesk";
+  font-weight: 700;
 }
 @media only screen and (min-width: 640px) {
-  .goalContainer .description {
-    font-size: 4rem;
+  .goal-Component .goal-Container .goalText-Container {
+    margin: 0 4.6875rem;
   }
 }
-.goalContainer .highlight {
+.goal-Component .goal-Container .goalText-Container .goal-Title {
+  font-size: 2.625rem;
+  margin-bottom: 3.75rem;
+}
+.goal-Component .goal-Container .goalText-Container .goal-Description {
+  font-size: 2.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.goal-Component .goal-Container .goalText-Container .goal-Description .nextmgzn-Highlight {
   color: #4f4138;
-  font-weight: extra-bold;
-  padding-top: 2rem;
+  font-size: 2.875rem;
+}
+@media only screen and (max-width: 639px) {
+  .goal-Component .goal-Container .goalText-Container .goal-Description .nextmgzn-Highlight {
+    display: block;
+  }
 }
 
 .contactContainer {
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   display: flex;
+  position: relative;
   flex-direction: column;
-  margin-bottom: 5rem;
-  background-color: #f9f9f9;
+  background-color: #fbfbfb;
 }
-.contactContainer .header {
+.contactContainer .text-Container {
+  width: 50%;
+  margin: 0 auto;
+}
+.contactContainer .text-Container .header {
   width: 100%;
   margin-top: 5rem;
   text-align: center;
@@ -287,16 +304,26 @@
   font-weight: bold;
   color: #4f4138;
 }
-.contactContainer .subheader {
+@media only screen and (min-width: 640px) {
+  .contactContainer .text-Container .header {
+    margin-top: 3.125rem;
+  }
+}
+.contactContainer .text-Container .subheader {
   margin-top: 1.5rem;
   text-align: center;
   color: #717171;
+}
+@media only screen and (min-width: 640px) {
+  .contactContainer .text-Container .subheader {
+    margin: 1.5rem 0;
+  }
 }
 .contactContainer .contactWrapper {
   height: 100%;
   background-color: #ffffff;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 0.3125rem;
   display: flex;
   width: 90%;
   margin: 0 1.5rem;
@@ -307,10 +334,7 @@
   .contactContainer .contactWrapper {
     margin-top: 5rem;
     margin-left: 2.5rem;
-  }
-}
-@media only screen and (min-width: 640px) {
-  .contactContainer .contactWrapper {
+    min-height: 75vh;
     flex-direction: row;
     margin: 0 auto;
   }
@@ -319,7 +343,7 @@
   width: 100%;
   background-color: #4f4138;
   color: #ffffff;
-  border-radius: 10px;
+  border-radius: 0.3125rem;
   padding: 3rem;
   text-align: center;
   display: flex;
@@ -328,15 +352,21 @@
 @media only screen and (min-width: 640px) {
   .contactContainer .contactWrapper .infoSection {
     width: 33.3333%;
+    text-align: left;
   }
 }
 .contactContainer .contactWrapper .infoSection .title {
-  font-size: 2.25rem;
+  font-size: 1.625rem;
   font-weight: bold;
 }
 .contactContainer .contactWrapper .infoSection .subtitle {
-  margin-top: 2.5rem;
-  font-size: 1.25rem;
+  margin-top: 1.875rem;
+  font-size: 1rem;
+}
+@media only screen and (min-width: 640px) {
+  .contactContainer .contactWrapper .infoSection .subtitle {
+    margin-top: 1.25rem;
+  }
 }
 .contactContainer .contactWrapper .infoSection .contactInfo {
   margin-top: 3rem;
@@ -344,10 +374,23 @@
   flex-direction: column;
   gap: 3rem;
 }
+@media only screen and (min-width: 640px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo {
+    margin-top: 5rem;
+  }
+}
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 1.25rem;
+}
+@media only screen and (min-width: 640px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo .contactItem {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+  }
 }
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(1) {
   cursor: pointer;
@@ -363,13 +406,26 @@
   align-items: center;
   gap: 1.25rem;
 }
+@media only screen and (min-width: 640px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(2) a {
+    flex-direction: row;
+  }
+}
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(3) {
   cursor: pointer;
 }
 @media only screen and (min-width: 640px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(3) {
-    justify-content: flex-start;
+    text-align: left;
   }
+}
+.contactContainer .contactWrapper .infoSection .contactInfo .contactItem .mail-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactContainer .contactWrapper .infoSection .contactInfo .contactItem .phone {
+  fill: #ffffff;
 }
 .contactContainer .contactWrapper .infoSection .socialIcons {
   margin-top: 6rem;
@@ -378,79 +434,165 @@
 }
 @media only screen and (min-width: 640px) {
   .contactContainer .contactWrapper .infoSection .socialIcons {
+    margin-top: 11rem;
     justify-content: flex-start;
   }
 }
 .contactContainer .contactWrapper .infoSection .socialIcons .icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin-right: 1rem;
+  width: 1.375rem;
+  height: 1.375rem;
+  margin: 0 1rem;
+  background-color: #262626;
+  border-radius: 50%;
+  border: 0.625rem solid #262626;
+}
+.contactContainer .contactWrapper .infoSection .socialIcons .icon:hover {
+  color: #262626;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+@media only screen and (min-width: 640px) {
+  .contactContainer .contactWrapper .infoSection .socialIcons .icon {
+    margin: 0 1rem 0 0;
+  }
 }
 .contactContainer .contactWrapper .formSection {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  color: #4f4138;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+  font-family: "Innovator Grotesk";
 }
 @media only screen and (min-width: 640px) {
   .contactContainer .contactWrapper .formSection {
-    width: 66.6667%;
-    margin: 0 5rem;
+    width: 50vw;
   }
 }
 .contactContainer .contactWrapper .formSection .form {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
-.contactContainer .contactWrapper .formSection .form .formGroup {
+.contactContainer .contactWrapper .formSection .formGroup {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
 }
 @media only screen and (min-width: 640px) {
-  .contactContainer .contactWrapper .formSection .form .formGroup {
+  .contactContainer .contactWrapper .formSection .formGroup {
     flex-direction: row;
-    gap: 2.5rem;
+    margin-bottom: 1.875rem;
   }
 }
-.contactContainer .contactWrapper .formSection .form .formGroup .formControl {
+.contactContainer .contactWrapper .formSection .formGroup .formControl {
+  flex: 1 1;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  width: 100%;
+  margin-bottom: 1.25rem;
+}
+.contactContainer .contactWrapper .formSection .formGroup .formControl:focus-within label {
+  color: #262626;
 }
 @media only screen and (min-width: 640px) {
-  .contactContainer .contactWrapper .formSection .form .formGroup .formControl {
-    width: 90%;
+  .contactContainer .contactWrapper .formSection .formGroup .formControl:last-child {
+    margin-right: 0;
   }
 }
-.contactContainer .contactWrapper .formSection .form .formGroup .formControl label {
-  margin-bottom: 0.5rem;
-}
-.contactContainer .contactWrapper .formSection .form .formGroup .formControl input, .contactContainer .contactWrapper .formSection .form .formGroup .formControl textarea {
-  border-bottom: 1px solid #000000;
-  padding: 0.5rem;
-  outline: none;
-  border-color: transparent;
-}
-.contactContainer .contactWrapper .formSection .form .formGroup .formControl input:focus, .contactContainer .contactWrapper .formSection .form .formGroup .formControl textarea:focus {
-  border-bottom: 1px solid #000000;
-}
-@media only screen and (min-width: 640px) {
-  .contactContainer .contactWrapper .formSection .form .formGroup .messageControl {
-    width: 50%;
-  }
-}
-.contactContainer .contactWrapper .formSection .form .submitButton {
-  background-color: #DD6545;
-  color: #ffffff;
-  padding: 0.5rem 1.5rem;
-  border-radius: 14px;
-  cursor: pointer;
-  border: none;
-  font-weight: bold;
+.contactContainer .contactWrapper .formSection .formGroup .formControl label {
   font-size: 1rem;
+  color: #d1d5db;
+}
+@media only screen and (min-width: 640px) {
+  .contactContainer .contactWrapper .formSection .formGroup .formControl label {
+    margin-bottom: 0.625rem;
+  }
+}
+.contactContainer .contactWrapper .formSection .formGroup .formControl input, .contactContainer .contactWrapper .formSection .formGroup .formControl textarea {
+  padding: 0.625rem;
+  font-size: 1rem;
+  font-family: "Innovator Grotesk";
+  color: #262626;
+  border: none;
+  border-bottom: 1px solid #d1d5db;
+  background-color: transparent;
+  outline: none;
+}
+@media only screen and (min-width: 640px) {
+  .contactContainer .contactWrapper .formSection .formGroup .formControl input, .contactContainer .contactWrapper .formSection .formGroup .formControl textarea {
+    margin-right: 3.125rem;
+  }
+}
+.contactContainer .contactWrapper .formSection .formGroup .formControl input::placeholder, .contactContainer .contactWrapper .formSection .formGroup .formControl textarea::placeholder {
+  color: #d1d5db;
+}
+.contactContainer .contactWrapper .formSection .formGroup .formControl input:focus, .contactContainer .contactWrapper .formSection .formGroup .formControl textarea:focus {
+  border-bottom-color: #262626;
+}
+.contactContainer .contactWrapper .formSection .messageControl {
+  margin-bottom: 1.875rem;
+}
+@media only screen and (min-width: 640px) {
+  .contactContainer .contactWrapper .formSection .messageControl {
+    margin-top: 4.6875rem;
+  }
+}
+.contactContainer .contactWrapper .formSection .messageControl:focus-within label {
+  color: #262626;
+}
+.contactContainer .contactWrapper .formSection .messageControl label {
+  font-size: 1rem;
+  color: #d1d5db;
+  margin-bottom: 0.625rem;
+}
+.contactContainer .contactWrapper .formSection .messageControl textarea {
+  width: 100%;
+  padding: 0.625rem;
+  font-size: 1rem;
+  color: #262626;
+  border: none;
+  border-bottom: 1px solid #d1d5db;
+  background-color: transparent;
+  font-family: "Innovator Grotesk";
+  outline: none;
+}
+@media only screen and (min-width: 640px) {
+  .contactContainer .contactWrapper .formSection .messageControl textarea {
+    width: 95%;
+  }
+}
+.contactContainer .contactWrapper .formSection .messageControl textarea::placeholder {
+  color: #d1d5db;
+}
+.contactContainer .contactWrapper .formSection .messageControl textarea:focus {
+  border-bottom-color: #262626;
+}
+.contactContainer .contactWrapper .formSection .buttonContainer {
+  position: relative;
+}
+.contactContainer .contactWrapper .formSection .buttonContainer .submitButton {
+  padding: 0.9375rem;
+  font-size: 1rem;
+  background-color: #4f4138;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.0625rem;
+  border-radius: 0.3125rem;
+}
+@media only screen and (max-width: 639px) {
+  .contactContainer .contactWrapper .formSection .buttonContainer .submitButton {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .contactContainer .contactWrapper .formSection .buttonContainer .submitButton {
+    position: absolute;
+    right: 0;
+    margin-right: 3.125rem;
+    border-radius: 1rem;
+    padding: 0.9375rem 3rem;
+    background-color: #DD6545;
+  }
+}
+.contactContainer .contactWrapper .formSection .buttonContainer .submitButton:hover {
+  background-color: #e58970;
 }
 
 body {
@@ -463,14 +605,15 @@ body {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth; /* Smooth scrolling */
-  transition: scroll-snap-stop 5s ease-in-out; /* Smoothens the snap */
+  scroll-behavior: smooth;
+  transition: scroll-snap-stop 5s ease-in-out;
 }
 
 .section {
   min-height: 100vh;
   scroll-snap-align: start;
-  scroll-snap-stop: always; /* Ensures the snap is always triggered */
+  scroll-snap-stop: always;
+  overflow: auto;
 }
 
 .seeMore {
@@ -490,4 +633,16 @@ body {
 .hiddenContent {
   margin-top: 1rem;
   overflow: hidden;
+}
+
+@media only screen and (min-width: 640px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .desktop-only {
+    display: none;
+  }
 }

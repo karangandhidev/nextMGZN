@@ -1,8 +1,8 @@
 
 import Image from 'next/image';
 // import { useState } from 'react';
-import banner from '@/public/hero1.jpg';
-import bannerLogo from '@/public/white-trans.svg'
+import banner from '../../assets/images/hero1.jpg';
+import bannerLogo from '../../assets/images/white-trans.svg'
 
 interface HeroProps {
   handleScroll?: () => void;

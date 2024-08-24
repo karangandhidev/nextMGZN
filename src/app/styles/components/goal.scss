@@ -1,37 +1,43 @@
-.goalContainer {
-    background-color: $buttonBgColor;
-    width: 100%;
-    height: 100%;
-    margin-top: 5rem;
-    padding: 3rem 0;
-    .title {
-        margin: 0 1.5rem;
-        color: $whiteColor;
-        font-size: 2.25rem;
-        font-weight: bold;
-        text-align: center;
-        
+.goal-Component {
+    background-color: $whiteColor2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .goal-Container {
+        background-color: $buttonBgColor;
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         @include tablets {
-            font-size: 4rem;
+            height: 60vh;
+            justify-content: flex-start;
         }
-    }
-
-    .description {
-        color: $whiteColor;
-        font-size: 2.25rem;
-        font-weight: bold;
-        margin-top: 3rem; 
-        margin: 0 1.5rem; 
-        width: 66.6667%; 
-
-        @include tablets {
-            font-size: 4rem; 
+        .goalText-Container {
+            margin: 0 cRems(35px);
+            font-family: $InnovatorGrotesk;
+            font-weight: $bold;
+            @include tablets {
+                margin: 0 cRems(75px);
+            }
+            .goal-Title {
+                font-size: cRems(42px);
+                margin-bottom: cRems(60px); 
+            }
+            .goal-Description {
+                font-size: cRems(46px);
+                font-weight: $bold;
+                line-height: 1.2;
+                .nextmgzn-Highlight {
+                    color: $brownColor;
+                    font-size: cRems(46px);
+                    @include mobile {
+                        display: block;
+                    }
+                }
+            }
         }
-    }
-
-    .highlight {
-        color: $brownColor;
-        font-weight: extra-bold;
-        padding-top: 2rem; 
     }
 }

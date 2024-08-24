@@ -15,14 +15,15 @@ body {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth; /* Smooth scrolling */
-  transition: scroll-snap-stop 5s ease-in-out; /* Smoothens the snap */
+  scroll-behavior: smooth; 
+  transition: scroll-snap-stop 5s ease-in-out;
 }
 
 .section {
   min-height: 100vh;
   scroll-snap-align: start;
-  scroll-snap-stop: always; /* Ensures the snap is always triggered */
+  scroll-snap-stop: always; 
+  overflow: auto;
 }
 
 .seeMore {
@@ -43,4 +44,15 @@ body {
 .hiddenContent {
   margin-top: 1rem;
   overflow: hidden;
+}
+
+.mobile-only {
+  @include tablets {
+      display: none;
+  }
+}
+.desktop-only {
+  @include mobile {
+      display: none;
+  }
 }
