@@ -206,5 +206,5 @@ const Contact = forwardRef<HTMLDivElement, {}>((props, ref) => {
         </div>
     );
 });
-
+Contact.displayName = 'Contact Us';
 export default Contact;
