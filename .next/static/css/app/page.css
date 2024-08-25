@@ -179,6 +179,9 @@
     width: 3.333dvw;
     height: 3.333dvw;
   }
+  .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-heading {
+    font-size: clamp(1.442dvw, 2.07dvh, 3.442dvw);
+  }
   .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-info {
     margin-right: 1.481dvw;
     font-size: clamp(0.333dvw, 1.812dvh, 1.633dvw);
@@ -219,7 +222,7 @@
 @media only screen and (max-width: 639px) {
   .whatWeDoContainer .seeMore-Button .seeMore {
     padding: 1.227dvh 5.547dvw;
-    font-size: clamp(3.233dvw, 1.612dvh, 1.433dvw);
+    font-size: clamp(2.233dvw, 1.612dvh, 3.433dvw);
   }
 }
 @media only screen and (min-width: 640px) {

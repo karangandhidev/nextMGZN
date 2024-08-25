@@ -58,6 +58,9 @@
                         width: 3.333dvw;
                         height: 3.333dvw;
                     }
+                    .wwd-heading {
+                        font-size: clamp(1.442dvw, 2.07dvh, 3.442dvw);
+                    }
                     .wwd-info {
                         margin-right: 1.481dvw;
                         font-size: clamp(0.333dvw, 1.812dvh, 1.633dvw);
@@ -97,7 +100,7 @@
             font-family: $InnovatorGrotesk;
             @include mobile {
                 padding: 1.227dvh 5.547dvw;
-                font-size: clamp(3.233dvw, 1.612dvh, 1.433dvw);
+                font-size: clamp(2.233dvw, 1.612dvh, 3.433dvw);
             }
         }
     }
