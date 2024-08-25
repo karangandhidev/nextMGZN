@@ -1,11 +1,10 @@
 
 import Image from 'next/image';
-// import { useState } from 'react';
 import banner from '../../assets/images/hero1.jpg';
 import bannerLogo from '../../assets/images/white-trans.svg'
 
 interface HeroProps {
-    contactRef: React.RefObject<HTMLDivElement>; // Match the ref type here
+    contactRef: React.RefObject<HTMLDivElement>; 
   }
 
 const Hero = ({ contactRef }: HeroProps) => {
