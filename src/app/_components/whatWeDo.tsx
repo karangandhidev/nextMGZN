@@ -8,9 +8,6 @@ const data = [
     { title: 'Data-Driven Decisions', desc: 'We use analytics to guide our strategies and measure our impact.' },
     { title: 'Rapid Experimentation', desc: 'We test ideas quickly, learn from the results, and iterate fast.' },
     { title: 'Customer Retention', desc: 'By understanding our customers, we enhance their experience and drive retention.' },
-    { title: 'Innovative Solutions', desc: 'Creativity and outside-the-box thinking drive our pursuit of new growth opportunities.' },    { title: 'Data-Driven Decisions', desc: 'We use analytics to guide our strategies and measure our impact.' },
-    { title: 'Rapid Experimentation', desc: 'We test ideas quickly, learn from the results, and iterate fast.' },
-    { title: 'Customer Retention', desc: 'By understanding our customers, we enhance their experience and drive retention.' },
     { title: 'Innovative Solutions', desc: 'Creativity and outside-the-box thinking drive our pursuit of new growth opportunities.' }, 
 ];
 

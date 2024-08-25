@@ -4,7 +4,7 @@
     display: flex;
     position: relative;
     flex-direction: column; 
-    background-color: $lightGreyColor;
+    background-color: $whiteColor2;
     
     .text-Container {
         width: 50%;
@@ -12,24 +12,25 @@
         
         .header {
             width: 100%;
-            margin-top: 10.32dvh; // 80px converted
+            margin-top: 10.32dvh;
             text-align: center;
-            font-size: cRems(36px); // (No conversion for font-size)
+            font-size: clamp(8.46dvw, 4.65dvh, 8.46dvw);
             font-weight: bold;
             color: $brownColor;
             
             @include tablets {
-                margin-top: 5.15dvh; // 50px converted
+                margin-top: 4.9dvh;
+                font-size: clamp(0.833dvh, 1.621dvw, 3.833dvh);
             }
         }
         
         .subheader {
-            margin-top: 3.10dvh; // 24px converted
+            margin-top: 3.10dvh;
             text-align: center;
             color: $darkGreyColor;
             
             @include tablets {
-                margin: 3.10dvh 0; // 24px converted
+                margin: 3.10dvh 0;
             }
         }
     }
@@ -37,17 +38,17 @@
     .contactWrapper {
         height: 100%;
         background-color: $whiteColor;
-        padding: 2.06dvh; // 16px converted
-        border-radius: cRems(5px); // (No conversion for border-radius)
+        padding: 2.06dvh;
+        border-radius: cRems(5px);
         display: flex;
         width: 90%;
-        margin: 0 3.76dvw; // 24px converted
+        margin: 0 3.76dvw;
         flex-direction: column;
-        margin: 5.16dvh auto; // 40px converted
+        margin: 5.16dvh auto;
         
         @include tablets {
-            margin-top: 8.24dvh; // 80px converted
-            margin-left: 4.12dvh; // 40px converted
+            margin-top: 8.24dvh;
+            margin-left: 4.12dvh;
             min-height: 75dvh;
             flex-direction: row;
             margin: 0 auto;
@@ -61,40 +62,43 @@
             width: 100%;
             background-color: $brownColor;
             color: $whiteColor;
-            border-radius: cRems(5px); // (No conversion for border-radius)
-            padding: 4.95dvh; // 48px converted
+            border-radius: cRems(5px);
+            padding: 4.95dvh;
             text-align: center;
             display: flex;
             flex-direction: column;
             
             .title {
-                font-size: cRems(26px); // (No conversion for font-size)
+                font-size: clamp(5.5dvw, 3.3dvh, 7.5dvw);
                 font-weight: bold;
+                @include tablets {
+                    font-size: clamp(1.5dvw, 2.9dvh, 2.5dvw);
+                }
             }
             
             .subtitle {
-                margin-top: 3.87dvh; // 30px converted
+                margin-top: 3.87dvh;
                 
                 @include tablets {
-                    margin-top: 2.58dvh; // 20px converted
+                    margin-top: 2.58dvh;
                 }
             }
             
             .contactInfo {
-                margin-top: 6.19dvh; // 48px converted
+                margin-top: 6.19dvh;
                 display: flex;
                 flex-direction: column;
-                gap: 6.19dvh; // 48px converted
+                gap: 5.19dvh;
                 
                 @include tablets {
-                    margin-top: 8.24dvh; // 80px converted
+                    margin-top: 8.24dvh;
                 }
                 
                 .contactItem {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    gap: 2.58dvh; // 20px converted
+                    gap: 2.58dvh;
                     
                     @include tablets {
                         justify-content: flex-start;
@@ -115,7 +119,7 @@
                             color: $whiteColor;
                             display: flex;
                             align-items: center;
-                            gap: 2.58dvh; // 20px converted
+                            gap: 2.58dvh;
                             
                             @include tablets {
                                 flex-direction: row;
@@ -144,22 +148,22 @@
             }
             
             .socialIcons {
-                margin-top: 7.68dvh; // 96px converted
+                margin-top: 7.68dvh;
                 display: flex;
                 justify-content: center;
                 
                 @include tablets {
-                    margin-top: 13.06dvh; // 176px converted
+                    margin-top: 13.06dvh;
                     justify-content: flex-start;
                 }
                 
                 .icon {
-                    width: 1.72dvw; // 22px converted
-                    height: 1.72dvw; // 22px converted
-                    margin: 0 1.28dvw; // 16px converted
+                    width: 1dvw;
+                    height: 1dvw;
+                    margin: 0 1.28dvw;
                     background-color: $iconDarkGreyColor;
-                    border-radius: 50%; // (No conversion for border-radius)
-                    border: cRems(10px) solid $iconDarkGreyColor; // (No conversion for border-radius)
+                    border-radius: 50%;
+                    border: cRems(10px) solid $iconDarkGreyColor;
                     
                     &:hover {
                         color: $iconDarkGreyColor;
@@ -168,7 +172,7 @@
                     }
                     
                     @include tablets {
-                        margin: 0 1.28dvw 0 0; // 16px converted
+                        margin: 0 1.28dvw 0 0;
                     }
                 }
             }
@@ -176,7 +180,7 @@
 
         .formSection {
             margin: 0 auto;
-            padding: 3.10dvh 1.55dvw; // 40px 20px converted
+            padding: 3.10dvh 1.55dvw;
             font-family: $InnovatorGrotesk;
             
             @include tablets {
@@ -195,14 +199,14 @@
                 
                 @include tablets {
                     flex-direction: row;
-                    margin-bottom: 3.87dvh; // 30px converted
+                    margin-bottom: 3.87dvh;
                 }
                 
                 .formControl {
                     flex: 1;
                     display: flex;
                     flex-direction: column;
-                    margin-bottom: 2.06dvh; // 20px converted
+                    margin-bottom: 2.06dvh;
                     
                     &:focus-within label {
                         color: $iconDarkGreyColor; 
@@ -215,17 +219,18 @@
                     }
                     
                     label {
-                        font-size: cRems(16px); // (No conversion for font-size)
+                        font-size: clamp(3.5dvw, 2.3dvh, 7.5dvw);
                         color: $grayBgColor;
                         
                         @include tablets {
-                            margin-bottom: 1.55dvh; // 10px converted
+                            margin-bottom: 1.55dvh;
+                            font-size: clamp(0.5dvw, 1.5dvh, 1.5dvw);
                         }
                     }
           
                     input, textarea {
-                        padding: 1.55dvh; // 10px converted
-                        font-size: cRems(16px); // (No conversion for font-size)
+                        padding: 1.55dvh;
+                        font-size: cRems(16px);
                         font-family: $InnovatorGrotesk;
                         color: $iconDarkGreyColor;
                         border: none;
@@ -234,7 +239,7 @@
                         outline: none;
                         
                         @include tablets {
-                            margin-right: 6.73dvw; // 50px converted
+                            margin-right: 6.73dvw;
                         }
                         
                         &::placeholder {
@@ -249,10 +254,10 @@
             }
 
             .messageControl {
-                margin-bottom: 3.87dvh; // 30px converted
+                margin-bottom: 3.87dvh;
                 
                 @include tablets {
-                    margin-top: 7.68dvh; // 75px converted
+                    margin-top: 7.68dvh;
                 }
                 
                 &:focus-within label {
@@ -260,15 +265,18 @@
                 }
                 
                 label {
-                    font-size: cRems(16px); // (No conversion for font-size)
+                    font-size: clamp(3.5dvw, 2.3dvh, 7.5dvw);
                     color: $grayBgColor;
-                    margin-bottom: 1.55dvh; // 10px converted
+                    margin-bottom: 1.55dvh;
+                    @include tablets {
+                        font-size: clamp(0.5dvw, 1.5dvh, 1.5dvw);
+                    }
                 }
                 
                 textarea {
                     width: 100%;
-                    padding: 1.55dvh; // 10px converted
-                    font-size: cRems(16px); // (No conversion for font-size)
+                    padding: 1.55dvh;
+                    font-size: clamp(3.5dvw, 2.3dvh, 7.5dvw);
                     color: $iconDarkGreyColor;
                     border: none;
                     border-bottom: 1px solid $grayBgColor;
@@ -277,6 +285,7 @@
                     outline: none;
                     
                     @include tablets {
+                        font-size: clamp(1.5dvh, 0.7dvw, 1.5dvw);;
                         width: 95%;
                     }
                     
@@ -294,14 +303,14 @@
                 position: relative;
                 
                 .submitButton {
-                    padding: 1.55dvh; // 15px converted
-                    font-size: cRems(16px); // (No conversion for font-size)
+                    padding: 1.55dvh;
+                    font-size: cRems(16px);
                     background-color: $brownColor;
                     color: $whiteColor;
                     border: none;
                     cursor: pointer;
-                    letter-spacing: 0.13dvw; // 1px converted
-                    border-radius: cRems(5px); // (No conversion for border-radius)
+                    letter-spacing: 0.13dvw;
+                    border-radius: cRems(5px);
                     
                     @include mobile {
                         width: 100%;
@@ -310,9 +319,9 @@
                     @include tablets {
                         position: absolute;
                         right: 0;
-                        margin-right: 6.73dvw; // 50px converted
-                        border-radius: cRems(16px); // (No conversion for border-radius)
-                        padding: 1.55dvh 4.95dvw; // 15px 48px converted
+                        margin-right: 6.73dvw;
+                        border-radius: cRems(16px);
+                        padding: 1.55dvh 4.95dvw;
                         background-color: $buttonBgColor;
                     }
                     

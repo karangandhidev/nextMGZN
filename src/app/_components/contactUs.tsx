@@ -1,11 +1,14 @@
 import { Facebook, Instagram, Mail, MapPin, PhoneCall, Twitter } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import { toast } from "react-toastify";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDiscord, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import React, { forwardRef } from 'react';
 
-const Contact = () => {
+const Contact = forwardRef<HTMLDivElement, {}>((props, ref) => {
+
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -20,18 +23,51 @@ const Contact = () => {
     };
 
     const validateEmail = (email: string) => {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const re = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
         return re.test(String(email).toLowerCase());
+    };
+
+    const validatePhoneNumber = (phoneNumber: string): boolean => {
+        const re = /^\d{10}$/;
+        return re.test(phoneNumber);
     };
 
     const validateForm = () => {
         const { firstName, lastName, email, phoneNumber, message } = formData;
         if (!firstName || !lastName || !email || !phoneNumber || !message) {
-            toast.warning('Please fill in all fields.', { position: 'top-center' });
+            toast.warning('Please fill in all fields.', {
+                position: 'top-center',
+                autoClose: 5000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            });
             return false;
         }
         if (!validateEmail(email)) {
-            toast.warning('Please enter a valid email address.', { position: 'top-center' });
+            toast.warning('Please enter a valid email address.', {
+                position: 'top-center',
+                autoClose: 5000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            });
+            return false;
+        }
+        if (!validatePhoneNumber(phoneNumber)) {
+            toast.warning('Please enter a valid phone number.', {
+                position: 'top-center',
+                autoClose: 5000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            });
             return false;
         }
         return true;
@@ -72,7 +108,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="contactContainer section">
+        <div ref={ref} className="contactContainer section">
             <div className="text-Container">
               <h1 className="header">Contact Us</h1>
               <p className="subheader">Any questions or remarks? Just write us a message!</p>
@@ -116,7 +152,6 @@ const Contact = () => {
                                     name="firstName"
                                     value={formData.firstName}
                                     onChange={handleInputChange}
-                                    required
                                 />
                             </div>
                             <div className="formControl">
@@ -126,7 +161,6 @@ const Contact = () => {
                                     name="lastName"
                                     value={formData.lastName}
                                     onChange={handleInputChange}
-                                    required
                                 />
                             </div>
                         </div>
@@ -139,7 +173,6 @@ const Contact = () => {
                                     type="email"
                                     value={formData.email}
                                     onChange={handleInputChange}
-                                    required
                                 />
                             </div>
                             <div className="formControl">
@@ -150,7 +183,6 @@ const Contact = () => {
                                     type="tel"
                                     value={formData.phoneNumber}
                                     onChange={handleInputChange}
-                                    required
                                 />
                             </div>
                         </div>
@@ -162,7 +194,6 @@ const Contact = () => {
                                 placeholder="Write your message..."
                                 value={formData.message}
                                 onChange={handleInputChange}
-                                required
                             />
                         </div>
                         <div className="buttonContainer">
@@ -174,6 +205,6 @@ const Contact = () => {
             </div>
         </div>
     );
-};
+});
 
 export default Contact;

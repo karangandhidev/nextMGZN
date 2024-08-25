@@ -5,10 +5,16 @@ import banner from '../../assets/images/hero1.jpg';
 import bannerLogo from '../../assets/images/white-trans.svg'
 
 interface HeroProps {
-  handleScroll?: () => void;
-}
+    contactRef: React.RefObject<HTMLDivElement>; // Match the ref type here
+  }
 
-const Hero = ({ handleScroll }: HeroProps) => {
+const Hero = ({ contactRef }: HeroProps) => {
+  const handleScroll = () => {
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
     return (
         <div className="section heroPage-Container">
             <div className="heroLogo-Container">
