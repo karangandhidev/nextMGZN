@@ -12,7 +12,7 @@ body {
 }
 .container {
   height: 100dvh;
-  scroll-snap-type: y mandatory;
+  // scroll-snap-type: y mandatory;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth; 
@@ -21,8 +21,8 @@ body {
 
 .section {
   min-height: 100dvh;
-  scroll-snap-align: start;
-  scroll-snap-stop: always; 
+  // scroll-snap-align: start;
+  // scroll-snap-stop: always; 
   overflow: auto;
 }
 
