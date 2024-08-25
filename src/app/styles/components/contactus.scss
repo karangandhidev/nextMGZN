@@ -1,5 +1,5 @@
 .contactContainer {
-    min-height: 100vh;
+    min-height: 100dvh;
     width: 100%;
     display: flex;
     position: relative;
@@ -42,7 +42,7 @@
         @include tablets {
             margin-top: cRems(80px); 
             margin-left: cRems(40px);
-            min-height: 75vh;
+            min-height: 75dvh;
             flex-direction: row;
             margin: 0 auto;
         }

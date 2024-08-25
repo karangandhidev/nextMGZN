@@ -11,7 +11,7 @@ body {
   padding: 0;
 }
 .container {
-  height: 100vh;
+  height: 100dvh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -20,14 +20,14 @@ body {
 }
 
 .section {
-  min-height: 100vh;
+  min-height: 100dvh;
   scroll-snap-align: start;
   scroll-snap-stop: always; 
   overflow: auto;
 }
 
 .seeMore {
-  max-height: 100vh;
+  max-height: 100dvh;
   overflow: hidden;
   transition: max-height 0.5s ease;
 

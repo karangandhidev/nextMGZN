@@ -42,7 +42,7 @@
   src: none;
   position: absolute;
   top: 0;
-  height: 65vh;
+  height: 65dvh;
   width: 100vw;
 }
 @media only screen and (max-width: 639px) {
@@ -56,7 +56,7 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 60vh;
+    width: 60dvh;
   }
 }
 .heroPage-Container .heroText-Container {
@@ -67,7 +67,7 @@
 @media only screen and (max-width: 639px) {
   .heroPage-Container .heroText-Container {
     position: absolute;
-    top: 65vh;
+    top: 65dvh;
     margin: 2.1875rem;
   }
 }
@@ -244,14 +244,14 @@
 .goal-Component .goal-Container {
   background-color: #DD6545;
   width: 100vw;
-  height: 80vh;
+  height: 80dvh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media only screen and (min-width: 640px) {
   .goal-Component .goal-Container {
-    height: 60vh;
+    height: 60dvh;
     justify-content: flex-start;
   }
 }
@@ -285,7 +285,7 @@
 }
 
 .contactContainer {
-  min-height: 100vh;
+  min-height: 100dvh;
   width: 100%;
   display: flex;
   position: relative;
@@ -334,7 +334,7 @@
   .contactContainer .contactWrapper {
     margin-top: 5rem;
     margin-left: 2.5rem;
-    min-height: 75vh;
+    min-height: 75dvh;
     flex-direction: row;
     margin: 0 auto;
   }
@@ -601,7 +601,7 @@ body {
 }
 
 .container {
-  height: 100vh;
+  height: 100dvh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -610,14 +610,14 @@ body {
 }
 
 .section {
-  min-height: 100vh;
+  min-height: 100dvh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   overflow: auto;
 }
 
 .seeMore {
-  max-height: 100vh;
+  max-height: 100dvh;
   overflow: hidden;
   transition: max-height 0.5s ease;
 }
