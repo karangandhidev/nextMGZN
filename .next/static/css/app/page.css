@@ -39,11 +39,11 @@
   }
 }
 .heroPage-Container .heroBanner {
-  src: none;
   position: absolute;
   top: 0;
   height: 65dvh;
   width: 100dvw;
+  object-fit: cover;
 }
 @media only screen and (min-width: 640px) {
   .heroPage-Container .heroBanner {
@@ -71,11 +71,11 @@
 .heroPage-Container .heroText-Container .heroHeading {
   font-family: "Innovator Grotesk";
   font-weight: 700;
-  font-size: 4.129dvh;
+  font-size: clamp(3.5dvw, 4.129dvh, 7.529dvw);
 }
 @media only screen and (min-width: 640px) {
   .heroPage-Container .heroText-Container .heroHeading {
-    font-size: 5.556dvh;
+    font-size: clamp(3dvh, 3.556dvw, 7dvh);
   }
 }
 .heroPage-Container .heroButton-Container {
@@ -87,7 +87,7 @@
   }
 }
 .heroPage-Container .heroButton-Container .heroButton {
-  color: white;
+  color: #ffffff;
   font-weight: 700;
   background-color: #DD6545;
   font-family: "Innovator Grotesk";
@@ -99,53 +99,52 @@
   .heroPage-Container .heroButton-Container .heroButton {
     width: 80dvw;
     padding: 1.548dvh 15.059dvw;
-    font-size: 2.581dvh;
+    font-size: clamp(1.581dvh, 4.706dvw, 3.581dvh);
   }
 }
 @media only screen and (min-width: 640px) {
   .heroPage-Container .heroButton-Container .heroButton {
     margin-top: 4.63dvh;
-    font-size: 2.5dvh;
+    font-size: clamp(1.5dvh, 1.458dvw, 3.5dvh);
     padding: 1dvh 1.667dvw;
   }
 }
 
 .whatWeDoContainer {
-  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #f9f9f9;
-  min-height: 100%;
+  min-height: 100dvh;
 }
 .whatWeDoContainer .wwd-title {
   text-align: left;
-  margin: 3.75rem 0 3.125rem 2.1875rem;
+  margin: 6.204dvh 0 5.168dvh 8.235dvw;
   color: #4f4138;
   font-family: "Innovator Grotesk";
   font-weight: 700;
 }
 @media only screen and (min-width: 640px) {
   .whatWeDoContainer .wwd-title {
-    font-size: 2.5rem;
-    margin: 7.5rem auto 5rem auto;
+    font-size: clamp(1.083dvw, 3.704dvh, 3dvw);
+    margin: 11.49dvh auto 7.704dvh auto;
   }
 }
 .whatWeDoContainer .wwdContent-Container {
-  margin: 0 2.1875rem;
+  margin: 0 8.235dvw;
   overflow-wrap: anywhere;
   color: #000000;
 }
 @media only screen and (min-width: 640px) {
   .whatWeDoContainer .wwdContent-Container {
-    margin: 0 5rem;
+    margin: 0 4.167dvw;
   }
 }
 .whatWeDoContainer .wwdContent-Container .wwd-Content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem 1.125rem;
-  gap: 3rem 1.125rem;
-  margin-bottom: 4.375rem;
+  grid-gap: 4.967dvh 2.323dvw;
+  gap: 4.967dvh 2.323dvw;
+  margin-bottom: 7.239dvh;
 }
 .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item {
   display: flex;
@@ -157,31 +156,32 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 13.176dvw;
+  width: 13.176dvw;
 }
 .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-heading {
-  margin-top: 2rem;
+  margin-top: 3.225dvh;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: clamp(3.442dvw, 2.07dvh, 5.442dvw);
 }
 .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-info {
-  margin-top: 1rem;
+  margin-top: 1.612dvh;
 }
 @media only screen and (min-width: 640px) {
   .whatWeDoContainer .wwdContent-Container .wwd-Content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5rem 1.25rem;
-    gap: 5rem 1.25rem;
-    margin-bottom: 6.25rem;
+    grid-gap: 8.267dvh 1.042dvw;
+    gap: 8.267dvh 1.042dvw;
+    margin-bottom: 10.341dvh;
   }
   .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-icon {
-    width: 4rem;
-    height: 4rem;
+    width: 3.333dvw;
+    height: 3.333dvw;
   }
   .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-info {
-    margin-right: 5rem;
+    margin-right: 1.481dvw;
+    font-size: clamp(0.333dvw, 1.812dvh, 1.633dvw);
   }
 }
 @media only screen and (max-width: 639px) {
@@ -197,25 +197,30 @@
 .whatWeDoContainer .seeMore-Button {
   width: 100%;
   height: 100%;
-  margin-bottom: 6.25rem;
+  margin-bottom: 10.341dvh;
   text-align: center;
-  font-size: 1rem;
 }
 @media only screen and (min-width: 640px) {
   .whatWeDoContainer .seeMore-Button {
-    margin-top: -3.125rem;
+    margin-top: -2.167dvw;
   }
 }
 .whatWeDoContainer .seeMore-Button .seeMore {
   background-color: #4f4138;
   color: #ffffff;
-  padding: 0.5rem 2rem;
+  padding: 0.827dvh 1.547dvw;
   border-radius: 1rem;
   border: none;
   cursor: pointer;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: clamp(0.233dvw, 1.612dvh, 1.433dvw);
   font-family: "Innovator Grotesk";
+}
+@media only screen and (max-width: 639px) {
+  .whatWeDoContainer .seeMore-Button .seeMore {
+    padding: 1.227dvh 5.547dvw;
+    font-size: clamp(3.233dvw, 1.612dvh, 1.433dvw);
+  }
 }
 @media only screen and (min-width: 640px) {
   .whatWeDoContainer .mobile-Button {
@@ -250,31 +255,42 @@
   }
 }
 .goal-Component .goal-Container .goalText-Container {
-  margin: 0 2.1875rem;
+  margin: 0 8.235dvw;
   font-family: "Innovator Grotesk";
   font-weight: 700;
 }
 @media only screen and (min-width: 640px) {
   .goal-Component .goal-Container .goalText-Container {
-    margin: 0 4.6875rem;
+    margin: 0 15.625dvw;
   }
 }
 .goal-Component .goal-Container .goalText-Container .goal-Title {
-  font-size: 2.625rem;
-  margin-bottom: 3.75rem;
+  font-size: clamp(1.688dvw, 4.343dvh, 2.788dvw);
+  margin-bottom: 6.204dvh;
+}
+@media only screen and (max-width: 639px) {
+  .goal-Component .goal-Container .goalText-Container .goal-Title {
+    font-size: clamp(8.688dvw, 4.343dvh, 2.788dvw);
+  }
 }
 .goal-Component .goal-Container .goalText-Container .goal-Description {
-  font-size: 2.875rem;
+  font-size: clamp(2.096dvw, 4.758dvh, 2.896dvw);
   font-weight: 700;
   line-height: 1.2;
 }
+@media only screen and (max-width: 639px) {
+  .goal-Component .goal-Container .goalText-Container .goal-Description {
+    font-size: clamp(8.688dvw, 4.343dvh, 2.788dvw);
+  }
+}
 .goal-Component .goal-Container .goalText-Container .goal-Description .nextmgzn-Highlight {
   color: #4f4138;
-  font-size: 2.875rem;
+  font-size: clamp(2.096dvw, 4.758dvh, 2.896dvw);
 }
 @media only screen and (max-width: 639px) {
   .goal-Component .goal-Container .goalText-Container .goal-Description .nextmgzn-Highlight {
     display: block;
+    font-size: clamp(8.688dvw, 4.343dvh, 2.788dvw);
   }
 }
 

@@ -1,33 +1,32 @@
 .whatWeDoContainer {
-    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: $whiteColor2;
-    min-height: 100%;
+    min-height: 100dvh;
     .wwd-title {
         text-align: left;
-        margin: cRems(60px) 0 cRems(50px) cRems(35px);
+        margin: 6.204dvh 0 5.168dvh 8.235dvw;
         color: $brownColor;
         font-family: $InnovatorGrotesk;
         font-weight: $bold;
         @include tablets {
-            font-size: cRems(40px);
-            margin: cRems(120px) auto cRems(80px) auto;
+            font-size: clamp(1.083dvw, 3.704dvh, 3dvw);
+            margin: 11.490dvh auto 7.704dvh auto;
         }
     }
     .wwdContent-Container {
-        margin: 0 cRems(35px);
+        margin: 0 8.235dvw;
         overflow-wrap: anywhere;
         color: $blackColor;
 
         @include tablets {
-            margin: 0 cRems(80px);
+            margin: 0 4.167dvw;
         }
         .wwd-Content {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: cRems(48px) cRems(18px);
-            margin-bottom: cRems(70px);
+            gap: 4.967dvh 2.323dvw;
+            margin-bottom: 7.239dvh;
             .wwd-item {
                 display: flex;
                 flex-direction: column;
@@ -37,30 +36,31 @@
                     display: flex;
                     align-items: center;
                     justify-content: flex-start;
-                    height: cRems(56px);
-                    width: cRems(56px);
+                    height:  13.176dvw;
+                    width:  13.176dvw;
                 }
                 .wwd-heading {
-                    margin-top: cRems(32px);
+                    margin-top: 3.225dvh;
                     font-weight: bold;
-                    font-size: cRems(20px);
+                    font-size: clamp(3.442dvw, 2.070dvh, 5.442dvw);
                 }
                 .wwd-info {
-                    margin-top: cRems(16px);
+                    margin-top: 1.612dvh;
                 }
             }
             @include tablets {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                gap: cRems(80px) cRems(20px);
-                margin-bottom: cRems(100px);
+                gap: 8.267dvh 1.042dvw;
+                margin-bottom: 10.341dvh;
                 .wwd-item {                 
                     .wwd-icon {
-                        width: cRems(64px);
-                        height: cRems(64px);
+                        width: 3.333dvw;
+                        height: 3.333dvw;
                     }
                     .wwd-info {
-                        margin-right: cRems(80px);
+                        margin-right: 1.481dvw;
+                        font-size: clamp(0.333dvw, 1.812dvh, 1.633dvw);
                     }
                 }
             }
@@ -80,22 +80,25 @@
     .seeMore-Button {
         width: 100%;
         height: 100%;
-        margin-bottom: cRems(100px);
+        margin-bottom: 10.341dvh;
         text-align: center;
-        font-size: cRems(16px);
         @include tablets {
-            margin-top: cRems(-50px) ;
+            margin-top: -2.167dvw;
         }
         .seeMore {
             background-color: $brownColor;
             color: $whiteColor;
-            padding: cRems(8px) cRems(32px);
+            padding: 0.827dvh 1.547dvw;
             border-radius: cRems(16px);
             border: none;
             cursor: pointer;
             font-weight: $bold;
-            font-size: cRems(16px);
+            font-size: clamp(0.233dvw, 1.612dvh, 1.433dvw);
             font-family: $InnovatorGrotesk;
+            @include mobile {
+                padding: 1.227dvh 5.547dvw;
+                font-size: clamp(3.233dvw, 1.612dvh, 1.433dvw);
+            }
         }
     }
     .mobile-Button {
@@ -109,4 +112,3 @@
         }
     }
 }
-

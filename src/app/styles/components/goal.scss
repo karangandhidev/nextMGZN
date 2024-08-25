@@ -16,25 +16,32 @@
             justify-content: flex-start;
         }
         .goalText-Container {
-            margin: 0 cRems(35px);
+            margin: 0 8.235dvw;
             font-family: $InnovatorGrotesk;
             font-weight: $bold;
             @include tablets {
-                margin: 0 cRems(75px);
+                margin: 0 15.625dvw;
             }
             .goal-Title {
-                font-size: cRems(42px);
-                margin-bottom: cRems(60px); 
+                font-size: clamp(1.688dvw, 4.343dvh, 2.788dvw);
+                margin-bottom: 6.204dvh;
+                @include mobile {
+                    font-size: clamp(8.688dvw, 4.343dvh, 2.788dvw);
+                }
             }
             .goal-Description {
-                font-size: cRems(46px);
+                font-size: clamp(2.096dvw, 4.758dvh, 2.896dvw);
                 font-weight: $bold;
                 line-height: 1.2;
+                @include mobile {
+                    font-size: clamp(8.688dvw, 4.343dvh, 2.788dvw);
+                }
                 .nextmgzn-Highlight {
                     color: $brownColor;
-                    font-size: cRems(46px);
+                    font-size: clamp(2.096dvw, 4.758dvh, 2.896dvw);
                     @include mobile {
                         display: block;
+                        font-size: clamp(8.688dvw, 4.343dvh, 2.788dvw);
                     }
                 }
             }

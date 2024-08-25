@@ -21,11 +21,11 @@
         }
     }
     .heroBanner {
-        src: none;
         position: absolute;
         top: 0;
         height: 65dvh;
         width: 100dvw;
+        object-fit: cover;
         @include tablets {
             right: 0;
             height: 100dvh;
@@ -47,9 +47,9 @@
         .heroHeading { 
             font-family: 'Innovator Grotesk';
             font-weight: $bold;
-            font-size: 4.129dvh;
+            font-size: clamp(3.5dvw, 4.129dvh, 7.529dvw);
             @include tablets {
-                font-size:  clamp(3dvh, 5.556dvh, 7dvh);
+                font-size: clamp(3dvh, 3.556dvw, 7dvh);
             }
         }
     }
@@ -59,7 +59,7 @@
             margin-top: 6.452dvh;
         }
         .heroButton {
-            color: white;
+            color: $whiteColor;
             font-weight: $bold;
             background-color: $buttonBgColor;
             font-family: 'Innovator Grotesk';
@@ -69,11 +69,11 @@
             @include mobile {
                 width: 80dvw;
                 padding: 1.548dvh 15.059dvw;
-                font-size: clamp(1.581dvh, 2.581dvh, 3.581dvh);
+                font-size: clamp(1.581dvh, 4.706dvw, 3.581dvh);
             }
             @include tablets {
                 margin-top: 4.63dvh;
-                font-size: clamp(1.5dvh, 2.5dvh, 3.5dvh);
+                font-size: clamp(1.5dvh, 1.458dvw, 3.5dvh);
                 padding: 1dvh 1.667dvw;
             }
         }
