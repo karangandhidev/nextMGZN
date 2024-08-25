@@ -1,5 +1,5 @@
 .heroPage-Container {
-    min-height: 100%;
+    min-height: 100dvh;
     background-color: $brownColor;
     position: relative;
     .heroLogo-Container {
@@ -7,16 +7,16 @@
             position: relative;
         }
         .nextmgzn-logo {
-            width: cRems(200px);
-            height: cRems(200px);
+            height: 20dvh;
+            width: 35dvw;
             position: relative;
             z-index: 1;
-            margin: cRems(35px) 0 0 cRems(35px);
+            margin: 4dvh 8dvw;
             @include tablets {
                 position: relative;
-                width: cRems(230px);
-                height: cRems(230px);
-                margin: cRems(75px) 0 0 cRems(75px);
+                width: 13dvw;
+                height: 30dvh;
+                margin: 5dvh 5dvw;
             }
         }
     }
@@ -25,43 +25,39 @@
         position: absolute;
         top: 0;
         height: 65dvh;
-        width: 100vw;
-        @include mobile {
-            left: 0;
-        }
+        width: 100dvw;
         @include tablets {
-            position: absolute;
-            top: 0;
             right: 0;
-            height: 100%;
-            width: 60dvh;
+            height: 100dvh;
+            width: 35dvw;
         }
     }
     .heroText-Container {
         z-index: 3;
         position: relative;
-        width: -webkit-fill-available;
+
         @include mobile {
             position: absolute;
+            margin: 4dvh 8dvw;
             top: 65dvh;
-            margin: cRems(35px);
         }
-        @include tablets {
-            margin: cRems(75px);
+        @include tablets {       
+            margin: 5dvh 5dvw;
         }
         .heroHeading { 
             font-family: 'Innovator Grotesk';
             font-weight: $bold;
-            font-size: cRems(32px);
+            font-size: 4.129dvh;
             @include tablets {
-                font-size: cRems(60px);
+                font-size:  clamp(3dvh, 5.556dvh, 7dvh);
             }
         }
-        
     }
     .heroButton-Container {
-        display: block;
-        margin: 0 auto;
+        max-width: min-content;
+        @include mobile {
+            margin-top: 6.452dvh;
+        }
         .heroButton {
             color: white;
             font-weight: $bold;
@@ -71,16 +67,14 @@
             text-align: center;                
             border: none;
             @include mobile {
-                width: 80vw;
-                margin-top: cRems(50px);
-                padding: cRems(12px) cRems(64px);
-                font-size: cRems(20px);
-                width: 100%;
+                width: 80dvw;
+                padding: 1.548dvh 15.059dvw;
+                font-size: clamp(1.581dvh, 2.581dvh, 3.581dvh);
             }
             @include tablets {
-                margin-top: cRems(50px);
-                font-size: cRems(24px);
-                padding: cRems(8px) cRems(32px);
+                margin-top: 4.63dvh;
+                font-size: clamp(1.5dvh, 2.5dvh, 3.5dvh);
+                padding: 1dvh 1.667dvw;
             }
         }
     }

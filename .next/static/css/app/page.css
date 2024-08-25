@@ -14,7 +14,7 @@
   src: url(/_next/static/media/OilvareBaseRegular.82147692.ttf);
 }
 .heroPage-Container {
-  min-height: 100%;
+  min-height: 100dvh;
   background-color: #4f4138;
   position: relative;
 }
@@ -24,18 +24,18 @@
   }
 }
 .heroPage-Container .heroLogo-Container .nextmgzn-logo {
-  width: 12.5rem;
-  height: 12.5rem;
+  height: 20dvh;
+  width: 35dvw;
   position: relative;
   z-index: 1;
-  margin: 2.1875rem 0 0 2.1875rem;
+  margin: 4dvh 8dvw;
 }
 @media only screen and (min-width: 640px) {
   .heroPage-Container .heroLogo-Container .nextmgzn-logo {
     position: relative;
-    width: 14.375rem;
-    height: 14.375rem;
-    margin: 4.6875rem 0 0 4.6875rem;
+    width: 13dvw;
+    height: 30dvh;
+    margin: 5dvh 5dvw;
   }
 }
 .heroPage-Container .heroBanner {
@@ -43,52 +43,48 @@
   position: absolute;
   top: 0;
   height: 65dvh;
-  width: 100vw;
-}
-@media only screen and (max-width: 639px) {
-  .heroPage-Container .heroBanner {
-    left: 0;
-  }
+  width: 100dvw;
 }
 @media only screen and (min-width: 640px) {
   .heroPage-Container .heroBanner {
-    position: absolute;
-    top: 0;
     right: 0;
-    height: 100%;
-    width: 60dvh;
+    height: 100dvh;
+    width: 35dvw;
   }
 }
 .heroPage-Container .heroText-Container {
   z-index: 3;
   position: relative;
-  width: -webkit-fill-available;
 }
 @media only screen and (max-width: 639px) {
   .heroPage-Container .heroText-Container {
     position: absolute;
+    margin: 4dvh 8dvw;
     top: 65dvh;
-    margin: 2.1875rem;
   }
 }
 @media only screen and (min-width: 640px) {
   .heroPage-Container .heroText-Container {
-    margin: 4.6875rem;
+    margin: 5dvh 5dvw;
   }
 }
 .heroPage-Container .heroText-Container .heroHeading {
   font-family: "Innovator Grotesk";
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 4.129dvh;
 }
 @media only screen and (min-width: 640px) {
   .heroPage-Container .heroText-Container .heroHeading {
-    font-size: 3.75rem;
+    font-size: 5.556dvh;
   }
 }
 .heroPage-Container .heroButton-Container {
-  display: block;
-  margin: 0 auto;
+  max-width: min-content;
+}
+@media only screen and (max-width: 639px) {
+  .heroPage-Container .heroButton-Container {
+    margin-top: 6.452dvh;
+  }
 }
 .heroPage-Container .heroButton-Container .heroButton {
   color: white;
@@ -101,18 +97,16 @@
 }
 @media only screen and (max-width: 639px) {
   .heroPage-Container .heroButton-Container .heroButton {
-    width: 80vw;
-    margin-top: 3.125rem;
-    padding: 0.75rem 4rem;
-    font-size: 1.25rem;
-    width: 100%;
+    width: 80dvw;
+    padding: 1.548dvh 15.059dvw;
+    font-size: 2.581dvh;
   }
 }
 @media only screen and (min-width: 640px) {
   .heroPage-Container .heroButton-Container .heroButton {
-    margin-top: 3.125rem;
-    font-size: 1.5rem;
-    padding: 0.5rem 2rem;
+    margin-top: 4.63dvh;
+    font-size: 2.5dvh;
+    padding: 1dvh 1.667dvw;
   }
 }
 
