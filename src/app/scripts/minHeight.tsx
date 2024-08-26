@@ -10,9 +10,9 @@ const useToggleClassOnResize = () => {
 
       // If the viewport Width is less than the screen Width, remove the min-Width class
       if (viewportWidth < screenWidth - 100) {
-        body.classList.add('small-window');
+        body?.classList.add('small-window');
       } else {
-        body.classList.remove('small-window');
+        body?.classList.remove('small-window');
       }
     };
 
