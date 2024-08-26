@@ -2,12 +2,14 @@
 import Image from 'next/image';
 import banner from '../../assets/images/hero1.jpg';
 import bannerLogo from '../../assets/images/white-trans.svg'
+import useToggleClassOnResize from '../scripts/minHeight'
 
 interface HeroProps {
     contactRef: React.RefObject<HTMLDivElement>; 
   }
 
 const Hero = ({ contactRef }: HeroProps) => {
+    useToggleClassOnResize();
   const handleScroll = () => {
     if (contactRef.current) {
       contactRef.current.scrollIntoView({ behavior: 'smooth' });

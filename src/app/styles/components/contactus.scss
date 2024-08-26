@@ -18,7 +18,7 @@
             font-weight: bold;
             color: $brownColor;
             
-            @include tablets {
+            @include desktop {
                 margin-top: 4.9dvh;
                 font-size: clamp(0.833dvh, 1.621dvw, 3.833dvh);
             }
@@ -29,7 +29,7 @@
             text-align: center;
             color: $darkGreyColor;
             
-            @include tablets {
+            @include desktop {
                 margin: 3.10dvh 0;
             }
         }
@@ -46,7 +46,7 @@
         flex-direction: column;
         margin: 5.16dvh auto;
         
-        @include tablets {
+        @include desktop {
             margin-top: 8.24dvh;
             margin-left: 4.12dvh;
             min-height: 75dvh;
@@ -55,7 +55,7 @@
         }
         
         .infoSection {
-            @include tablets {
+            @include desktop {
                 width: 33.3333%;
                 text-align: left;
             }
@@ -71,7 +71,7 @@
             .title {
                 font-size: clamp(5.5dvw, 3.3dvh, 7.5dvw);
                 font-weight: bold;
-                @include tablets {
+                @include desktop {
                     font-size: clamp(1.5dvw, 2.9dvh, 2.5dvw);
                 }
             }
@@ -79,7 +79,7 @@
             .subtitle {
                 margin-top: 3.87dvh;
                 
-                @include tablets {
+                @include desktop {
                     margin-top: 2.58dvh;
                 }
             }
@@ -90,7 +90,7 @@
                 flex-direction: column;
                 gap: 5.19dvh;
                 
-                @include tablets {
+                @include desktop {
                     margin-top: 8.24dvh;
                 }
                 
@@ -100,7 +100,7 @@
                     align-items: center;
                     gap: 2.58dvh;
                     
-                    @include tablets {
+                    @include desktop {
                         justify-content: flex-start;
                         align-items: flex-start;
                         flex-direction: row;
@@ -109,7 +109,7 @@
                     &:nth-child(1) {
                         cursor: pointer;
                         
-                        @include tablets {
+                        @include desktop {
                             justify-content: flex-start;
                         }
                     }
@@ -121,7 +121,7 @@
                             align-items: center;
                             gap: 2.58dvh;
                             
-                            @include tablets {
+                            @include desktop {
                                 flex-direction: row;
                             }
                         }
@@ -130,7 +130,7 @@
                     &:nth-child(3) {
                         cursor: pointer;
                         
-                        @include tablets {
+                        @include desktop {
                             text-align: left;
                         }
                     }
@@ -152,7 +152,7 @@
                 display: flex;
                 justify-content: center;
                 
-                @include tablets {
+                @include desktop {
                     margin-top: 13.06dvh;
                     justify-content: flex-start;
                 }
@@ -171,7 +171,7 @@
                         border-color: $whiteColor;
                     }
                     
-                    @include tablets {
+                    @include desktop {
                         margin: 0 1.28dvw 0 0;
                     }
                 }
@@ -183,7 +183,7 @@
             padding: 3.10dvh 1.55dvw;
             font-family: $InnovatorGrotesk;
             
-            @include tablets {
+            @include desktop {
                 width: 50vw;
             }
             
@@ -197,7 +197,7 @@
                 justify-content: space-between;
                 flex-direction: column;
                 
-                @include tablets {
+                @include desktop {
                     flex-direction: row;
                     margin-bottom: 3.87dvh;
                 }
@@ -213,7 +213,7 @@
                     }
                     
                     &:last-child {
-                        @include tablets {
+                        @include desktop {
                             margin-right: 0;
                         }
                     }
@@ -222,7 +222,7 @@
                         font-size: clamp(3.5dvw, 2.3dvh, 7.5dvw);
                         color: $grayBgColor;
                         
-                        @include tablets {
+                        @include desktop {
                             margin-bottom: 1.55dvh;
                             font-size: clamp(0.5dvw, 1.5dvh, 1.5dvw);
                         }
@@ -238,7 +238,7 @@
                         background-color: transparent;
                         outline: none;
                         
-                        @include tablets {
+                        @include desktop {
                             margin-right: 6.73dvw;
                         }
                         
@@ -256,7 +256,7 @@
             .messageControl {
                 margin-bottom: 3.87dvh;
                 
-                @include tablets {
+                @include desktop {
                     margin-top: 7.68dvh;
                 }
                 
@@ -268,7 +268,7 @@
                     font-size: clamp(3.5dvw, 2.3dvh, 7.5dvw);
                     color: $grayBgColor;
                     margin-bottom: 1.55dvh;
-                    @include tablets {
+                    @include desktop {
                         font-size: clamp(0.5dvw, 1.5dvh, 1.5dvw);
                     }
                 }
@@ -284,7 +284,7 @@
                     font-family: $InnovatorGrotesk;
                     outline: none;
                     
-                    @include tablets {
+                    @include desktop {
                         font-size: clamp(1.5dvh, 0.7dvw, 1.5dvw);;
                         width: 95%;
                     }
@@ -316,7 +316,7 @@
                         width: 100%;
                     }
                     
-                    @include tablets {
+                    @include desktop {
                         position: absolute;
                         right: 0;
                         margin-right: 6.73dvw;

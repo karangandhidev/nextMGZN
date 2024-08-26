@@ -710,69 +710,109 @@
   font-family: "Oilvare Base Regular";
   src: url(/_next/static/media/OilvareBaseRegular.82147692.ttf);
 }
+.heroPage-Container.section.small-window {
+  min-height: unset;
+}
+
 .heroPage-Container {
-  min-height: 100dvh;
   background-color: #4f4138;
   position: relative;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .heroPage-Container .heroLogo-Container {
     position: relative;
   }
 }
 .heroPage-Container .heroLogo-Container .nextmgzn-logo {
-  height: 20dvh;
-  width: 35dvw;
+  width: 12.5rem;
+  height: 12.5rem;
   position: relative;
-  z-index: 1;
-  margin: 4dvh 8dvw;
+  z-index: 2;
+  margin: 2.25dvw 8dvw;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .heroPage-Container .heroLogo-Container .nextmgzn-logo {
     position: relative;
-    width: 13dvw;
-    height: 30dvh;
-    margin: 5dvh 5dvw;
+    width: 14.375rem;
+    height: 14.375rem;
+    margin: 2.8125dvw 5dvw;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .heroPage-Container .heroLogo-Container .nextmgzn-logo {
+    position: relative;
+    width: 14.375rem;
+    height: 14.375rem;
+    margin: 2.8125dvw 5dvw 0;
   }
 }
 .heroPage-Container .heroBanner {
+  src: none;
   position: absolute;
   top: 0;
+  z-index: 1;
   height: 65dvh;
-  width: 100dvw;
   object-fit: cover;
+  width: 100vw;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .heroPage-Container .heroBanner {
+    position: absolute;
+    top: 0;
     right: 0;
-    height: 100dvh;
-    width: 35dvw;
+    height: 100%;
+    width: 60dvh;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .heroPage-Container .heroBanner {
+    width: 47.5dvw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
   }
 }
 .heroPage-Container .heroText-Container {
-  z-index: 3;
+  z-index: 1;
   position: relative;
 }
 @media only screen and (max-width: 639px) {
   .heroPage-Container .heroText-Container {
     position: absolute;
-    margin: 4dvh 8dvw;
-    top: 65dvh;
+    top: 67dvh;
+    margin: 2.25dvw 8dvw;
+    width: -webkit-fill-available;
   }
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .heroPage-Container .heroText-Container {
-    margin: 5dvh 5dvw;
+    margin: 2.8125dvw 5dvw;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .heroPage-Container .heroText-Container {
+    margin: 0 5dvw;
   }
 }
 .heroPage-Container .heroText-Container .heroHeading {
   font-family: "Innovator Grotesk";
   font-weight: 700;
-  font-size: clamp(3.5dvw, 4.129dvh, 7.529dvw);
+  font-size: 2.323125dvw;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (max-width: 639px) {
   .heroPage-Container .heroText-Container .heroHeading {
-    font-size: clamp(3dvh, 3.556dvw, 7dvh);
+    font-size: clamp(3.5dvw, 4.129dvh, 7.529dvw);
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .heroPage-Container .heroText-Container .heroHeading {
+    font-size: 3.85575dvw;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .heroPage-Container .heroText-Container .heroHeading {
+    font-size: 3.85575dvw;
   }
 }
 .heroPage-Container .heroButton-Container {
@@ -780,11 +820,15 @@
 }
 @media only screen and (max-width: 639px) {
   .heroPage-Container .heroButton-Container {
-    margin-top: 6.452dvh;
+    max-width: min-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .heroPage-Container .heroButton-Container .heroButton {
-  color: #ffffff;
+  color: white;
   font-weight: 700;
   background-color: #DD6545;
   font-family: "Innovator Grotesk";
@@ -794,16 +838,26 @@
 }
 @media only screen and (max-width: 639px) {
   .heroPage-Container .heroButton-Container .heroButton {
-    width: 80dvw;
-    padding: 1.548dvh 15.059dvw;
-    font-size: clamp(1.581dvh, 4.706dvw, 3.581dvh);
+    width: 80vw;
+    margin-top: 3.125rem;
+    padding: 2dvw 15.059dvw;
+    font-size: 1.25rem;
   }
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .heroPage-Container .heroButton-Container .heroButton {
-    margin-top: 4.63dvh;
-    font-size: clamp(1.5dvh, 1.458dvw, 3.5dvh);
-    padding: 1dvh 1.667dvw;
+    margin-top: 2.603125dvw;
+    font-size: 1.34375dvw;
+    padding: 0.5625dvw 1.667dvw;
+    margin-bottom: 7rem;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .heroPage-Container .heroButton-Container .heroButton {
+    margin-top: 2.603125dvw;
+    font-size: 1.34375dvw;
+    padding: 0.5625dvw 1.667dvw;
+    margin-bottom: 7rem;
   }
 }
 
@@ -820,7 +874,7 @@
   font-family: "Innovator Grotesk";
   font-weight: 700;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .whatWeDoContainer .wwd-title {
     font-size: clamp(1.083dvw, 3.704dvh, 3dvw);
     margin: 11.49dvh auto 7.704dvh auto;
@@ -831,7 +885,7 @@
   overflow-wrap: anywhere;
   color: #000000;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .whatWeDoContainer .wwdContent-Container {
     margin: 0 4.167dvw;
   }
@@ -864,7 +918,7 @@
 .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-info {
   margin-top: 1.612dvh;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .whatWeDoContainer .wwdContent-Container .wwd-Content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -889,7 +943,7 @@
     display: none;
   }
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .whatWeDoContainer .wwdContent-Container .wwd-mobileView {
     display: none;
   }
@@ -900,7 +954,7 @@
   margin-bottom: 10.341dvh;
   text-align: center;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .whatWeDoContainer .seeMore-Button {
     margin-top: -2.167dvw;
   }
@@ -922,7 +976,7 @@
     font-size: clamp(2.233dvw, 1.612dvh, 3.433dvw);
   }
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .whatWeDoContainer .mobile-Button {
     display: none;
   }
@@ -948,7 +1002,7 @@
   justify-content: center;
   align-items: center;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .goal-Component .goal-Container {
     height: 60dvh;
     justify-content: flex-start;
@@ -959,7 +1013,7 @@
   font-family: "Innovator Grotesk";
   font-weight: 700;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .goal-Component .goal-Container .goalText-Container {
     margin: 0 15.625dvw;
   }
@@ -1014,7 +1068,7 @@
   font-weight: bold;
   color: #4f4138;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .text-Container .header {
     margin-top: 4.9dvh;
     font-size: clamp(0.833dvh, 1.621dvw, 3.833dvh);
@@ -1025,7 +1079,7 @@
   text-align: center;
   color: #717171;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .text-Container .subheader {
     margin: 3.1dvh 0;
   }
@@ -1041,7 +1095,7 @@
   flex-direction: column;
   margin: 5.16dvh auto;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper {
     margin-top: 8.24dvh;
     margin-left: 4.12dvh;
@@ -1060,7 +1114,7 @@
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection {
     width: 33.3333%;
     text-align: left;
@@ -1070,7 +1124,7 @@
   font-size: clamp(5.5dvw, 3.3dvh, 7.5dvw);
   font-weight: bold;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .title {
     font-size: clamp(1.5dvw, 2.9dvh, 2.5dvw);
   }
@@ -1078,7 +1132,7 @@
 .contactContainer .contactWrapper .infoSection .subtitle {
   margin-top: 3.87dvh;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .subtitle {
     margin-top: 2.58dvh;
   }
@@ -1089,7 +1143,7 @@
   flex-direction: column;
   gap: 5.19dvh;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo {
     margin-top: 8.24dvh;
   }
@@ -1100,7 +1154,7 @@
   align-items: center;
   gap: 2.58dvh;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem {
     justify-content: flex-start;
     align-items: flex-start;
@@ -1110,7 +1164,7 @@
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(1) {
   cursor: pointer;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(1) {
     justify-content: flex-start;
   }
@@ -1121,7 +1175,7 @@
   align-items: center;
   gap: 2.58dvh;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(2) a {
     flex-direction: row;
   }
@@ -1129,7 +1183,7 @@
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(3) {
   cursor: pointer;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(3) {
     text-align: left;
   }
@@ -1147,7 +1201,7 @@
   display: flex;
   justify-content: center;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .socialIcons {
     margin-top: 13.06dvh;
     justify-content: flex-start;
@@ -1166,7 +1220,7 @@
   background-color: #ffffff;
   border-color: #ffffff;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .socialIcons .icon {
     margin: 0 1.28dvw 0 0;
   }
@@ -1176,7 +1230,7 @@
   padding: 3.1dvh 1.55dvw;
   font-family: "Innovator Grotesk";
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection {
     width: 50vw;
   }
@@ -1190,7 +1244,7 @@
   justify-content: space-between;
   flex-direction: column;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .formGroup {
     flex-direction: row;
     margin-bottom: 3.87dvh;
@@ -1205,7 +1259,7 @@
 .contactContainer .contactWrapper .formSection .formGroup .formControl:focus-within label {
   color: #262626;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .formGroup .formControl:last-child {
     margin-right: 0;
   }
@@ -1214,7 +1268,7 @@
   font-size: clamp(3.5dvw, 2.3dvh, 7.5dvw);
   color: #d1d5db;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .formGroup .formControl label {
     margin-bottom: 1.55dvh;
     font-size: clamp(0.5dvw, 1.5dvh, 1.5dvw);
@@ -1230,7 +1284,7 @@
   background-color: transparent;
   outline: none;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .formGroup .formControl input, .contactContainer .contactWrapper .formSection .formGroup .formControl textarea {
     margin-right: 6.73dvw;
   }
@@ -1244,7 +1298,7 @@
 .contactContainer .contactWrapper .formSection .messageControl {
   margin-bottom: 3.87dvh;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .messageControl {
     margin-top: 7.68dvh;
   }
@@ -1257,7 +1311,7 @@
   color: #d1d5db;
   margin-bottom: 1.55dvh;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .messageControl label {
     font-size: clamp(0.5dvw, 1.5dvh, 1.5dvw);
   }
@@ -1273,7 +1327,7 @@
   font-family: "Innovator Grotesk";
   outline: none;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .messageControl textarea {
     font-size: clamp(1.5dvh, 0.7dvw, 1.5dvw);
     width: 95%;
@@ -1303,7 +1357,7 @@
     width: 100%;
   }
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .buttonContainer .submitButton {
     position: absolute;
     right: 0;
@@ -1325,7 +1379,6 @@ body {
 .container {
   height: 100dvh;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
   transition: scroll-snap-stop 5s ease-in-out;
 }
@@ -1354,7 +1407,7 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 1141px) {
   .mobile-only {
     display: none;
   }

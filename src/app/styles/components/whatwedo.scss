@@ -9,7 +9,7 @@
         color: $brownColor;
         font-family: $InnovatorGrotesk;
         font-weight: $bold;
-        @include tablets {
+        @include desktop {
             font-size: clamp(1.083dvw, 3.704dvh, 3dvw);
             margin: 11.490dvh auto 7.704dvh auto;
         }
@@ -19,7 +19,7 @@
         overflow-wrap: anywhere;
         color: $blackColor;
 
-        @include tablets {
+        @include desktop {
             margin: 0 4.167dvw;
         }
         .wwd-Content {
@@ -48,7 +48,7 @@
                     margin-top: 1.612dvh;
                 }
             }
-            @include tablets {
+            @include desktop {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 8.267dvh 1.042dvw;
@@ -75,7 +75,7 @@
         }
 
         .wwd-mobileView {
-            @include tablets {
+            @include desktop {
                 display: none;
             }
         }
@@ -85,7 +85,7 @@
         height: 100%;
         margin-bottom: 10.341dvh;
         text-align: center;
-        @include tablets {
+        @include desktop {
             margin-top: -2.167dvw;
         }
         .seeMore {
@@ -105,7 +105,7 @@
         }
     }
     .mobile-Button {
-        @include tablets {
+        @include desktop {
             display: none;
         }
     }

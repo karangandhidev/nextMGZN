@@ -1,65 +1,100 @@
+.heroPage-Container.section.small-window {
+    min-height: unset;
+  }
 .heroPage-Container {
-    min-height: 100dvh;
     background-color: $brownColor;
     position: relative;
+    
     .heroLogo-Container {
-        @include tablets {
+        @include desktop {
             position: relative;
         }
         .nextmgzn-logo {
-            height: 20dvh;
-            width: 35dvw;
+            width: cRems(200px);
+            height: cRems(200px);
             position: relative;
-            z-index: 1;
-            margin: 4dvh 8dvw;
-            @include tablets {
+            z-index: 2;
+            margin: 2.25dvw 8dvw;
+            @include desktop {
                 position: relative;
-                width: 13dvw;
-                height: 30dvh;
-                margin: 5dvh 5dvw;
+                width: cRems(230px);
+                height: cRems(230px);
+                margin: 2.8125dvw 5dvw;
+            }
+            @include tablet {
+                position: relative;
+                width: cRems(230px);
+                height: cRems(230px);
+                margin: 2.8125dvw 5dvw 0;
             }
         }
     }
     .heroBanner {
+        src: none;
         position: absolute;
         top: 0;
+        z-index: 1;
         height: 65dvh;
-        width: 100dvw;
-        object-fit: cover;
-        @include tablets {
+            object-fit: cover;
+            width: 100vw;
+        @include desktop {
+            position: absolute;
+            top: 0;
             right: 0;
-            height: 100dvh;
-            width: 35dvw;
+            height: 100%;
+            width: 60dvh;
+        }
+        @include tablet {
+            width: 47.5dvw;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
         }
     }
     .heroText-Container {
-        z-index: 3;
+        z-index: 1;
         position: relative;
-
         @include mobile {
             position: absolute;
-            margin: 4dvh 8dvw;
-            top: 65dvh;
+            top: 67dvh;
+            margin: 2.25dvw 8dvw; 
+            width: -webkit-fill-available;
         }
-        @include tablets {       
-            margin: 5dvh 5dvw;
+        @include desktop {
+            margin: 2.8125dvw 5dvw;
+        }
+        @include tablet {
+            margin: 0 5dvw;
         }
         .heroHeading { 
             font-family: 'Innovator Grotesk';
             font-weight: $bold;
-            font-size: clamp(3.5dvw, 4.129dvh, 7.529dvw);
-            @include tablets {
-                font-size: clamp(3dvh, 3.556dvw, 7dvh);
+            font-size: clamp(1.96875dvw, 2.323125dvw, 4.14875dvw);
+            @include mobile {
+                font-size: clamp(3.5dvw, 4.129dvh, 7.529dvw);
+            }
+            @include desktop {
+                font-size: 3.85575dvw;
+            }
+            @include tablet {
+                font-size: 3.85575dvw;
             }
         }
+
     }
     .heroButton-Container {
         max-width: min-content;
+
         @include mobile {
-            margin-top: 6.452dvh;
+            max-width: min-content;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .heroButton {
-            color: $whiteColor;
+            color: white;
             font-weight: $bold;
             background-color: $buttonBgColor;
             font-family: 'Innovator Grotesk';
@@ -67,14 +102,22 @@
             text-align: center;                
             border: none;
             @include mobile {
-                width: 80dvw;
-                padding: 1.548dvh 15.059dvw;
-                font-size: clamp(1.581dvh, 4.706dvw, 3.581dvh);
+                width: 80vw;
+                margin-top: cRems(50px);
+                padding: 2dvw 15.059dvw;
+                font-size: cRems(20px);
             }
-            @include tablets {
-                margin-top: 4.63dvh;
-                font-size: clamp(1.5dvh, 1.458dvw, 3.5dvh);
-                padding: 1dvh 1.667dvw;
+            @include desktop {
+                margin-top: 2.603125dvw;
+                font-size: clamp(0.84375dvw, 1.34375dvw, 2.056875dvw);
+                padding: 0.5625dvw 1.667dvw;
+                margin-bottom: cRems(112px);
+            }
+            @include tablet {
+                margin-top: 2.603125dvw;
+                font-size:1.34375dvw;
+                padding: 0.5625dvw 1.667dvw;
+                margin-bottom: cRems(112px);
             }
         }
     }
