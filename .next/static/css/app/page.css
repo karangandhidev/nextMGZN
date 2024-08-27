@@ -720,7 +720,7 @@
 }
 @media only screen and (max-width: 639px) {
   .heroPage-Container {
-    min-height: -webkit-fill-available;
+    max-height: 100svh;
   }
 }
 @media only screen and (min-width: 1141px) {
@@ -764,7 +764,7 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 60dvh;
+    width: 42dvw;
   }
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
@@ -786,6 +786,7 @@
     top: 65svh;
     margin: 4.25dvw 8dvw;
     width: -webkit-fill-available;
+    text-wrap: nowrap;
   }
 }
 @media only screen and (min-width: 1141px) {
@@ -805,7 +806,7 @@
 }
 @media only screen and (max-width: 639px) {
   .heroPage-Container .heroText-Container .heroHeading {
-    font-size: 7.529dvw;
+    font-size: 6.529dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
@@ -996,6 +997,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffffff;
 }
 .goal-Component .goal-Container {
   background-color: #DD6545;

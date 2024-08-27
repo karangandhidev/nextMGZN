@@ -6,7 +6,6 @@
     position: relative;
     @include mobile {
         max-height: 100svh;
-        border: 2px solid blue;
     }
     .heroLogo-Container {
         @include desktop {
@@ -43,7 +42,7 @@
             top: 0;
             right: 0;
             height: 100%;
-            width: 60dvh;
+            width: 42dvw;
         }
         @include tablet {
             width: 47.5dvw;
@@ -61,6 +60,7 @@
             top: 65svh;
             margin: 4.25dvw 8dvw; 
             width: -webkit-fill-available;
+            text-wrap: nowrap;
         }
         @include desktop {
             margin: 2.8125dvw 5dvw;
@@ -73,7 +73,7 @@
             font-weight: $bold;
             font-size: clamp(1.96875dvw, 2.323125dvw, 4.14875dvw);
             @include mobile {
-                font-size: 7.529dvw;
+                font-size: 6.529dvw;
             }
             @include desktop {
                 font-size: 3.85575dvw;
