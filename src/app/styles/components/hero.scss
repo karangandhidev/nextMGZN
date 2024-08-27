@@ -5,7 +5,7 @@
     background-color: $brownColor;
     position: relative;
     @include mobile {
-        min-height: 100svh;
+        min-height: -webkit-fill-available;
     }
     .heroLogo-Container {
         @include desktop {
@@ -32,15 +32,13 @@
         }
     }
     .heroBanner {
-        src: none;
         position: absolute;
         top: 0;
         z-index: 1;
         height: 65svh;
-            object-fit: cover;
-            width: 100vw;
+        object-fit: cover;
+        width: 100vw;
         @include desktop {
-            position: absolute;
             top: 0;
             right: 0;
             height: 100%;
@@ -48,7 +46,6 @@
         }
         @include tablet {
             width: 47.5dvw;
-            position: absolute;
             top: 0;
             right: 0;
             height: 100%;

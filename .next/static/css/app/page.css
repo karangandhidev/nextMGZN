@@ -720,7 +720,7 @@
 }
 @media only screen and (max-width: 639px) {
   .heroPage-Container {
-    min-height: 100svh;
+    min-height: -webkit-fill-available;
   }
 }
 @media only screen and (min-width: 1141px) {
@@ -752,7 +752,6 @@
   }
 }
 .heroPage-Container .heroBanner {
-  src: none;
   position: absolute;
   top: 0;
   z-index: 1;
@@ -762,7 +761,6 @@
 }
 @media only screen and (min-width: 1141px) {
   .heroPage-Container .heroBanner {
-    position: absolute;
     top: 0;
     right: 0;
     height: 100%;
@@ -772,7 +770,6 @@
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .heroPage-Container .heroBanner {
     width: 47.5dvw;
-    position: absolute;
     top: 0;
     right: 0;
     height: 100%;
