@@ -6,10 +6,12 @@ const useToggleClassOnResize = () => {
     const toggleClassBasedOnWidth = () => {
       const body = document.querySelector('.heroPage-Container');
       const viewportWidth = window.innerWidth;
-      const screenWidth = window.screen.width;
+      var screenWidth = window.screen.width*0.95;
+      console.log(screenWidth)
+      console.log(viewportWidth)
 
       // If the viewport Width is less than the screen Width, remove the min-Width class
-      if (viewportWidth < screenWidth - 100) {
+      if ((viewportWidth < screenWidth) && (viewportWidth > 640)) {
         body?.classList.add('small-window');
       } else {
         body?.classList.remove('small-window');

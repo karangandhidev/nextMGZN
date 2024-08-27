@@ -718,6 +718,11 @@
   background-color: #4f4138;
   position: relative;
 }
+@media only screen and (max-width: 639px) {
+  .heroPage-Container {
+    min-width: 100svh;
+  }
+}
 @media only screen and (min-width: 1141px) {
   .heroPage-Container .heroLogo-Container {
     position: relative;
@@ -842,6 +847,7 @@
     margin-top: 3.125rem;
     padding: 2dvw 15.059dvw;
     font-size: 1.25rem;
+    margin-bottom: 1.875rem;
   }
 }
 @media only screen and (min-width: 1141px) {
