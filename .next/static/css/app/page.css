@@ -720,7 +720,7 @@
 }
 @media only screen and (max-width: 639px) {
   .heroPage-Container {
-    min-width: 100svh;
+    min-height: 100svh;
   }
 }
 @media only screen and (min-width: 1141px) {
@@ -756,7 +756,7 @@
   position: absolute;
   top: 0;
   z-index: 1;
-  height: 65dvh;
+  height: 65svh;
   object-fit: cover;
   width: 100vw;
 }
@@ -785,8 +785,8 @@
 @media only screen and (max-width: 639px) {
   .heroPage-Container .heroText-Container {
     position: absolute;
-    top: 67dvh;
-    margin: 2.25dvw 8dvw;
+    top: 65svh;
+    margin: 4.25dvw 8dvw;
     width: -webkit-fill-available;
   }
 }
@@ -807,7 +807,7 @@
 }
 @media only screen and (max-width: 639px) {
   .heroPage-Container .heroText-Container .heroHeading {
-    font-size: clamp(3.5dvw, 4.129dvh, 7.529dvw);
+    font-size: 7.529dvw;
   }
 }
 @media only screen and (min-width: 1141px) {

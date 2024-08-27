@@ -5,7 +5,7 @@
     background-color: $brownColor;
     position: relative;
     @include mobile {
-        min-width: 100svh;
+        min-height: 100svh;
     }
     .heroLogo-Container {
         @include desktop {
@@ -36,7 +36,7 @@
         position: absolute;
         top: 0;
         z-index: 1;
-        height: 65dvh;
+        height: 65svh;
             object-fit: cover;
             width: 100vw;
         @include desktop {
@@ -59,8 +59,8 @@
         position: relative;
         @include mobile {
             position: absolute;
-            top: 67dvh;
-            margin: 2.25dvw 8dvw; 
+            top: 65svh;
+            margin: 4.25dvw 8dvw; 
             width: -webkit-fill-available;
         }
         @include desktop {
@@ -74,7 +74,7 @@
             font-weight: $bold;
             font-size: clamp(1.96875dvw, 2.323125dvw, 4.14875dvw);
             @include mobile {
-                font-size: clamp(3.5dvw, 4.129dvh, 7.529dvw);
+                font-size: 7.529dvw;
             }
             @include desktop {
                 font-size: 3.85575dvw;
@@ -111,7 +111,7 @@
             }
             @include desktop {
                 margin-top: 2.603125dvw;
-                font-size: clamp(0.84375dvw, 1.34375dvw, 2.056875dvw);
+                font-size: 1.34375dvw;
                 padding: 0.5625dvw 1.667dvw;
                 margin-bottom: cRems(112px);
             }
