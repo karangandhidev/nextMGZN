@@ -9,7 +9,7 @@ interface HeroProps {
   }
 
 const Hero = ({ contactRef }: HeroProps) => {
-    useToggleClassOnResize();
+    useToggleClassOnResize('.heroPage-Container');
   const handleScroll = () => {
     if (contactRef.current) {
       contactRef.current.scrollIntoView({ behavior: 'smooth' });

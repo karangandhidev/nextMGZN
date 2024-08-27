@@ -1,3 +1,6 @@
+.goal-Component.section {
+    min-height: unset;
+}
 .goal-Component {
     background-color: $whiteColor2;
     position: relative;
@@ -5,6 +8,7 @@
     justify-content: center;
     align-items: center;
     color: $whiteColor;
+
     .goal-Container {
         background-color: $buttonBgColor;
         width: 100vw;

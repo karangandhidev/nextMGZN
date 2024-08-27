@@ -16,7 +16,9 @@ $InnovatorGrotesk: 'Innovator Grotesk';
 $InnovatorGroteskBlack: 'Innovator Grotesk Black';
 $InnovatorGroteskBold: 'Innovator Grotesk Bold';
 $InnovatorGroteskExtraBold: 'Innovator Grotesk Extra Bold';
-
+$InnovatorGroteskLight: 'Innovator Grotesk Light';
+$InnovatorGroteskMedium: 'Innovator Grotesk Medium';
+$InnovatorGroteskRegular: 'Innovator Grotesk Regular';
 
 //WEIGHTS
 $regular: 400;
@@ -48,4 +50,19 @@ $medium: ((math.div($base_font_size, $large))*100)+vw;
 @font-face {
     font-family: 'Innovator Grotesk Extra Bold';
     src: url('../../assets/fonts/InnovatorGrotesk-ExtraBold.otf');
+}
+
+@font-face {
+    font-family: 'Innovator Grotesk Light';
+    src: url('../../assets/fonts/InnovatorGrotesk-Light.otf');
+}
+
+@font-face {
+    font-family: 'Innovator Grotesk Medium';
+    src: url('../../assets/fonts/InnovatorGrotesk-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Innovator Grotesk Regular';
+    src: url('../../assets/fonts/InnovatorGrotesk-Regular.otf');
 }

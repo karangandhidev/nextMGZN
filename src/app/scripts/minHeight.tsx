@@ -1,10 +1,10 @@
 
 import { useEffect } from 'react';
 
-const useToggleClassOnResize = () => {
+const useToggleClassOnResize = (sectionClass) => {
   useEffect(() => {
     const toggleClassBasedOnWidth = () => {
-      const body = document.querySelector('.heroPage-Container');
+      const body = document.querySelector(sectionClass);
       const viewportWidth = window.innerWidth;
       var screenWidth = window.screen.width*0.95;
       console.log(screenWidth)

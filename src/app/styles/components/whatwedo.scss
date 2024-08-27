@@ -1,32 +1,47 @@
+// .whatWeDoContainer.section.small-window {
+//     min-height: unset;
+//   }
+.whatWeDoContainer.section {
+    min-height: unset;
+  }
 .whatWeDoContainer {
     display: flex;
     flex-direction: column;
     background-color: $whiteColor2;
-    min-height: 100dvh;
+    // min-height: 100dvh; 
     .wwd-title {
         text-align: left;
-        margin: 6.204dvh 0 5.168dvh 8.235dvw;
         color: $brownColor;
-        font-family: $InnovatorGrotesk;
-        font-weight: $bold;
+        font-family: $InnovatorGroteskExtraBold;
+        @include mobile {
+            font-size: 5.4dvw;
+            margin: 10dvw 6.235dvw;
+        }
+        @include tablet {
+            font-size: 3dvw;
+            margin: 5.908dvw auto 3.961dvw auto;
+        }
         @include desktop {
-            font-size: clamp(1.083dvw, 3.704dvh, 3dvw);
-            margin: 11.490dvh auto 7.704dvh auto;
+            font-size: 3dvw;
+            margin: 5.908dvw auto 3.961dvw auto;
         }
     }
+    
     .wwdContent-Container {
-        margin: 0 8.235dvw;
+        margin: 0 9dvw;
         overflow-wrap: anywhere;
         color: $blackColor;
-
+        @include tablet {
+            margin: 0 4.167dvw;
+        }
         @include desktop {
             margin: 0 4.167dvw;
         }
         .wwd-Content {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 4.967dvh 2.323dvw;
-            margin-bottom: 7.239dvh;
+            gap: 6dvw 9dvw;
+            margin-bottom: 3.725dvw;
             .wwd-item {
                 display: flex;
                 flex-direction: column;
@@ -36,46 +51,77 @@
                     display: flex;
                     align-items: center;
                     justify-content: flex-start;
-                    height:  13.176dvw;
-                    width:  13.176dvw;
+                    height: 8.5dvw;
+                    width: 8.5dvw;
                 }
                 .wwd-heading {
-                    margin-top: 3.225dvh;
-                    font-weight: bold;
-                    font-size: clamp(3.442dvw, 2.070dvh, 5.442dvw);
+                    font-family: $InnovatorGroteskBold;
+                    margin-top: 2.3dvw;
+                    font-size: 3.442dvw;
                 }
                 .wwd-info {
-                    margin-top: 1.612dvh;
+                    font-family: $InnovatorGroteskRegular;
+                    margin-top: 0.829dvw;
+                }
+            }
+            @include tablet {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 5dvw 2dvw;
+                margin-bottom: 5.309dvw;
+                .wwd-item {                 
+                    .wwd-icon {
+                        width: 4.333dvw;
+                        height: 4.333dvw;
+                    }
+                    .wwd-heading {
+                        font-size: 2dvw;
+                    }
+                    .wwd-info {
+                        margin-right: 0.761dvw;
+                        font-size: 1.3dvw;
+                    }
                 }
             }
             @include desktop {
-                display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                gap: 8.267dvh 1.042dvw;
-                margin-bottom: 10.341dvh;
+                gap: 4.254dvw 1.042dvw;
+                margin-bottom: 5.309dvw;
                 .wwd-item {                 
                     .wwd-icon {
                         width: 3.333dvw;
                         height: 3.333dvw;
                     }
                     .wwd-heading {
-                        font-size: clamp(1.442dvw, 2.07dvh, 3.442dvw);
+                        font-size: 1.442dvw;
                     }
                     .wwd-info {
-                        margin-right: 1.481dvw;
-                        font-size: clamp(0.333dvw, 1.812dvh, 1.633dvw);
+                        margin-right: 0.761dvw;
+                        font-size: 0.93dvw;
                     }
                 }
             }
         }
+        .wwd-mobileView {
+            @include tablet {
+                display: none;
+            }
+            @include desktop {
+                display: none;
+            }
+        }
+        .wwd-tabletView {
+            @include mobile {
+                display: none;
+            }
+            @include desktop {
+                display: none;
+            }
+        }                
         .wwd-desktopView {
             @include mobile {
                 display: none;
             }
-        }
-
-        .wwd-mobileView {
-            @include desktop {
+            @include tablet {
                 display: none;
             }
         }
@@ -83,34 +129,57 @@
     .seeMore-Button {
         width: 100%;
         height: 100%;
-        margin-bottom: 10.341dvh;
+        margin-bottom: 5.309dvw;
         text-align: center;
+        @include mobile {
+            margin-top: 8dvw;
+        }
         @include desktop {
-            margin-top: -2.167dvw;
+            margin-top: -1.114dvw;
+            margin-bottom: 4.3dvw;
         }
         .seeMore {
             background-color: $brownColor;
             color: $whiteColor;
-            padding: 0.827dvh 1.547dvw;
             border-radius: cRems(16px);
             border: none;
             cursor: pointer;
-            font-weight: $bold;
-            font-size: clamp(0.233dvw, 1.612dvh, 1.433dvw);
-            font-family: $InnovatorGrotesk;
+            font-family: $InnovatorGroteskMedium;
             @include mobile {
-                padding: 1.227dvh 5.547dvw;
-                font-size: clamp(2.233dvw, 1.612dvh, 3.433dvw);
+                padding: 1.631dvw 3.856dvw;
+                font-size: 3.233dvw;
+            }
+            @include tablet {
+                padding: 0.8dvw 3dvw;
+                font-size: 1.2dvw;
+            }
+            @include desktop {
+                padding: 0.8dvw 3dvw;
+                font-size: 1.2dvw;
             }
         }
     }
     .mobile-Button {
+        @include tablet {
+            display: none;
+        }
+        @include desktop {
+            display: none;
+        }
+    }
+    .tablet-Button {
+        @include mobile {
+            display: none;
+        }
         @include desktop {
             display: none;
         }
     }
     .desktop-Button {
         @include mobile {
+            display: none;
+        }
+        @include tablet {
             display: none;
         }
     }

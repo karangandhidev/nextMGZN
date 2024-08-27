@@ -714,6 +714,18 @@
   font-family: "Innovator Grotesk Extra Bold";
   src: url(/_next/static/media/InnovatorGrotesk-ExtraBold.f5fdb890.otf);
 }
+@font-face {
+  font-family: "Innovator Grotesk Light";
+  src: url(/_next/static/media/InnovatorGrotesk-Light.b12ea085.otf);
+}
+@font-face {
+  font-family: "Innovator Grotesk Medium";
+  src: url(/_next/static/media/InnovatorGrotesk-Medium.f2953a0a.otf);
+}
+@font-face {
+  font-family: "Innovator Grotesk Regular";
+  src: url(/_next/static/media/InnovatorGrotesk-Regular.67bd9d1e.otf);
+}
 .heroPage-Container.section.small-window {
   min-height: unset;
 }
@@ -739,20 +751,20 @@
   z-index: 2;
   margin: 2.25dvw 8dvw;
 }
-@media only screen and (min-width: 1141px) {
-  .heroPage-Container .heroLogo-Container .nextmgzn-logo {
-    position: relative;
-    width: 14.375rem;
-    height: 14.375rem;
-    margin: 2.8125dvw 5dvw;
-  }
-}
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .heroPage-Container .heroLogo-Container .nextmgzn-logo {
     position: relative;
     width: 14.375rem;
     height: 14.375rem;
     margin: 2.8125dvw 5dvw 0;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .heroPage-Container .heroLogo-Container .nextmgzn-logo {
+    position: relative;
+    width: 14.375rem;
+    height: 14.375rem;
+    margin: 2.8125dvw 5dvw;
   }
 }
 .heroPage-Container .heroBanner {
@@ -763,20 +775,20 @@
   object-fit: cover;
   width: 100vw;
 }
-@media only screen and (min-width: 1141px) {
-  .heroPage-Container .heroBanner {
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 42dvw;
-  }
-}
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .heroPage-Container .heroBanner {
     width: 47.5dvw;
     top: 0;
     right: 0;
     height: 100%;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .heroPage-Container .heroBanner {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 42dvw;
   }
 }
 .heroPage-Container .heroText-Container {
@@ -793,14 +805,14 @@
     text-wrap: nowrap;
   }
 }
-@media only screen and (min-width: 1141px) {
-  .heroPage-Container .heroText-Container {
-    margin: 2.8125dvw 5dvw;
-  }
-}
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .heroPage-Container .heroText-Container {
     margin: 0 5dvw;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .heroPage-Container .heroText-Container {
+    margin: 2.8125dvw 5dvw;
   }
 }
 .heroPage-Container .heroText-Container .heroHeading {
@@ -812,12 +824,12 @@
     font-size: 5.5dvw;
   }
 }
-@media only screen and (min-width: 1141px) {
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
   .heroPage-Container .heroText-Container .heroHeading {
     font-size: 3.85575dvw;
   }
 }
-@media only screen and (min-width: 640px) and (max-width: 1140px) {
+@media only screen and (min-width: 1141px) {
   .heroPage-Container .heroText-Container .heroHeading {
     font-size: 3.85575dvw;
   }
@@ -851,14 +863,6 @@
     font-size: 1.25rem;
   }
 }
-@media only screen and (min-width: 1141px) {
-  .heroPage-Container .heroButton-Container .heroButton {
-    margin-top: 2.603125dvw;
-    font-size: 2dvw;
-    padding: 0.8dvw 2.667dvw;
-    margin-bottom: 7rem;
-  }
-}
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .heroPage-Container .heroButton-Container .heroButton {
     margin-top: 2.603125dvw;
@@ -867,30 +871,56 @@
     margin-bottom: 7rem;
   }
 }
+@media only screen and (min-width: 1141px) {
+  .heroPage-Container .heroButton-Container .heroButton {
+    margin-top: 2.603125dvw;
+    font-size: 2dvw;
+    padding: 0.8dvw 2.667dvw;
+    margin-bottom: 7rem;
+  }
+}
+
+.whatWeDoContainer.section {
+  min-height: unset;
+}
 
 .whatWeDoContainer {
   display: flex;
   flex-direction: column;
   background-color: #f9f9f9;
-  min-height: 100dvh;
 }
 .whatWeDoContainer .wwd-title {
   text-align: left;
-  margin: 6.204dvh 0 5.168dvh 8.235dvw;
   color: #4f4138;
-  font-family: "Innovator Grotesk";
-  font-weight: 700;
+  font-family: "Innovator Grotesk Extra Bold";
+}
+@media only screen and (max-width: 639px) {
+  .whatWeDoContainer .wwd-title {
+    font-size: 5.4dvw;
+    margin: 10dvw 6.235dvw;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .whatWeDoContainer .wwd-title {
+    font-size: 3dvw;
+    margin: 5.908dvw auto 3.961dvw auto;
+  }
 }
 @media only screen and (min-width: 1141px) {
   .whatWeDoContainer .wwd-title {
-    font-size: clamp(1.083dvw, 3.704dvh, 3dvw);
-    margin: 11.49dvh auto 7.704dvh auto;
+    font-size: 3dvw;
+    margin: 5.908dvw auto 3.961dvw auto;
   }
 }
 .whatWeDoContainer .wwdContent-Container {
-  margin: 0 8.235dvw;
+  margin: 0 9dvw;
   overflow-wrap: anywhere;
   color: #000000;
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .whatWeDoContainer .wwdContent-Container {
+    margin: 0 4.167dvw;
+  }
 }
 @media only screen and (min-width: 1141px) {
   .whatWeDoContainer .wwdContent-Container {
@@ -900,9 +930,9 @@
 .whatWeDoContainer .wwdContent-Container .wwd-Content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4.967dvh 2.323dvw;
-  gap: 4.967dvh 2.323dvw;
-  margin-bottom: 7.239dvh;
+  grid-gap: 6dvw 9dvw;
+  gap: 6dvw 9dvw;
+  margin-bottom: 3.725dvw;
 }
 .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item {
   display: flex;
@@ -914,39 +944,56 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 13.176dvw;
-  width: 13.176dvw;
+  height: 8.5dvw;
+  width: 8.5dvw;
 }
 .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-heading {
-  margin-top: 3.225dvh;
-  font-weight: bold;
-  font-size: clamp(3.442dvw, 2.07dvh, 5.442dvw);
+  font-family: "Innovator Grotesk Bold";
+  margin-top: 2.3dvw;
+  font-size: 3.442dvw;
 }
 .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-info {
-  margin-top: 1.612dvh;
+  font-family: "Innovator Grotesk Regular";
+  margin-top: 0.829dvw;
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .whatWeDoContainer .wwdContent-Container .wwd-Content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5dvw 2dvw;
+    margin-bottom: 5.309dvw;
+  }
+  .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-icon {
+    width: 4.333dvw;
+    height: 4.333dvw;
+  }
+  .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-heading {
+    font-size: 2dvw;
+  }
+  .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-info {
+    margin-right: 0.761dvw;
+    font-size: 1.3dvw;
+  }
 }
 @media only screen and (min-width: 1141px) {
   .whatWeDoContainer .wwdContent-Container .wwd-Content {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 8.267dvh 1.042dvw;
-    gap: 8.267dvh 1.042dvw;
-    margin-bottom: 10.341dvh;
+    gap: 4.254dvw 1.042dvw;
+    margin-bottom: 5.309dvw;
   }
   .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-icon {
     width: 3.333dvw;
     height: 3.333dvw;
   }
   .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-heading {
-    font-size: clamp(1.442dvw, 2.07dvh, 3.442dvw);
+    font-size: 1.442dvw;
   }
   .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-info {
-    margin-right: 1.481dvw;
-    font-size: clamp(0.333dvw, 1.812dvh, 1.633dvw);
+    margin-right: 0.761dvw;
+    font-size: 0.93dvw;
   }
 }
-@media only screen and (max-width: 639px) {
-  .whatWeDoContainer .wwdContent-Container .wwd-desktopView {
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .whatWeDoContainer .wwdContent-Container .wwd-mobileView {
     display: none;
   }
 }
@@ -955,32 +1002,72 @@
     display: none;
   }
 }
+@media only screen and (max-width: 639px) {
+  .whatWeDoContainer .wwdContent-Container .wwd-tabletView {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .whatWeDoContainer .wwdContent-Container .wwd-tabletView {
+    display: none;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .whatWeDoContainer .wwdContent-Container .wwd-desktopView {
+    display: none;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .whatWeDoContainer .wwdContent-Container .wwd-desktopView {
+    display: none;
+  }
+}
 .whatWeDoContainer .seeMore-Button {
   width: 100%;
   height: 100%;
-  margin-bottom: 10.341dvh;
+  margin-bottom: 5.309dvw;
   text-align: center;
+}
+@media only screen and (max-width: 639px) {
+  .whatWeDoContainer .seeMore-Button {
+    margin-top: 8dvw;
+  }
 }
 @media only screen and (min-width: 1141px) {
   .whatWeDoContainer .seeMore-Button {
-    margin-top: -2.167dvw;
+    margin-top: -1.114dvw;
+    margin-bottom: 4.3dvw;
   }
 }
 .whatWeDoContainer .seeMore-Button .seeMore {
   background-color: #4f4138;
   color: #ffffff;
-  padding: 0.827dvh 1.547dvw;
   border-radius: 1rem;
   border: none;
   cursor: pointer;
-  font-weight: 700;
-  font-size: clamp(0.233dvw, 1.612dvh, 1.433dvw);
-  font-family: "Innovator Grotesk";
+  font-family: "Innovator Grotesk Medium";
 }
 @media only screen and (max-width: 639px) {
   .whatWeDoContainer .seeMore-Button .seeMore {
-    padding: 1.227dvh 5.547dvw;
-    font-size: clamp(2.233dvw, 1.612dvh, 3.433dvw);
+    padding: 1.631dvw 3.856dvw;
+    font-size: 3.233dvw;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .whatWeDoContainer .seeMore-Button .seeMore {
+    padding: 0.8dvw 3dvw;
+    font-size: 1.2dvw;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .whatWeDoContainer .seeMore-Button .seeMore {
+    padding: 0.8dvw 3dvw;
+    font-size: 1.2dvw;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .whatWeDoContainer .mobile-Button {
+    display: none;
   }
 }
 @media only screen and (min-width: 1141px) {
@@ -989,9 +1076,28 @@
   }
 }
 @media only screen and (max-width: 639px) {
+  .whatWeDoContainer .tablet-Button {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .whatWeDoContainer .tablet-Button {
+    display: none;
+  }
+}
+@media only screen and (max-width: 639px) {
   .whatWeDoContainer .desktop-Button {
     display: none;
   }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .whatWeDoContainer .desktop-Button {
+    display: none;
+  }
+}
+
+.goal-Component.section {
+  min-height: unset;
 }
 
 .goal-Component {

@@ -17,17 +17,17 @@
             position: relative;
             z-index: 2;
             margin: 2.25dvw 8dvw;
-            @include desktop {
-                position: relative;
-                width: cRems(230px);
-                height: cRems(230px);
-                margin: 2.8125dvw 5dvw;
-            }
             @include tablet {
                 position: relative;
                 width: cRems(230px);
                 height: cRems(230px);
                 margin: 2.8125dvw 5dvw 0;
+            }
+            @include desktop {
+                position: relative;
+                width: cRems(230px);
+                height: cRems(230px);
+                margin: 2.8125dvw 5dvw;
             }
         }
     }
@@ -38,17 +38,17 @@
         height: 65svh;
         object-fit: cover;
         width: 100vw;
-        @include desktop {
-            top: 0;
-            right: 0;
-            height: 100%;
-            width: 42dvw;
-        }
         @include tablet {
             width: 47.5dvw;
             top: 0;
             right: 0;
             height: 100%;
+        }
+        @include desktop {
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 42dvw;
         }
     }
     .heroText-Container {
@@ -62,11 +62,11 @@
             width: -webkit-fill-available;
             text-wrap: nowrap;
         }
-        @include desktop {
-            margin: 2.8125dvw 5dvw;
-        }
         @include tablet {
             margin: 0 5dvw;
+        }
+        @include desktop {
+            margin: 2.8125dvw 5dvw;
         }
         .heroHeading { 
             font-family: $InnovatorGroteskExtraBold;
@@ -74,12 +74,13 @@
             @include mobile {
                 font-size: 5.5dvw;
             }
-            @include desktop {
-                font-size: 3.85575dvw;
-            }
             @include tablet {
                 font-size: 3.85575dvw;
             }
+            @include desktop {
+                font-size: 3.85575dvw;
+            }
+
         }
 
     }
@@ -107,18 +108,19 @@
                 padding: 2dvw 15.059dvw;
                 font-size: cRems(20px);
             }
-            @include desktop {
-                margin-top: 2.603125dvw;
-                font-size: 2dvw;
-                padding: 0.8dvw 2.667dvw;
-                margin-bottom: cRems(112px);
-            }
             @include tablet {
                 margin-top: 2.603125dvw;
                 font-size: 2dvw;
                 padding: 0.8dvw 2.667dvw;
                 margin-bottom: cRems(112px);
             }
+            @include desktop {
+                margin-top: 2.603125dvw;
+                font-size: 2dvw;
+                padding: 0.8dvw 2.667dvw;
+                margin-bottom: cRems(112px);
+            }
+
         }
     }
 }
