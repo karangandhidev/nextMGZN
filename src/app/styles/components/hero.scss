@@ -94,10 +94,10 @@
             align-items: center;
         }
         .heroButton {
-            color: white;
+            color: $whiteColor;
+            font-family: $InnovatorGroteskBold;
             font-weight: $bold;
             background-color: $buttonBgColor;
-            font-family: 'Innovator Grotesk';
             border-radius: cRems(16px);
             text-align: center;                
             border: none;
@@ -109,14 +109,14 @@
             }
             @include desktop {
                 margin-top: 2.603125dvw;
-                font-size: 1.34375dvw;
-                padding: 0.5625dvw 1.667dvw;
+                font-size: 2dvw;
+                padding: 0.8dvw 2.667dvw;
                 margin-bottom: cRems(112px);
             }
             @include tablet {
                 margin-top: 2.603125dvw;
-                font-size:1.34375dvw;
-                padding: 0.5625dvw 1.667dvw;
+                font-size: 2dvw;
+                padding: 0.8dvw 2.667dvw;
                 margin-bottom: cRems(112px);
             }
         }

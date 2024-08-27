@@ -835,10 +835,10 @@
   }
 }
 .heroPage-Container .heroButton-Container .heroButton {
-  color: white;
+  color: #ffffff;
+  font-family: "Innovator Grotesk Bold";
   font-weight: 700;
   background-color: #DD6545;
-  font-family: "Innovator Grotesk";
   border-radius: 1rem;
   text-align: center;
   border: none;
@@ -854,16 +854,16 @@
 @media only screen and (min-width: 1141px) {
   .heroPage-Container .heroButton-Container .heroButton {
     margin-top: 2.603125dvw;
-    font-size: 1.34375dvw;
-    padding: 0.5625dvw 1.667dvw;
+    font-size: 2dvw;
+    padding: 0.8dvw 2.667dvw;
     margin-bottom: 7rem;
   }
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .heroPage-Container .heroButton-Container .heroButton {
     margin-top: 2.603125dvw;
-    font-size: 1.34375dvw;
-    padding: 0.5625dvw 1.667dvw;
+    font-size: 2dvw;
+    padding: 0.8dvw 2.667dvw;
     margin-bottom: 7rem;
   }
 }
