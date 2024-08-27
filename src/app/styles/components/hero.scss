@@ -5,7 +5,8 @@
     background-color: $brownColor;
     position: relative;
     @include mobile {
-        min-height: -webkit-fill-available;
+        max-height: 100svh;
+        border: 2px solid blue;
     }
     .heroLogo-Container {
         @include desktop {
@@ -54,6 +55,7 @@
     .heroText-Container {
         z-index: 1;
         position: relative;
+        color: $whiteColor;
         @include mobile {
             position: absolute;
             top: 65svh;

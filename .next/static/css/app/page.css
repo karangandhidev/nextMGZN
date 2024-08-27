@@ -778,6 +778,7 @@
 .heroPage-Container .heroText-Container {
   z-index: 1;
   position: relative;
+  color: #ffffff;
 }
 @media only screen and (max-width: 639px) {
   .heroPage-Container .heroText-Container {

@@ -22,7 +22,7 @@ const Hero = ({ contactRef }: HeroProps) => {
                 <Image src={bannerLogo} alt="logo" className="nextmgzn-logo" />
             </div>
             <Image src={banner} alt="hero" className="heroBanner" />
-            <div className="heroText-Container">
+            {/* <div className="heroText-Container">
                 <p className="heroHeading">
                     Sustainable Growth,
                 </p>
@@ -37,7 +37,7 @@ const Hero = ({ contactRef }: HeroProps) => {
                         Contact
                     </button>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
