@@ -58,7 +58,7 @@
         @include mobile {
             position: absolute;
             top: 65svh;
-            margin: 4.25dvw 8dvw; 
+            margin: 12dvw 10dvw; 
             width: -webkit-fill-available;
             text-wrap: nowrap;
         }
@@ -69,11 +69,10 @@
             margin: 0 5dvw;
         }
         .heroHeading { 
-            font-family: 'Innovator Grotesk';
+            font-family: $InnovatorGroteskExtraBold;
             font-weight: $bold;
-            font-size: clamp(1.96875dvw, 2.323125dvw, 4.14875dvw);
             @include mobile {
-                font-size: 6.529dvw;
+                font-size: 5.5dvw;
             }
             @include desktop {
                 font-size: 3.85575dvw;

@@ -13,8 +13,10 @@ $iconDarkGreyColor:#262626;
 
 //FONTS
 $InnovatorGrotesk: 'Innovator Grotesk';
-$OilvareBase: 'Oilvare Base';
-$OilvareBaseRegular: 'Oilvare Base Regular';
+$InnovatorGroteskBlack: 'Innovator Grotesk Black';
+$InnovatorGroteskBold: 'Innovator Grotesk Bold';
+$InnovatorGroteskExtraBold: 'Innovator Grotesk Extra Bold';
+
 
 //WEIGHTS
 $regular: 400;
@@ -34,11 +36,16 @@ $medium: ((math.div($base_font_size, $large))*100)+vw;
 }
 
 @font-face {
-    font-family: 'Oilvare Base';
-    src: url('../../assets/fonts/OilvareBase.ttf');
+    font-family: 'Innovator Grotesk Black';
+    src: url('../../assets/fonts/InnovatorGrotesk-Black.otf');
 }
 
 @font-face {
-    font-family: 'Oilvare Base Regular';
-    src: url('../../assets/fonts/OilvareBaseRegular.ttf');
+    font-family: 'Innovator Grotesk Bold';
+    src: url('../../assets/fonts/InnovatorGrotesk-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Innovator Grotesk Extra Bold';
+    src: url('../../assets/fonts/InnovatorGrotesk-ExtraBold.otf');
 }

@@ -703,12 +703,16 @@
   src: url(/_next/static/media/InnovatorGrotesk.3ca2663e.otf);
 }
 @font-face {
-  font-family: "Oilvare Base";
-  src: url(/_next/static/media/OilvareBase.9c06d411.ttf);
+  font-family: "Innovator Grotesk Black";
+  src: url(/_next/static/media/InnovatorGrotesk-Black.ebfbb403.otf);
 }
 @font-face {
-  font-family: "Oilvare Base Regular";
-  src: url(/_next/static/media/OilvareBaseRegular.82147692.ttf);
+  font-family: "Innovator Grotesk Bold";
+  src: url(/_next/static/media/InnovatorGrotesk-Bold.24885c9b.otf);
+}
+@font-face {
+  font-family: "Innovator Grotesk Extra Bold";
+  src: url(/_next/static/media/InnovatorGrotesk-ExtraBold.f5fdb890.otf);
 }
 .heroPage-Container.section.small-window {
   min-height: unset;
@@ -784,7 +788,7 @@
   .heroPage-Container .heroText-Container {
     position: absolute;
     top: 65svh;
-    margin: 4.25dvw 8dvw;
+    margin: 12dvw 10dvw;
     width: -webkit-fill-available;
     text-wrap: nowrap;
   }
@@ -800,13 +804,12 @@
   }
 }
 .heroPage-Container .heroText-Container .heroHeading {
-  font-family: "Innovator Grotesk";
+  font-family: "Innovator Grotesk Extra Bold";
   font-weight: 700;
-  font-size: 2.323125dvw;
 }
 @media only screen and (max-width: 639px) {
   .heroPage-Container .heroText-Container .heroHeading {
-    font-size: 6.529dvw;
+    font-size: 5.5dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
