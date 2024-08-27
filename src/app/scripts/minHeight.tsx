@@ -1,7 +1,7 @@
 
 import { useEffect } from 'react';
 
-const useToggleClassOnResize = (sectionClass) => {
+const useToggleClassOnResize = (sectionClass: string) => {
   useEffect(() => {
     const toggleClassBasedOnWidth = () => {
       const body = document.querySelector(sectionClass);
