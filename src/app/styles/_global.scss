@@ -46,12 +46,15 @@ body {
 }
 
 .mobile-only {
+  @include tablet {
+    display: none;
+  }
   @include desktop {
-      display: none;
+    display: none;
   }
 }
 .desktop-only {
   @include mobile {
-      display: none;
+    display: none;
   }
 }
