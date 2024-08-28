@@ -12,41 +12,49 @@
     .goal-Container {
         background-color: $buttonBgColor;
         width: 100vw;
-        height: 80dvh;
+        height: 100dvw;
         display: flex;
         justify-content: center;
         align-items: center;
+        @include tablet {
+            height: 25dvw;
+            justify-content: flex-start;
+        } 
         @include desktop {
-            height: 60dvh;
+            height: 25dvw;
             justify-content: flex-start;
         }
         .goalText-Container {
             margin: 0 8.235dvw;
-            font-family: $InnovatorGrotesk;
-            font-weight: $bold;
+            font-family: $InnovatorGroteskExtraBold;
+            @include tablet {
+                margin: 0 5dvw;
+            }
             @include desktop {
-                margin: 0 15.625dvw;
+                margin: 0 5dvw;
             }
             .goal-Title {
-                font-size: clamp(1.688dvw, 4.343dvh, 2.788dvw);
-                margin-bottom: 6.204dvh;
+                font-size: 2.8dvw;
+                margin-bottom: 4dvw;
                 @include mobile {
-                    font-size: clamp(8.688dvw, 4.343dvh, 2.788dvw);
+                    font-size: 7.9dvw;
+                    margin-bottom: 10dvw;
                 }
             }
             .goal-Description {
-                font-size: clamp(2.096dvw, 4.758dvh, 2.896dvw);
+                font-size: 2.8dvw;
                 font-weight: $bold;
                 line-height: 1.2;
                 @include mobile {
-                    font-size: clamp(8.688dvw, 4.343dvh, 2.788dvw);
+                    font-size: 7.9dvw;
                 }
+
                 .nextmgzn-Highlight {
                     color: $brownColor;
-                    font-size: clamp(2.096dvw, 4.758dvh, 2.896dvw);
+                    font-size: 2.8dvw;
                     @include mobile {
                         display: block;
-                        font-size: clamp(8.688dvw, 4.343dvh, 2.788dvw);
+                        font-size: 7.9dvw;
                     }
                 }
             }
