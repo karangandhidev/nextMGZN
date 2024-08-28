@@ -70,15 +70,15 @@
                 margin-bottom: 5.309dvw;
                 .wwd-item {                 
                     .wwd-icon {
-                        width: 4.333dvw;
-                        height: 4.333dvw;
+                        width: 3.333dvw;
+                        height: 3.333dvw;
                     }
                     .wwd-heading {
-                        font-size: 2dvw;
+                        font-size: 1.442dvw;
                     }
                     .wwd-info {
                         margin-right: 0.761dvw;
-                        font-size: 1.3dvw;
+                        font-size: 0.93dvw;
                     }
                 }
             }
@@ -133,6 +133,7 @@
         text-align: center;
         @include mobile {
             margin-top: 8dvw;
+            margin-bottom: 7.5dvw;
         }
         @include desktop {
             margin-top: -1.114dvw;
