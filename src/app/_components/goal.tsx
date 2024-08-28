@@ -9,7 +9,7 @@ const Goal = () => {
                     </p>
                     <p className="goal-Description desktop-only">
                         and improve
-                        <span className="nextmgzn-Highlight"> nextmgzn. </span>
+                        <span className="nextmgzn-Highlight"> NeXTMGZN </span>
                         every day.
                     </p>
                     <p className="goal-Description mobile-only">
@@ -22,7 +22,7 @@ const Goal = () => {
                         to grow
                     </p>
                     <p className="goal-Description mobile-only">
-                        and improve<span className="nextmgzn-Highlight"> nextmgzn.</span>
+                        and improve<span className="nextmgzn-Highlight"> NeXTMGZN </span>
                     </p>
                     <p className="goal-Description mobile-only"> 
                         every day.
