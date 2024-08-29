@@ -1,3 +1,6 @@
+.contactContainer.section.small-window {
+    min-height: unset;
+}
 .contactContainer {
     min-height: 100dvh;
     width: 100%;
@@ -5,32 +8,64 @@
     position: relative;
     flex-direction: column; 
     background-color: $whiteColor2;
-    
+    @include mobile {
+        background-color: $whiteColor;
+    }
+    .test {
+        margin: 0 auto;
+        @include mobile {
+            min-height: 100svh;
+        }
+        @include tablet {
+            max-width: 100dvw;
+        }
+        @include desktop {
+            max-width: 100dvw;
+        }
+    }
     .text-Container {
         width: 50%;
         margin: 0 auto;
-        
+        @include mobile {
+            width: 70dvw;
+            margin: 0;
+        }
         .header {
             width: 100%;
-            margin-top: 10.5dvw;
+            margin-top: 5.397dvw;
             text-align: center;
-            font-size: clamp(8.46dvw, 4.65dvh, 8.46dvw);
+            font-size: clamp(4.354dvw, 2.389dvw, 4.354dvw);
             font-weight: bold;
             color: $brownColor;
-            
+            font-family: $InnovatorGrotesk;
+            @include mobile {
+                text-align: left;
+            }
+            @include tablet {
+                margin-top: 4dvw;
+                font-size: 2.8dvw;
+            }
             @include desktop {
-                margin-top: 4.9dvh;
-                font-size: clamp(0.833dvh, 1.621dvw, 3.833dvh);
+                margin-top: 4dvw;
+                font-size: 2.8dvw;
             }
         }
         
         .subheader {
-            margin-top: 3.10dvh;
+            margin-top: 1.594dvw;
             text-align: center;
             color: $darkGreyColor;
-            
+            font-family: $InnovatorGroteskRegular;
+            @include mobile {
+                text-align: left;
+            }
+            @include tablet {
+                margin: 1.594dvw 0;
+                font-size: 1.1dvw;
+            }
             @include desktop {
-                margin: 3.10dvh 0;
+                font-size: 1.1dvw;
+                margin: 1.594dvw 0;
             }
         }
     }
@@ -38,79 +73,120 @@
     .contactWrapper {
         height: 100%;
         background-color: $whiteColor;
-        padding: 2.06dvh;
+        padding: 1.059dvw;
         border-radius: cRems(5px);
         display: flex;
         width: 90%;
-        margin: 0 3.76dvw;
+        margin: 0 1.931dvw;
         flex-direction: column;
-        margin: 5.16dvh auto;
+        margin: 2.653dvw auto;
         
-        @include desktop {
-            margin-top: 8.24dvh;
-            margin-left: 4.12dvh;
-            min-height: 75dvh;
+        @include mobile {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        
+        @include tablet {
+            margin-top: 4.237dvw;
+            margin-left: 2.122dvw;
+            min-height: 38.555dvw;
             flex-direction: row;
             margin: 0 auto;
+            margin-bottom: 2dvw;
+        }
+        @include desktop {
+            margin-top: 4.237dvw;
+            margin-left: 2.122dvw;
+            min-height: 38.555dvw;
+            flex-direction: row;
+            margin: 0 auto;
+            margin-bottom: 2dvw;
         }
         
         .infoSection {
-            @include desktop {
-                width: 33.3333%;
-                text-align: left;
-            }
             width: 100%;
             background-color: $brownColor;
             color: $whiteColor;
             border-radius: cRems(5px);
-            padding: 4.95dvh;
+            padding: 2.544dvw;
             text-align: center;
             display: flex;
             flex-direction: column;
-            
+            @include tablet {
+                width: 30dvw;
+                text-align: left;
+                height: 45dvw;
+            }
+            @include desktop {
+                width: 30dvw;
+                text-align: left;
+                height: 45dvw;
+            }
             .title {
-                font-size: clamp(5.5dvw, 3.3dvh, 7.5dvw);
-                font-weight: bold;
+                font-size: clamp(2.827dvw, 1.696dvw, 3.855dvw);
+                font-family: $InnovatorGroteskBold;
+                @include tablet {
+                    font-size: 1.6dvw;
+                }
                 @include desktop {
-                    font-size: clamp(1.5dvw, 2.9dvh, 2.5dvw);
+                    font-size: 1.6dvw;
                 }
             }
             
             .subtitle {
-                margin-top: 3.87dvh;
-                
+                margin-top: 1.989dvw;
+                font-family: $InnovatorGroteskRegular;
+                @include tablet {
+                    margin-top: 1.328dvw;
+                    font-size: 1.1dvw;
+                }
                 @include desktop {
-                    margin-top: 2.58dvh;
+                    margin-top: 1.328dvw;
+                    font-size: 1.1dvw;
                 }
             }
             
             .contactInfo {
-                margin-top: 6.19dvh;
+                margin-top: 3.181dvw;
                 display: flex;
                 flex-direction: column;
-                gap: 5.19dvh;
-                
+                gap: 2.669dvw;
+                @include tablet {
+                    margin-top: 8dvw;
+                }
                 @include desktop {
-                    margin-top: 8.24dvh;
+                    margin-top: 8dvw;
                 }
                 
                 .contactItem {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    gap: 2.58dvh;
-                    
+                    gap: 1.328dvw;
+                    font-family: $InnovatorGroteskRegular;
+                    @include tablet {
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        flex-direction: row;
+                        font-size: 1.1dvw;
+                    }
                     @include desktop {
                         justify-content: flex-start;
                         align-items: flex-start;
                         flex-direction: row;
+                        font-size: 1.1dvw;
                     }
                     
                     &:nth-child(1) {
                         cursor: pointer;
-                        
+                        @include tablet {
+                            font-size: 1.1dvw;
+                            justify-content: flex-start;
+                        }
                         @include desktop {
                             justify-content: flex-start;
+                            font-size: 1.1dvw;
                         }
                     }
                     
@@ -119,18 +195,26 @@
                             color: $whiteColor;
                             display: flex;
                             align-items: center;
-                            gap: 2.58dvh;
-                            
+                            gap: 1.328dvw;
+                            @include tablet {
+                                font-size: 1.1dvw;
+                                flex-direction: row;
+                            }
                             @include desktop {
                                 flex-direction: row;
+                                font-size: 1.1dvw;
                             }
                         }
                     }
                     
                     &:nth-child(3) {
                         cursor: pointer;
-                        
+                        @include tablet {
+                            font-size: 1.1dvw;
+                            text-align: left;
+                        }
                         @include desktop {
+                            font-size: 1.1dvw;
                             text-align: left;
                         }
                     }
@@ -143,27 +227,59 @@
                     
                     .phone {
                         fill: $whiteColor;
+                        @include tablet {
+                            height: 1.5dvw;
+                            width: 1.5dvw;
+                        }
+                        @include desktop {
+                            height: 1.5dvw;
+                            width: 1.5dvw;
+                        }
+                    }
+                    .lucide-mail {
+                        @include tablet {
+                            height: 1.5dvw;
+                            width: 1.5dvw;
+                        }
+                        @include desktop {
+                            height: 1.5dvw;
+                            width: 1.5dvw;
+                        }
+                    }
+                    .lucide-map-pin {
+                        @include tablet {
+                            height: 1.5dvw;
+                            width: 2.5dvw;
+                        }
+                        @include desktop {
+                            height: 1.5dvw;
+                            width: 2.5dvw;
+                        }
                     }
                 }
             }
             
             .socialIcons {
-                margin-top: 7.68dvh;
+                margin-top: 3.948dvw;
                 display: flex;
                 justify-content: center;
                 
+                @include tablet {
+                    margin-top: 13.6dvw;
+                    justify-content: flex-start;
+                }
                 @include desktop {
-                    margin-top: 13.06dvh;
+                    margin-top: 13.6dvw;
                     justify-content: flex-start;
                 }
                 
                 .icon {
-                    width: 1dvw;
-                    height: 1dvw;
-                    margin: 0 1.28dvw;
+                    width: 0.514dvw;
+                    height: 0.514dvw;
+                    margin: 0 0.659dvw;
                     background-color: $iconDarkGreyColor;
                     border-radius: 50%;
-                    border: cRems(10px) solid $iconDarkGreyColor;
+                    border: 0.6dvw solid $iconDarkGreyColor;
                     
                     &:hover {
                         color: $iconDarkGreyColor;
@@ -171,8 +287,17 @@
                         border-color: $whiteColor;
                     }
                     
+                    @include tablet {
+                        margin: 0 0.659dvw 0 0;
+                        height: 1.5dvw;
+                        width: 1.5dvw;
+                        border: 0.6dvw solid $iconDarkGreyColor;
+                    }
                     @include desktop {
-                        margin: 0 1.28dvw 0 0;
+                        width: 1.5dvw;
+                        height: 1.5dvw;
+                        border: 0.6dvw solid $iconDarkGreyColor;
+                        margin: 0 0.659dvw 0 0;
                     }
                 }
             }
@@ -180,16 +305,31 @@
 
         .formSection {
             margin: 0 auto;
-            padding: 3.10dvh 1.55dvw;
+            padding: 1.594dvw 0.795dvw;
             font-family: $InnovatorGrotesk;
-            
+            @include mobile {
+                margin: 0;
+                padding: 0;
+                height: 100svh;
+            }
+            @include tablet {
+                width: 70dvw;
+            }
             @include desktop {
-                width: 50vw;
+                width: 70dvw;
             }
             
             .form {
               display: flex;
               flex-direction: column;
+
+            @include tablet {
+                padding-left: 4dvw;
+                padding-top: 2.5dvw;
+            }
+            @include desktop {
+                padding-left: 4dvw;
+                padding-top: 2.5dvw;
             }
           
             .formGroup {
@@ -197,49 +337,66 @@
                 justify-content: space-between;
                 flex-direction: column;
                 
+                @include tablet {
+                    flex-direction: row;
+                    margin-bottom: 1.989dvw;
+                }
                 @include desktop {
                     flex-direction: row;
-                    margin-bottom: 3.87dvh;
+                    margin-bottom: 1.989dvw;
                 }
                 
                 .formControl {
                     flex: 1;
                     display: flex;
                     flex-direction: column;
-                    margin-bottom: 2.06dvh;
+                    margin-bottom: 1.059dvw;
                     
                     &:focus-within label {
                         color: $iconDarkGreyColor; 
                     }
                     
                     &:last-child {
+                        @include tablet {
+                            margin-right: 0;
+                        }
                         @include desktop {
                             margin-right: 0;
                         }
                     }
                     
                     label {
-                        font-size: clamp(3.5dvw, 2.3dvh, 7.5dvw);
-                        color: $grayBgColor;
+                        font-size: clamp(1.798dvw, 1.181dvw, 3.855dvw);
+                        color: $inputColor;
+                        font-family: $InnovatorGroteskRegular;
                         
+                        @include tablet {
+                            margin-bottom: 0.797dvw;
+                            font-size: 1dvw;
+                        }
                         @include desktop {
-                            margin-bottom: 1.55dvh;
-                            font-size: clamp(0.5dvw, 1.5dvh, 1.5dvw);
+                            margin-bottom: 0.797dvw;
+                            font-size: 1dvw;
                         }
                     }
           
                     input, textarea {
-                        padding: 1.55dvh;
+                        padding: 0.797dvw;
                         font-size: cRems(16px);
                         font-family: $InnovatorGrotesk;
                         color: $iconDarkGreyColor;
                         border: none;
-                        border-bottom: 1px solid $grayBgColor;
+                        border-bottom: 1px solid $inputColor;
                         background-color: transparent;
                         outline: none;
                         
+                        @include tablet {
+                            margin-right: 3.465dvw;
+                            font-size: 1.2dvw;
+                        }
                         @include desktop {
-                            margin-right: 6.73dvw;
+                            font-size: 1.2dvw;
+                            margin-right: 3.465dvw;
                         }
                         
                         &::placeholder {
@@ -254,10 +411,12 @@
             }
 
             .messageControl {
-                margin-bottom: 3.87dvh;
-                
+                margin-bottom: 1.989dvw;
+                @include tablet {
+                    margin-top: 6dvw;
+                }
                 @include desktop {
-                    margin-top: 7.68dvh;
+                    margin-top: 6dvw;
                 }
                 
                 &:focus-within label {
@@ -265,71 +424,100 @@
                 }
                 
                 label {
-                    font-size: clamp(3.5dvw, 2.3dvh, 7.5dvw);
-                    color: $grayBgColor;
-                    margin-bottom: 1.55dvh;
+                    font-size: clamp(1.798dvw, 1.181dvw, 3.855dvw);
+                    color: $inputColor;
+                    font-family: $InnovatorGroteskRegular;
+                    @include tablet {
+                        margin-bottom: 0.797dvw;
+                        font-size: 1dvw;
+
+                    }
                     @include desktop {
-                        font-size: clamp(0.5dvw, 1.5dvh, 1.5dvw);
+                        margin-bottom: 0.797dvw;
+                        font-size: 1dvw;
                     }
                 }
-                
                 textarea {
                     width: 100%;
-                    padding: 1.55dvh;
-                    font-size: clamp(3.5dvw, 2.3dvh, 7.5dvw);
+                    padding: 0.797dvw;
+                    font-size: clamp(6.563dvw, 1.189dvw, 7.5dvw);
                     color: $iconDarkGreyColor;
                     border: none;
-                    border-bottom: 1px solid $grayBgColor;
+                    border-bottom: 1px solid $inputColor;
                     background-color: transparent;
                     font-family: $InnovatorGrotesk;
                     outline: none;
-                    
+                    @include tablet {
+                        font-size: 1.2dvw;
+                        width: 93.5%;
+                        padding-left: 0.797dvw;
+                        padding-top: 1.5dvw;
+                        height: 3.95dvw;
+                    }
                     @include desktop {
-                        font-size: clamp(1.5dvh, 0.7dvw, 1.5dvw);;
-                        width: 95%;
+                        font-size: 1.2dvw;
+                        width: 93.5%;
+                        padding-left: 0.797dvw;
+                        padding-top: 1.5dvw;
+                        height: 3.95dvw;
                     }
-                    
+                
                     &::placeholder {
-                        color: $grayBgColor;
+                        color: $inputColor;
                     }
-                    
+                
                     &:focus {
                         border-bottom-color: $iconDarkGreyColor;
                     }
                 }
             }
-            
-            .buttonContainer {
-                position: relative;
+                .buttonContainer {
+                    position: relative;
                 
-                .submitButton {
-                    padding: 1.55dvh;
-                    font-size: cRems(16px);
-                    background-color: $brownColor;
-                    color: $whiteColor;
-                    border: none;
-                    cursor: pointer;
-                    letter-spacing: 0.13dvw;
-                    border-radius: cRems(5px);
-                    
-                    @include mobile {
-                        width: 100%;
-                    }
-                    
-                    @include desktop {
-                        position: absolute;
-                        right: 0;
-                        margin-right: 6.73dvw;
-                        border-radius: cRems(16px);
-                        padding: 1.55dvh 4.95dvw;
-                        background-color: $buttonBgColor;
-                    }
-                    
-                    &:hover {
-                        background-color: lighten($buttonBgColor, 10%);
+                    .submitButton {
+                        padding: 0.797dvw;
+                        font-size: cRems(16px);
+                        background-color: $brownColor;
+                        color: $whiteColor;
+                        border: none;
+                        cursor: pointer;
+                        border-radius: cRems(5px);
+                
+                        @include mobile {
+                            width: 100%;
+                        }
+                
+                        @include tablet {
+                            position: absolute;
+                            right: 0;
+                            margin-right: 3.515dvw;
+                            border-radius: cRems(16px);
+                            padding: 0.797dvw 2.578dvw;
+                            background-color: $buttonBgColor;
+                            font-size: 1.2dvw;
+                        }
+                        @include desktop {
+                            position: absolute;
+                            right: 0;
+                            margin-right: 3.515dvw;
+                            border-radius: cRems(16px);
+                            padding: 0.797dvw 2.578dvw;
+                            background-color: $buttonBgColor;
+                            font-size: 1.2dvw;
+                        }
+                
+                        &:hover {
+                            background-color: $brownColor;
+                        }
                     }
                 }
             }
+        
+        }                
+    }
+    .footer-Wrapper {
+        .footer-Container {
+
         }
     }
 }
