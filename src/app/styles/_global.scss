@@ -47,14 +47,14 @@ body {
 
 .mobile-only {
   @include tablet {
-    display: none;
+    display: none !important;
   }
   @include desktop {
-    display: none;
+    display: none !important;
   }
 }
 .desktop-only {
   @include mobile {
-    display: none;
+    display: none !important;
   }
 }
