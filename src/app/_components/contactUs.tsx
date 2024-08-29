@@ -6,8 +6,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDiscord, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import React, { forwardRef } from 'react';
+import useToggleClassOnResize from '../scripts/minHeight';
 
 const Contact = forwardRef<HTMLDivElement, {}>((props, ref) => {
+    useToggleClassOnResize('.contactContainer');
 
     const [formData, setFormData] = useState({
         firstName: "",
@@ -109,12 +111,13 @@ const Contact = forwardRef<HTMLDivElement, {}>((props, ref) => {
 
     return (
         <div ref={ref} className="contactContainer section">
+            <div className="test">
             <div className="text-Container">
               <h1 className="header">Contact Us</h1>
               <p className="subheader">Any questions or remarks? Just write us a message!</p>
             </div>
             <div className="contactWrapper">
-                <div className="infoSection">
+                <div className="infoSection desktop-only">
                     <p className="title">Contact Information</p>
                     <p className="subtitle">Let&apos;s Grow your business together</p>
                     <div className="contactInfo">
@@ -203,7 +206,37 @@ const Contact = forwardRef<HTMLDivElement, {}>((props, ref) => {
                     </form>
                 </div>
             </div>
+            </div>
+        <div className="footer-Wrapper mobile-only">
+            <div className="footer-Container">
+                <p className="title">Contact Information</p>
+                <p className="subtitle">Let&apos;s Grow your business together</p>
+                <div className="contactInfo">
+                    <div className="contactItem" onClick={() => window.location.href = 'tel:+918018695050'}>
+                        <PhoneCall className="icon phone" />
+                        <p>+91 80186 95050</p>
+                    </div>
+                    <div className="contactItem">
+                        <a className="mail-tag" href="mailto:contact@themagazinestudios.com" target="_blank" rel="noopener noreferrer">
+                            <Mail className="icon" />
+                            <p>contact@nextmgzn.com</p>
+                        </a>
+                    </div>
+                    <div className="contactItem" onClick={() => window.open("https://maps.app.goo.gl/hwpMkh444ZjS7Eia6?g_st=iw", "_blank")}>
+                        <MapPin className="icon" />
+                        <p>M84, M block market, Greater Kailash 2, New Delhi</p>
+                    </div>
+                </div>
+                <div className="socialIcons">
+                    <FontAwesomeIcon icon={faTwitter} className="icon" />
+                    <Link href={`https://www.instagram.com/nextmgzn/?igsh=c3hyb3NreGVweDNi&utm_source=qr`} target="_blank">
+                        <FontAwesomeIcon icon={faInstagram} className="icon" />
+                    </Link>
+                    <FontAwesomeIcon icon={faDiscord} className="icon" />
+                </div>
+            </div>
         </div>
+    </div>
     );
 });
 Contact.displayName = 'Contact Us';
