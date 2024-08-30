@@ -15,6 +15,7 @@
         margin: 0 auto;
         @include mobile {
             min-height: 100svh;
+            margin: 0 8dvw;
         }
         @include tablet {
             max-width: 100dvw;
@@ -39,6 +40,7 @@
             color: $brownColor;
             font-family: $InnovatorGrotesk;
             @include mobile {
+                font-size: 8dvw;
                 text-align: left;
             }
             @include tablet {
@@ -52,12 +54,13 @@
         }
         
         .subheader {
-            margin-top: 1.594dvw;
             text-align: center;
             color: $darkGreyColor;
             font-family: $InnovatorGroteskRegular;
             @include mobile {
                 text-align: left;
+                margin-top: 4dvw;
+                font-size: 4dvw;
             }
             @include tablet {
                 margin: 1.594dvw 0;
@@ -310,7 +313,7 @@
             @include mobile {
                 margin: 0;
                 padding: 0;
-                height: 100svh;
+                height: 100%;
             }
             @include tablet {
                 width: 70dvw;
@@ -352,6 +355,9 @@
                     flex-direction: column;
                     margin-bottom: 1.059dvw;
                     
+                    @include mobile {
+                        margin: 4dvw 0;
+                    }
                     &:focus-within label {
                         color: $iconDarkGreyColor; 
                     }
@@ -366,10 +372,12 @@
                     }
                     
                     label {
-                        font-size: clamp(1.798dvw, 1.181dvw, 3.855dvw);
                         color: $inputColor;
                         font-family: $InnovatorGroteskRegular;
-                        
+                        @include mobile {
+                            font-size: 4dvw;
+                            margin-bottom: 3dvw;
+                        }
                         @include tablet {
                             margin-bottom: 0.797dvw;
                             font-size: 1dvw;
@@ -381,7 +389,6 @@
                     }
           
                     input, textarea {
-                        padding: 0.797dvw;
                         font-size: cRems(16px);
                         font-family: $InnovatorGrotesk;
                         color: $iconDarkGreyColor;
@@ -389,13 +396,19 @@
                         border-bottom: 1px solid $inputColor;
                         background-color: transparent;
                         outline: none;
-                        
+                        @include mobile {
+                            padding: 0.797dvw 3dvw;
+                            border-radius: 0;
+                            font-size: 4dvw;
+                        }
                         @include tablet {
                             margin-right: 3.465dvw;
+                            padding: 0.797dvw;
                             font-size: 1.2dvw;
                         }
                         @include desktop {
                             font-size: 1.2dvw;
+                            padding: 0.797dvw;
                             margin-right: 3.465dvw;
                         }
                         
@@ -424,9 +437,11 @@
                 }
                 
                 label {
-                    font-size: clamp(1.798dvw, 1.181dvw, 3.855dvw);
                     color: $inputColor;
                     font-family: $InnovatorGroteskRegular;
+                    @include mobile {
+                        font-size: 4dvw;
+                    }
                     @include tablet {
                         margin-bottom: 0.797dvw;
                         font-size: 1dvw;
@@ -439,14 +454,20 @@
                 }
                 textarea {
                     width: 100%;
-                    padding: 0.797dvw;
-                    font-size: clamp(6.563dvw, 1.189dvw, 7.5dvw);
                     color: $iconDarkGreyColor;
                     border: none;
                     border-bottom: 1px solid $inputColor;
                     background-color: transparent;
                     font-family: $InnovatorGrotesk;
                     outline: none;
+                    @include mobile {
+                        font-size: 4dvw;
+                        margin-top: 3dvw;
+                        padding: 0 3dvw;
+                        height: 15dvw;
+                        border-radius: 0;
+                        margin-bottom: 6dvw;
+                    }
                     @include tablet {
                         font-size: 1.2dvw;
                         width: 93.5%;
@@ -485,6 +506,9 @@
                 
                         @include mobile {
                             width: 100%;
+                            padding: 4dvw;
+                            font-size: 5dvw;
+                            border-radius: cRems(16px);
                         }
                 
                         @include tablet {
@@ -516,8 +540,73 @@
         }                
     }
     .footer-Wrapper {
+        color: $whiteColor;
+        background-color: $brownColor;
+        min-height: 80svh;
+        .title {
+            font-family: $InnovatorGroteskBlack;
+            font-size: 5dvw;
+            margin: 6dvw;
+            margin-bottom: 12dvw;
+        }
         .footer-Container {
-
+            display: flex;
+            flex-direction: row;
+            .contactInfo {
+                margin-left: 6dvw;
+                width: 55%;                
+                .contacttitle {
+                    font-size: 4dvw;
+                    font-family: $InnovatorGroteskBold;
+                    margin-bottom: 6dvw;
+                }
+                .contactsubtitle {
+                    font-family: $InnovatorGroteskLight;
+                    font-size: 3dvw;
+                    margin-right: 8dvw;
+                }
+                .contactItem {
+                    margin: 6dvw 0;
+                    .icon {
+                        margin-bottom: 2dvw;
+                    }
+                }
+            }
+            .legalInfo {
+                .legaltitle {
+                    font-size: 4dvw;
+                    font-family: $InnovatorGroteskBold;
+                    margin-bottom: 6dvw;                    
+                }
+                .legalsubtitle {
+                    font-family: $InnovatorGroteskLight;
+                    font-size: 3dvw;
+                    margin: 4dvw 0;
+                }
+            }
+        }
+        .socialtitle {
+            text-align: center;
+            font-size: 4dvw;
+            font-family: $InnovatorGroteskLight;
+            margin-bottom: 6dvw;     
+            margin-top: 30dvw;               
+        }
+        .socialIcons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4dvw;
+            .fa-linkedin,.fa-instagram {
+                height: 7dvw;
+                width: 7dvw;
+            }
+            .icon {
+                padding: 0 3dvw;
+                color: white;
+                fill: white;
+            }
         }
     }
 }
