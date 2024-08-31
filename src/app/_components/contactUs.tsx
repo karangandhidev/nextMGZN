@@ -136,7 +136,7 @@ const Contact = forwardRef<HTMLDivElement, {}>((props, ref) => {
                                 <p>+91 80186 95050</p>
                             </div>
                             <div className="contactItem">
-                                <a className="mail-tag" href="mailto:contact@themagazinestudios.com" target="_blank" rel="noopener noreferrer">
+                                <a className="mail-tag" href="mailto:contact@nextmgzn.com" target="_blank" rel="noopener noreferrer">
                                     <Mail className="icon" />
                                     <p>contact@nextmgzn.com</p>
                                 </a>
@@ -225,7 +225,8 @@ const Contact = forwardRef<HTMLDivElement, {}>((props, ref) => {
                                 </p>
                             </div>
                             <div className="buttonContainer">
-                                <button type="submit" className="submitButton">Send Message</button>
+                                <button type="submit" className="submitButton mobile-only">Send </button>
+                                <button type="submit" className="submitButton desktop-only">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -242,7 +243,7 @@ const Contact = forwardRef<HTMLDivElement, {}>((props, ref) => {
                             <p className="contactsubtitle">+91 80186 95050</p>
                         </div>
                         <div className="contactItem">
-                            <a className="mail-tag" href="mailto:contact@themagazinestudios.com" target="_blank" rel="noopener noreferrer">
+                            <a className="mail-tag" href="mailto:contact@nextmgzn.com" target="_blank" rel="noopener noreferrer">
                                 <Mail className="icon" />
                                 <p className="contactsubtitle">contact@nextmgzn.com</p>
                             </a>
