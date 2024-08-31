@@ -963,15 +963,15 @@
     margin-bottom: 5.309dvw;
   }
   .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-icon {
-    width: 4.333dvw;
-    height: 4.333dvw;
+    width: 3.333dvw;
+    height: 3.333dvw;
   }
   .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-heading {
-    font-size: 2dvw;
+    font-size: 1.442dvw;
   }
   .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-info {
     margin-right: 0.761dvw;
-    font-size: 1.3dvw;
+    font-size: 0.93dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
@@ -1031,6 +1031,7 @@
 @media only screen and (max-width: 639px) {
   .whatWeDoContainer .seeMore-Button {
     margin-top: 8dvw;
+    margin-bottom: 7.5dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
@@ -1111,55 +1112,70 @@
 .goal-Component .goal-Container {
   background-color: #DD6545;
   width: 100vw;
-  height: 80dvh;
+  height: 100dvw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .goal-Component .goal-Container {
+    height: 25dvw;
+    justify-content: flex-start;
+  }
+}
 @media only screen and (min-width: 1141px) {
   .goal-Component .goal-Container {
-    height: 60dvh;
+    height: 25dvw;
     justify-content: flex-start;
   }
 }
 .goal-Component .goal-Container .goalText-Container {
   margin: 0 8.235dvw;
-  font-family: "Innovator Grotesk";
-  font-weight: 700;
+  font-family: "Innovator Grotesk Extra Bold";
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .goal-Component .goal-Container .goalText-Container {
+    margin: 0 5dvw;
+  }
 }
 @media only screen and (min-width: 1141px) {
   .goal-Component .goal-Container .goalText-Container {
-    margin: 0 15.625dvw;
+    margin: 0 5dvw;
   }
 }
 .goal-Component .goal-Container .goalText-Container .goal-Title {
-  font-size: clamp(1.688dvw, 4.343dvh, 2.788dvw);
-  margin-bottom: 6.204dvh;
+  font-size: 2.8dvw;
+  margin-bottom: 4dvw;
 }
 @media only screen and (max-width: 639px) {
   .goal-Component .goal-Container .goalText-Container .goal-Title {
-    font-size: clamp(8.688dvw, 4.343dvh, 2.788dvw);
+    font-size: 7.9dvw;
+    margin-bottom: 10dvw;
   }
 }
 .goal-Component .goal-Container .goalText-Container .goal-Description {
-  font-size: clamp(2.096dvw, 4.758dvh, 2.896dvw);
+  font-size: 2.8dvw;
   font-weight: 700;
   line-height: 1.2;
 }
 @media only screen and (max-width: 639px) {
   .goal-Component .goal-Container .goalText-Container .goal-Description {
-    font-size: clamp(8.688dvw, 4.343dvh, 2.788dvw);
+    font-size: 7.9dvw;
   }
 }
 .goal-Component .goal-Container .goalText-Container .goal-Description .nextmgzn-Highlight {
   color: #4f4138;
-  font-size: clamp(2.096dvw, 4.758dvh, 2.896dvw);
+  font-size: 2.8dvw;
 }
 @media only screen and (max-width: 639px) {
   .goal-Component .goal-Container .goalText-Container .goal-Description .nextmgzn-Highlight {
     display: block;
-    font-size: clamp(8.688dvw, 4.343dvh, 2.788dvw);
+    font-size: 7.9dvw;
   }
+}
+
+.contactContainer.section.small-window {
+  min-height: unset;
 }
 
 .contactContainer {
@@ -1170,52 +1186,127 @@
   flex-direction: column;
   background-color: #f9f9f9;
 }
+@media only screen and (max-width: 639px) {
+  .contactContainer {
+    background-color: #ffffff;
+  }
+}
+.contactContainer .page-Wrapper {
+  margin: 0 auto;
+}
+@media only screen and (max-width: 639px) {
+  .contactContainer .page-Wrapper {
+    min-height: 100svh;
+    margin: 0 8dvw;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .page-Wrapper {
+    max-width: 100dvw;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .contactContainer .page-Wrapper {
+    max-width: 100dvw;
+  }
+}
 .contactContainer .text-Container {
   width: 50%;
   margin: 0 auto;
 }
+@media only screen and (max-width: 639px) {
+  .contactContainer .text-Container {
+    width: 70dvw;
+    margin: 0;
+  }
+}
 .contactContainer .text-Container .header {
   width: 100%;
-  margin-top: 10.32dvh;
+  margin-top: 5.397dvw;
   text-align: center;
-  font-size: clamp(8.46dvw, 4.65dvh, 8.46dvw);
+  font-size: 4.354dvw;
   font-weight: bold;
   color: #4f4138;
+  font-family: "Innovator Grotesk";
+}
+@media only screen and (max-width: 639px) {
+  .contactContainer .text-Container .header {
+    font-size: 8dvw;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .text-Container .header {
+    margin-top: 4dvw;
+    font-size: 2.8dvw;
+  }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .text-Container .header {
-    margin-top: 4.9dvh;
-    font-size: clamp(0.833dvh, 1.621dvw, 3.833dvh);
+    margin-top: 4dvw;
+    font-size: 2.8dvw;
   }
 }
 .contactContainer .text-Container .subheader {
-  margin-top: 3.1dvh;
   text-align: center;
   color: #717171;
+  font-family: "Innovator Grotesk Regular";
+}
+@media only screen and (max-width: 639px) {
+  .contactContainer .text-Container .subheader {
+    text-align: left;
+    margin-top: 4dvw;
+    font-size: 4dvw;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .text-Container .subheader {
+    margin: 1.594dvw 0;
+    font-size: 1.1dvw;
+  }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .text-Container .subheader {
-    margin: 3.1dvh 0;
+    font-size: 1.1dvw;
+    margin: 1.594dvw 0;
   }
 }
 .contactContainer .contactWrapper {
   height: 100%;
   background-color: #ffffff;
-  padding: 2.06dvh;
+  padding: 1.059dvw;
   border-radius: 0.3125rem;
   display: flex;
   width: 90%;
-  margin: 0 3.76dvw;
+  margin: 0 1.931dvw;
   flex-direction: column;
-  margin: 5.16dvh auto;
+  margin: 2.653dvw auto;
+}
+@media only screen and (max-width: 639px) {
+  .contactContainer .contactWrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper {
+    margin-top: 4.237dvw;
+    margin-left: 2.122dvw;
+    min-height: 38.555dvw;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-bottom: 2dvw;
+  }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper {
-    margin-top: 8.24dvh;
-    margin-left: 4.12dvh;
-    min-height: 75dvh;
+    margin-top: 4.237dvw;
+    margin-left: 2.122dvw;
+    min-height: 38.555dvw;
     flex-direction: row;
     margin: 0 auto;
+    margin-bottom: 2dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection {
@@ -1223,82 +1314,139 @@
   background-color: #4f4138;
   color: #ffffff;
   border-radius: 0.3125rem;
-  padding: 4.95dvh;
+  padding: 2.544dvw;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .infoSection {
+    width: 30dvw;
+    text-align: left;
+    height: 45dvw;
+  }
+}
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection {
-    width: 33.3333%;
+    width: 30dvw;
     text-align: left;
+    height: 45dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection .title {
-  font-size: clamp(5.5dvw, 3.3dvh, 7.5dvw);
-  font-weight: bold;
+  font-size: 2.827dvw;
+  font-family: "Innovator Grotesk Bold";
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .infoSection .title {
+    font-size: 1.6dvw;
+  }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .title {
-    font-size: clamp(1.5dvw, 2.9dvh, 2.5dvw);
+    font-size: 1.6dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection .subtitle {
-  margin-top: 3.87dvh;
+  margin-top: 1.989dvw;
+  font-family: "Innovator Grotesk Regular";
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .infoSection .subtitle {
+    margin-top: 1.328dvw;
+    font-size: 1.1dvw;
+  }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .subtitle {
-    margin-top: 2.58dvh;
+    margin-top: 1.328dvw;
+    font-size: 1.1dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection .contactInfo {
-  margin-top: 6.19dvh;
+  margin-top: 3.181dvw;
   display: flex;
   flex-direction: column;
-  gap: 5.19dvh;
+  gap: 2.669dvw;
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo {
+    margin-top: 8dvw;
+  }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo {
-    margin-top: 8.24dvh;
+    margin-top: 8dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.58dvh;
+  gap: 1.328dvw;
+  font-family: "Innovator Grotesk Regular";
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo .contactItem {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    font-size: 1.1dvw;
+  }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
+    font-size: 1.1dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(1) {
   cursor: pointer;
 }
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(1) {
+    font-size: 1.1dvw;
+    justify-content: flex-start;
+  }
+}
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(1) {
     justify-content: flex-start;
+    font-size: 1.1dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(2) a {
   color: #ffffff;
   display: flex;
   align-items: center;
-  gap: 2.58dvh;
+  gap: 1.328dvw;
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(2) a {
+    font-size: 1.1dvw;
+    flex-direction: row;
+  }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(2) a {
     flex-direction: row;
+    font-size: 1.1dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(3) {
   cursor: pointer;
 }
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(3) {
+    font-size: 1.1dvw;
+    text-align: left;
+  }
+}
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(3) {
+    font-size: 1.1dvw;
     text-align: left;
   }
 }
@@ -1310,179 +1458,433 @@
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem .phone {
   fill: #ffffff;
 }
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo .contactItem .phone {
+    height: 1.5dvw;
+    width: 1.5dvw;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo .contactItem .phone {
+    height: 1.5dvw;
+    width: 1.5dvw;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo .contactItem .lucide-mail {
+    height: 1.5dvw;
+    width: 1.5dvw;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo .contactItem .lucide-mail {
+    height: 1.5dvw;
+    width: 1.5dvw;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo .contactItem .lucide-map-pin {
+    height: 1.5dvw;
+    width: 2.5dvw;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .contactContainer .contactWrapper .infoSection .contactInfo .contactItem .lucide-map-pin {
+    height: 1.5dvw;
+    width: 2.5dvw;
+  }
+}
 .contactContainer .contactWrapper .infoSection .socialIcons {
-  margin-top: 7.68dvh;
+  margin-top: 3.948dvw;
   display: flex;
   justify-content: center;
 }
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .infoSection .socialIcons {
+    margin-top: 13.6dvw;
+    justify-content: flex-start;
+  }
+}
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .socialIcons {
-    margin-top: 13.06dvh;
+    margin-top: 13.6dvw;
     justify-content: flex-start;
   }
 }
 .contactContainer .contactWrapper .infoSection .socialIcons .icon {
-  width: 1dvw;
-  height: 1dvw;
-  margin: 0 1.28dvw;
+  width: 0.514dvw;
+  height: 0.514dvw;
+  margin: 0 0.659dvw;
   background-color: #262626;
   border-radius: 50%;
-  border: 0.625rem solid #262626;
+  border: 0.6dvw solid #262626;
 }
 .contactContainer .contactWrapper .infoSection .socialIcons .icon:hover {
   color: #262626;
   background-color: #ffffff;
   border-color: #ffffff;
 }
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .infoSection .socialIcons .icon {
+    margin: 0 0.659dvw 0 0;
+    height: 1.5dvw;
+    width: 1.5dvw;
+    border: 0.6dvw solid #262626;
+  }
+}
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .socialIcons .icon {
-    margin: 0 1.28dvw 0 0;
+    width: 1.5dvw;
+    height: 1.5dvw;
+    border: 0.6dvw solid #262626;
+    margin: 0 0.659dvw 0 0;
   }
 }
 .contactContainer .contactWrapper .formSection {
   margin: 0 auto;
-  padding: 3.1dvh 1.55dvw;
+  padding: 1.594dvw 0.795dvw;
   font-family: "Innovator Grotesk";
+}
+@media only screen and (max-width: 639px) {
+  .contactContainer .contactWrapper .formSection {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .formSection {
+    width: 67dvw;
+  }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection {
-    width: 50vw;
+    width: 67dvw;
   }
 }
 .contactContainer .contactWrapper .formSection .form {
   display: flex;
   flex-direction: column;
 }
-.contactContainer .contactWrapper .formSection .formGroup {
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .formSection .form {
+    padding-left: 4dvw;
+    padding-top: 2.5dvw;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .contactContainer .contactWrapper .formSection .form {
+    padding-left: 4dvw;
+    padding-top: 2.5dvw;
+  }
+}
+.contactContainer .contactWrapper .formSection .form .formGroup {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-@media only screen and (min-width: 1141px) {
-  .contactContainer .contactWrapper .formSection .formGroup {
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .formSection .form .formGroup {
     flex-direction: row;
-    margin-bottom: 3.87dvh;
+    margin-bottom: 1.989dvw;
   }
 }
-.contactContainer .contactWrapper .formSection .formGroup .formControl {
+@media only screen and (min-width: 1141px) {
+  .contactContainer .contactWrapper .formSection .form .formGroup {
+    flex-direction: row;
+    margin-bottom: 1.989dvw;
+  }
+}
+.contactContainer .contactWrapper .formSection .form .formGroup .formControl {
   flex: 1 1;
   display: flex;
   flex-direction: column;
-  margin-bottom: 2.06dvh;
+  margin-bottom: 1.059dvw;
 }
-.contactContainer .contactWrapper .formSection .formGroup .formControl:focus-within label {
+@media only screen and (max-width: 639px) {
+  .contactContainer .contactWrapper .formSection .form .formGroup .formControl {
+    margin: 2dvw 0;
+  }
+}
+.contactContainer .contactWrapper .formSection .form .formGroup .formControl:focus-within label {
   color: #262626;
 }
-@media only screen and (min-width: 1141px) {
-  .contactContainer .contactWrapper .formSection .formGroup .formControl:last-child {
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .formSection .form .formGroup .formControl:last-child {
     margin-right: 0;
   }
 }
-.contactContainer .contactWrapper .formSection .formGroup .formControl label {
-  font-size: clamp(3.5dvw, 2.3dvh, 7.5dvw);
-  color: #d1d5db;
-}
 @media only screen and (min-width: 1141px) {
-  .contactContainer .contactWrapper .formSection .formGroup .formControl label {
-    margin-bottom: 1.55dvh;
-    font-size: clamp(0.5dvw, 1.5dvh, 1.5dvw);
+  .contactContainer .contactWrapper .formSection .form .formGroup .formControl:last-child {
+    margin-right: 0;
   }
 }
-.contactContainer .contactWrapper .formSection .formGroup .formControl input, .contactContainer .contactWrapper .formSection .formGroup .formControl textarea {
-  padding: 1.55dvh;
+.contactContainer .contactWrapper .formSection .form .formGroup .formControl label {
+  color: #8D8D8D;
+  font-family: "Innovator Grotesk Regular";
+}
+@media only screen and (max-width: 639px) {
+  .contactContainer .contactWrapper .formSection .form .formGroup .formControl label {
+    font-size: 4dvw;
+    margin-bottom: 3dvw;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .formSection .form .formGroup .formControl label {
+    margin-bottom: 0.797dvw;
+    font-size: 1dvw;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .contactContainer .contactWrapper .formSection .form .formGroup .formControl label {
+    margin-bottom: 0.797dvw;
+    font-size: 1dvw;
+  }
+}
+.contactContainer .contactWrapper .formSection .form .formGroup .formControl input, .contactContainer .contactWrapper .formSection .form .formGroup .formControl textarea {
   font-size: 1rem;
   font-family: "Innovator Grotesk";
   color: #262626;
   border: none;
-  border-bottom: 1px solid #d1d5db;
+  border-bottom: 1px solid #8D8D8D;
   background-color: transparent;
   outline: none;
 }
-@media only screen and (min-width: 1141px) {
-  .contactContainer .contactWrapper .formSection .formGroup .formControl input, .contactContainer .contactWrapper .formSection .formGroup .formControl textarea {
-    margin-right: 6.73dvw;
+@media only screen and (max-width: 639px) {
+  .contactContainer .contactWrapper .formSection .form .formGroup .formControl input, .contactContainer .contactWrapper .formSection .form .formGroup .formControl textarea {
+    padding: 0.797dvw 3dvw;
+    border-radius: 0;
+    font-size: 4dvw;
   }
 }
-.contactContainer .contactWrapper .formSection .formGroup .formControl input::placeholder, .contactContainer .contactWrapper .formSection .formGroup .formControl textarea::placeholder {
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .formSection .form .formGroup .formControl input, .contactContainer .contactWrapper .formSection .form .formGroup .formControl textarea {
+    margin-right: 3.465dvw;
+    padding: 0.797dvw;
+    font-size: 1.2dvw;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .contactContainer .contactWrapper .formSection .form .formGroup .formControl input, .contactContainer .contactWrapper .formSection .form .formGroup .formControl textarea {
+    font-size: 1.2dvw;
+    padding: 0.797dvw;
+    margin-right: 3.465dvw;
+  }
+}
+.contactContainer .contactWrapper .formSection .form .formGroup .formControl input::placeholder, .contactContainer .contactWrapper .formSection .form .formGroup .formControl textarea::placeholder {
   color: #d1d5db;
 }
-.contactContainer .contactWrapper .formSection .formGroup .formControl input:focus, .contactContainer .contactWrapper .formSection .formGroup .formControl textarea:focus {
+.contactContainer .contactWrapper .formSection .form .formGroup .formControl input:focus, .contactContainer .contactWrapper .formSection .form .formGroup .formControl textarea:focus {
   border-bottom-color: #262626;
 }
-.contactContainer .contactWrapper .formSection .messageControl {
-  margin-bottom: 3.87dvh;
+.contactContainer .contactWrapper .formSection .form .formGroup .formControl input:-webkit-autofill,
+.contactContainer .contactWrapper .formSection .form .formGroup .formControl input:-webkit-autofill:focus,
+.contactContainer .contactWrapper .formSection .form .formGroup .formControl input:-webkit-autofill:hover {
+  -webkit-transition: background-color 0s 600000s, color 0s 600000s !important;
+  transition: background-color 0s 600000s, color 0s 600000s !important;
 }
-@media only screen and (min-width: 1141px) {
-  .contactContainer .contactWrapper .formSection .messageControl {
-    margin-top: 7.68dvh;
+.contactContainer .contactWrapper .formSection .form .messageControl {
+  margin-bottom: 1.989dvw;
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .formSection .form .messageControl {
+    margin-top: 6dvw;
   }
 }
-.contactContainer .contactWrapper .formSection .messageControl:focus-within label {
+@media only screen and (min-width: 1141px) {
+  .contactContainer .contactWrapper .formSection .form .messageControl {
+    margin-top: 6dvw;
+  }
+}
+.contactContainer .contactWrapper .formSection .form .messageControl:focus-within label {
   color: #262626;
 }
-.contactContainer .contactWrapper .formSection .messageControl label {
-  font-size: clamp(3.5dvw, 2.3dvh, 7.5dvw);
-  color: #d1d5db;
-  margin-bottom: 1.55dvh;
+.contactContainer .contactWrapper .formSection .form .messageControl label {
+  color: #8D8D8D;
+  font-family: "Innovator Grotesk Regular";
 }
-@media only screen and (min-width: 1141px) {
-  .contactContainer .contactWrapper .formSection .messageControl label {
-    font-size: clamp(0.5dvw, 1.5dvh, 1.5dvw);
+@media only screen and (max-width: 639px) {
+  .contactContainer .contactWrapper .formSection .form .messageControl label {
+    font-size: 4dvw;
   }
 }
-.contactContainer .contactWrapper .formSection .messageControl textarea {
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .formSection .form .messageControl label {
+    margin-bottom: 0.797dvw;
+    font-size: 1dvw;
+  }
+}
+@media only screen and (min-width: 1141px) {
+  .contactContainer .contactWrapper .formSection .form .messageControl label {
+    margin-bottom: 0.797dvw;
+    font-size: 1dvw;
+  }
+}
+.contactContainer .contactWrapper .formSection .form .messageControl textarea {
   width: 100%;
-  padding: 1.55dvh;
-  font-size: clamp(3.5dvw, 2.3dvh, 7.5dvw);
   color: #262626;
   border: none;
-  border-bottom: 1px solid #d1d5db;
+  border-bottom: 1px solid #8D8D8D;
   background-color: transparent;
   font-family: "Innovator Grotesk";
   outline: none;
 }
-@media only screen and (min-width: 1141px) {
-  .contactContainer .contactWrapper .formSection .messageControl textarea {
-    font-size: clamp(1.5dvh, 0.7dvw, 1.5dvw);
-    width: 95%;
+@media only screen and (max-width: 639px) {
+  .contactContainer .contactWrapper .formSection .form .messageControl textarea {
+    font-size: 4dvw;
+    margin-top: 3dvw;
+    padding: 0 3dvw;
+    height: 15dvw;
+    border-radius: 0;
   }
 }
-.contactContainer .contactWrapper .formSection .messageControl textarea::placeholder {
-  color: #d1d5db;
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .formSection .form .messageControl textarea {
+    font-size: 1.2dvw;
+    width: 93.5%;
+    padding-left: 0.797dvw;
+    padding-top: 1.5dvw;
+    height: 3.95dvw;
+  }
 }
-.contactContainer .contactWrapper .formSection .messageControl textarea:focus {
+@media only screen and (min-width: 1141px) {
+  .contactContainer .contactWrapper .formSection .form .messageControl textarea {
+    font-size: 1.2dvw;
+    width: 93.5%;
+    padding-left: 0.797dvw;
+    padding-top: 1.5dvw;
+    height: 3.95dvw;
+  }
+}
+.contactContainer .contactWrapper .formSection .form .messageControl textarea::placeholder {
+  color: #8D8D8D;
+}
+.contactContainer .contactWrapper .formSection .form .messageControl textarea:focus {
   border-bottom-color: #262626;
 }
-.contactContainer .contactWrapper .formSection .buttonContainer {
+.contactContainer .contactWrapper .formSection .form .errorText {
+  display: block;
+  font-size: 1.1dvw;
+  color: red;
+}
+@media only screen and (max-width: 639px) {
+  .contactContainer .contactWrapper .formSection .form .errorText {
+    font-size: 4dvw;
+  }
+}
+.contactContainer .contactWrapper .formSection .form .buttonContainer {
   position: relative;
 }
-.contactContainer .contactWrapper .formSection .buttonContainer .submitButton {
-  padding: 1.55dvh;
+.contactContainer .contactWrapper .formSection .form .buttonContainer .submitButton {
+  padding: 0.797dvw;
   font-size: 1rem;
   background-color: #4f4138;
   color: #ffffff;
   border: none;
   cursor: pointer;
-  letter-spacing: 0.13dvw;
   border-radius: 0.3125rem;
 }
 @media only screen and (max-width: 639px) {
-  .contactContainer .contactWrapper .formSection .buttonContainer .submitButton {
+  .contactContainer .contactWrapper .formSection .form .buttonContainer .submitButton {
     width: 100%;
+    padding: 4dvw;
+    font-size: 5dvw;
+    border-radius: 1rem;
+    margin-top: 6dvw;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .contactContainer .contactWrapper .formSection .form .buttonContainer .submitButton {
+    position: absolute;
+    right: 0;
+    margin-right: 3.515dvw;
+    border-radius: 1rem;
+    padding: 0.797dvw 2.578dvw;
+    background-color: #DD6545;
+    font-size: 1.2dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
-  .contactContainer .contactWrapper .formSection .buttonContainer .submitButton {
+  .contactContainer .contactWrapper .formSection .form .buttonContainer .submitButton {
     position: absolute;
     right: 0;
-    margin-right: 6.73dvw;
+    margin-right: 3.515dvw;
     border-radius: 1rem;
-    padding: 1.55dvh 4.95dvw;
+    padding: 0.797dvw 2.578dvw;
     background-color: #DD6545;
+    font-size: 1.2dvw;
   }
 }
-.contactContainer .contactWrapper .formSection .buttonContainer .submitButton:hover {
-  background-color: #e58970;
+.contactContainer .contactWrapper .formSection .form .buttonContainer .submitButton:hover {
+  background-color: #4f4138;
+}
+.contactContainer .footer-Wrapper {
+  color: #ffffff;
+  background-color: #4f4138;
+  min-height: 80svh;
+}
+.contactContainer .footer-Wrapper .title {
+  font-family: "Innovator Grotesk Black";
+  font-size: 5dvw;
+  margin: 6dvw;
+  margin-bottom: 12dvw;
+}
+.contactContainer .footer-Wrapper .footer-Container {
+  display: flex;
+  flex-direction: row;
+}
+.contactContainer .footer-Wrapper .footer-Container .contactInfo {
+  margin-left: 6dvw;
+  width: 55%;
+}
+.contactContainer .footer-Wrapper .footer-Container .contactInfo .contacttitle {
+  font-size: 4dvw;
+  font-family: "Innovator Grotesk Bold";
+  margin-bottom: 6dvw;
+}
+.contactContainer .footer-Wrapper .footer-Container .contactInfo .contactsubtitle {
+  font-family: "Innovator Grotesk Light";
+  font-size: 3dvw;
+  margin-right: 8dvw;
+}
+.contactContainer .footer-Wrapper .footer-Container .contactInfo .contactItem {
+  margin: 6dvw 0;
+}
+.contactContainer .footer-Wrapper .footer-Container .contactInfo .contactItem .icon {
+  margin-bottom: 2dvw;
+}
+.contactContainer .footer-Wrapper .footer-Container .legalInfo .legaltitle {
+  font-size: 4dvw;
+  font-family: "Innovator Grotesk Bold";
+  margin-bottom: 6dvw;
+}
+.contactContainer .footer-Wrapper .footer-Container .legalInfo .legalsubtitle {
+  font-family: "Innovator Grotesk Light";
+  font-size: 3dvw;
+  margin: 4dvw 0;
+}
+.contactContainer .footer-Wrapper .socialtitle {
+  text-align: center;
+  font-size: 4dvw;
+  font-family: "Innovator Grotesk Light";
+  margin-bottom: 6dvw;
+  margin-top: 30dvw;
+}
+.contactContainer .footer-Wrapper .socialIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4dvw;
+}
+.contactContainer .footer-Wrapper .socialIcons .fa-linkedin, .contactContainer .footer-Wrapper .socialIcons .fa-instagram {
+  height: 7dvw;
+  width: 7dvw;
+}
+.contactContainer .footer-Wrapper .socialIcons .icon {
+  padding: 0 3dvw;
+  color: white;
+  fill: white;
 }
 
 body {
@@ -1521,14 +1923,19 @@ body {
   overflow: hidden;
 }
 
+@media only screen and (min-width: 640px) and (max-width: 1140px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
 @media only screen and (min-width: 1141px) {
   .mobile-only {
-    display: none;
+    display: none !important;
   }
 }
 
 @media only screen and (max-width: 639px) {
   .desktop-only {
-    display: none;
+    display: none !important;
   }
 }

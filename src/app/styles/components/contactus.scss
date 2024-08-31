@@ -11,7 +11,7 @@
     @include mobile {
         background-color: $whiteColor;
     }
-    .test {
+    .page-Wrapper {
         margin: 0 auto;
         @include mobile {
             min-height: 100svh;
@@ -316,10 +316,10 @@
                 height: 100%;
             }
             @include tablet {
-                width: 70dvw;
+                width: 67dvw;
             }
             @include desktop {
-                width: 70dvw;
+                width: 67dvw;
             }
             
             .form {
@@ -356,7 +356,7 @@
                     margin-bottom: 1.059dvw;
                     
                     @include mobile {
-                        margin: 4dvw 0;
+                        margin: 2dvw 0;
                     }
                     &:focus-within label {
                         color: $iconDarkGreyColor; 
@@ -420,6 +420,11 @@
                             border-bottom-color: $iconDarkGreyColor;
                         }
                     }
+                    input:-webkit-autofill,
+                    input:-webkit-autofill:focus,
+                    input:-webkit-autofill:hover {
+                    transition: background-color 0s 600000s, color 0s 600000s !important;
+                    }
                 }
             }
 
@@ -466,7 +471,6 @@
                         padding: 0 3dvw;
                         height: 15dvw;
                         border-radius: 0;
-                        margin-bottom: 6dvw;
                     }
                     @include tablet {
                         font-size: 1.2dvw;
@@ -492,53 +496,60 @@
                     }
                 }
             }
-                .buttonContainer {
-                    position: relative;
-                
-                    .submitButton {
-                        padding: 0.797dvw;
-                        font-size: cRems(16px);
+            .errorText {
+                display: block;
+                font-size: 1.1dvw;
+                color: red;
+                @include mobile {
+                    font-size: 4dvw;
+                }
+            }
+            .buttonContainer {
+                position: relative;
+                .submitButton {
+                    padding: 0.797dvw;
+                    font-size: cRems(16px);
+                    background-color: $brownColor;
+                    color: $whiteColor;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: cRems(5px);
+            
+                    @include mobile {
+                        width: 100%;
+                        padding: 4dvw;
+                        font-size: 5dvw;
+                        border-radius: cRems(16px);
+                        margin-top: 6dvw;
+                    }
+            
+                    @include tablet {
+                        position: absolute;
+                        right: 0;
+                        margin-right: 3.515dvw;
+                        border-radius: cRems(16px);
+                        padding: 0.797dvw 2.578dvw;
+                        background-color: $buttonBgColor;
+                        font-size: 1.2dvw;
+                    }
+                    @include desktop {
+                        position: absolute;
+                        right: 0;
+                        margin-right: 3.515dvw;
+                        border-radius: cRems(16px);
+                        padding: 0.797dvw 2.578dvw;
+                        background-color: $buttonBgColor;
+                        font-size: 1.2dvw;
+                    }
+            
+                    &:hover {
                         background-color: $brownColor;
-                        color: $whiteColor;
-                        border: none;
-                        cursor: pointer;
-                        border-radius: cRems(5px);
-                
-                        @include mobile {
-                            width: 100%;
-                            padding: 4dvw;
-                            font-size: 5dvw;
-                            border-radius: cRems(16px);
-                        }
-                
-                        @include tablet {
-                            position: absolute;
-                            right: 0;
-                            margin-right: 3.515dvw;
-                            border-radius: cRems(16px);
-                            padding: 0.797dvw 2.578dvw;
-                            background-color: $buttonBgColor;
-                            font-size: 1.2dvw;
-                        }
-                        @include desktop {
-                            position: absolute;
-                            right: 0;
-                            margin-right: 3.515dvw;
-                            border-radius: cRems(16px);
-                            padding: 0.797dvw 2.578dvw;
-                            background-color: $buttonBgColor;
-                            font-size: 1.2dvw;
-                        }
-                
-                        &:hover {
-                            background-color: $brownColor;
-                        }
                     }
                 }
             }
-        
-        }                
-    }
+        }
+    }                
+}
     .footer-Wrapper {
         color: $whiteColor;
         background-color: $brownColor;
@@ -610,3 +621,5 @@
         }
     }
 }
+
+
