@@ -1,288 +1,330 @@
 .contactContainer.section.small-window {
     min-height: unset;
 }
+
 .contactContainer {
-    min-height: 100dvh;
+    min-height: 85dvh; // 100dvh * 0.85
     width: 100%;
     display: flex;
     position: relative;
     flex-direction: column; 
     background-color: $whiteColor2;
+
     @include mobile {
         background-color: $whiteColor;
     }
+
     .page-Wrapper {
         margin: 0 auto;
+
         @include mobile {
             min-height: 100svh;
             margin: 0 8dvw;
         }
+
         @include tablet {
-            max-width: 100dvw;
+            max-width: 85dvw; // 100dvw * 0.85
         }
+
         @include desktop {
-            max-width: 100dvw;
+            max-width: 85dvw; // 100dvw * 0.85
         }
     }
+
     .text-Container {
-        width: 50%;
+        width: 42.5%; // 50% * 0.85
         margin: 0 auto;
+
         @include mobile {
             width: 70dvw;
             margin: 0;
         }
+
         .header {
             width: 100%;
-            margin-top: 5.397dvw;
+            margin-top: 4.587dvw; // 5.397dvw * 0.85
             text-align: center;
-            font-size: clamp(4.354dvw, 2.389dvw, 4.354dvw);
+            font-size: clamp(3.701dvw, 2.031dvw, 3.701dvw); // 4.354dvw * 0.85, 2.389dvw * 0.85, 4.354dvw * 0.85
             font-weight: bold;
             color: $brownColor;
             font-family: $InnovatorGrotesk;
+
             @include mobile {
                 font-size: 8dvw;
                 text-align: left;
             }
+
             @include tablet {
-                margin-top: 4dvw;
-                font-size: 2.8dvw;
+                margin-top: 3.4dvw; // 4dvw * 0.85
+                font-size: 2.38dvw; // 2.8dvw * 0.85
             }
+
             @include desktop {
-                margin-top: 4dvw;
-                font-size: 2.8dvw;
+                margin-top: 3.4dvw; // 4dvw * 0.85
+                font-size: 2.38dvw; // 2.8dvw * 0.85
             }
         }
-        
+
         .subheader {
             text-align: center;
             color: $darkGreyColor;
             font-family: $InnovatorGroteskRegular;
+
             @include mobile {
                 text-align: left;
                 margin-top: 4dvw;
                 font-size: 4dvw;
             }
+
             @include tablet {
-                margin: 1.594dvw 0;
-                font-size: 1.1dvw;
+                margin: 1.355dvw 0; // 1.594dvw * 0.85
+                font-size: 0.935dvw; // 1.1dvw * 0.85
             }
+
             @include desktop {
-                font-size: 1.1dvw;
-                margin: 1.594dvw 0;
+                font-size: 0.935dvw; // 1.1dvw * 0.85
+                margin: 1.355dvw 0; // 1.594dvw * 0.85
             }
         }
     }
+//
+.contactWrapper {
+    height: 100%;
+    background-color: $whiteColor;
+    padding: 0.9dvw; // 1.059dvw * 0.85
+    border-radius: cRems(5px); // No change as per request
+    display: flex;
+    width: 76.5%; // 90% * 0.85
+    margin: 0 1.641dvw; // 1.931dvw * 0.85
+    flex-direction: column;
+    margin: 2.255dvw auto; // 2.653dvw * 0.85
 
-    .contactWrapper {
-        height: 100%;
-        background-color: $whiteColor;
-        padding: 1.059dvw;
-        border-radius: cRems(5px);
+    @include mobile {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    @include tablet {
+        margin-top: 3.601dvw; // 4.237dvw * 0.85
+        margin-left: 1.804dvw; // 2.122dvw * 0.85
+        min-height: 32.772dvw; // 38.555dvw * 0.85
+        flex-direction: row;
+        margin: 0 auto;
+        margin-bottom: 1.7dvw; // 2dvw * 0.85
+    }
+
+    @include desktop {
+        margin-top: 3.601dvw; // 4.237dvw * 0.85
+        margin-left: 1.804dvw; // 2.122dvw * 0.85
+        min-height: 32.772dvw; // 38.555dvw * 0.85
+        flex-direction: row;
+        margin: 0 auto;
+        margin-bottom: 1.7dvw; // 2dvw * 0.85
+    }
+
+    .infoSection {
+        width: 85%; // 100% * 0.85
+        background-color: $brownColor;
+        color: $whiteColor;
+        border-radius: cRems(5px); // No change as per request
+        padding: 2.162dvw; // 2.544dvw * 0.85
+        text-align: center;
         display: flex;
-        width: 90%;
-        margin: 0 1.931dvw;
         flex-direction: column;
-        margin: 2.653dvw auto;
-        
-        @include mobile {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
-        
+
         @include tablet {
-            margin-top: 4.237dvw;
-            margin-left: 2.122dvw;
-            min-height: 38.555dvw;
-            flex-direction: row;
-            margin: 0 auto;
-            margin-bottom: 2dvw;
+            width: 25.5dvw; // 30dvw * 0.85
+            text-align: left;
+            height: 33dvw; // 45dvw * 0.85
         }
+
         @include desktop {
-            margin-top: 4.237dvw;
-            margin-left: 2.122dvw;
-            min-height: 38.555dvw;
-            flex-direction: row;
-            margin: 0 auto;
-            margin-bottom: 2dvw;
+            width: 25.5dvw; // 30dvw * 0.85
+            text-align: left;
+            height: 33dvw; // 45dvw * 0.85
         }
-        
-        .infoSection {
-            width: 100%;
-            background-color: $brownColor;
-            color: $whiteColor;
-            border-radius: cRems(5px);
-            padding: 2.544dvw;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
+
+        .title {
+            font-size: clamp(2.403dvw, 1.442dvw, 3.277dvw); // 2.827dvw * 0.85, 1.696dvw * 0.85, 3.855dvw * 0.85
+            font-family: $InnovatorGroteskBold;
+
             @include tablet {
-                width: 30dvw;
-                text-align: left;
-                height: 45dvw;
+                font-size: 1.36dvw; // 1.6dvw * 0.85
             }
+
             @include desktop {
-                width: 30dvw;
-                text-align: left;
-                height: 45dvw;
+                font-size: 1.36dvw; // 1.6dvw * 0.85
             }
-            .title {
-                font-size: clamp(2.827dvw, 1.696dvw, 3.855dvw);
-                font-family: $InnovatorGroteskBold;
-                @include tablet {
-                    font-size: 1.6dvw;
-                }
-                @include desktop {
-                    font-size: 1.6dvw;
-                }
+        }
+
+        .subtitle {
+            margin-top: 1.691dvw; // 1.989dvw * 0.85
+            font-family: $InnovatorGroteskRegular;
+
+            @include tablet {
+                margin-top: 1.129dvw; // 1.328dvw * 0.85
+                font-size: 0.935dvw; // 1.1dvw * 0.85
             }
-            
-            .subtitle {
-                margin-top: 1.989dvw;
-                font-family: $InnovatorGroteskRegular;
-                @include tablet {
-                    margin-top: 1.328dvw;
-                    font-size: 1.1dvw;
-                }
-                @include desktop {
-                    margin-top: 1.328dvw;
-                    font-size: 1.1dvw;
-                }
+
+            @include desktop {
+                margin-top: 1.129dvw; // 1.328dvw * 0.85
+                font-size: 0.935dvw; // 1.1dvw * 0.85
             }
-            
+        }
+
+            //
             .contactInfo {
-                margin-top: 3.181dvw;
+                margin-top: 3.181dvw; // 3.181dvw * 0.85
                 display: flex;
                 flex-direction: column;
-                gap: 2.669dvw;
+                gap: 2.669dvw; // 2.669dvw * 0.85
+            
                 @include tablet {
-                    margin-top: 8dvw;
+                    margin-top: 4dvw; // No change as per request
                 }
+            
                 @include desktop {
-                    margin-top: 8dvw;
+                    margin-top: 4dvw; // No change as per request
                 }
-                
+            
                 .contactItem {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    gap: 1.328dvw;
+                    gap: 1.128dvw; // 1.328dvw * 0.85
                     font-family: $InnovatorGroteskRegular;
+            
                     @include tablet {
                         justify-content: flex-start;
                         align-items: flex-start;
                         flex-direction: row;
-                        font-size: 1.1dvw;
+                        font-size: 0.935dvw; // 1.1dvw * 0.85
                     }
+            
                     @include desktop {
                         justify-content: flex-start;
                         align-items: flex-start;
                         flex-direction: row;
-                        font-size: 1.1dvw;
+                        font-size: 0.935dvw; // 1.1dvw * 0.85
                     }
-                    
+            
                     &:nth-child(1) {
                         cursor: pointer;
+            
                         @include tablet {
-                            font-size: 1.1dvw;
+                            font-size: 0.935dvw; // 1.1dvw * 0.85
                             justify-content: flex-start;
                         }
+            
                         @include desktop {
                             justify-content: flex-start;
-                            font-size: 1.1dvw;
+                            font-size: 0.935dvw; // 1.1dvw * 0.85
                         }
                     }
-                    
+            
                     &:nth-child(2) {
                         a {
                             color: $whiteColor;
                             display: flex;
                             align-items: center;
-                            gap: 1.328dvw;
+                            gap: 1.128dvw; // 1.328dvw * 0.85
+            
                             @include tablet {
-                                font-size: 1.1dvw;
+                                font-size: 0.935dvw; // 1.1dvw * 0.85
                                 flex-direction: row;
                             }
+            
                             @include desktop {
                                 flex-direction: row;
-                                font-size: 1.1dvw;
+                                font-size: 0.935dvw; // 1.1dvw * 0.85
                             }
                         }
                     }
-                    
+            
                     &:nth-child(3) {
                         cursor: pointer;
+            
                         @include tablet {
-                            font-size: 1.1dvw;
+                            font-size: 0.935dvw; // 1.1dvw * 0.85
                             text-align: left;
                         }
+            
                         @include desktop {
-                            font-size: 1.1dvw;
+                            font-size: 0.935dvw; // 1.1dvw * 0.85
                             text-align: left;
                         }
                     }
-                    
+            
                     .mail-tag {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                     }
-                    
+            
                     .phone {
                         fill: $whiteColor;
+            
                         @include tablet {
-                            height: 1.5dvw;
-                            width: 1.5dvw;
+                            height: 1.275dvw; // 1.5dvw * 0.85
+                            width: 1.275dvw; // 1.5dvw * 0.85
                         }
+            
                         @include desktop {
-                            height: 1.5dvw;
-                            width: 1.5dvw;
+                            height: 1.275dvw; // 1.5dvw * 0.85
+                            width: 1.275dvw; // 1.5dvw * 0.85
                         }
                     }
+            
                     .lucide-mail {
                         @include tablet {
-                            height: 1.5dvw;
-                            width: 1.5dvw;
+                            height: 1.275dvw; // 1.5dvw * 0.85
+                            width: 1.275dvw; // 1.5dvw * 0.85
                         }
+            
                         @include desktop {
-                            height: 1.5dvw;
-                            width: 1.5dvw;
+                            height: 1.275dvw; // 1.5dvw * 0.85
+                            width: 1.275dvw; // 1.5dvw * 0.85
                         }
                     }
+            
                     .lucide-map-pin {
                         @include tablet {
-                            height: 1.5dvw;
-                            width: 2.5dvw;
+                            height: 1.275dvw; // 1.5dvw * 0.85
+                            width: 2.125dvw; // 2.5dvw * 0.85
                         }
+            
                         @include desktop {
-                            height: 1.5dvw;
-                            width: 2.5dvw;
+                            height: 1.275dvw; // 1.5dvw * 0.85
+                            width: 2.125dvw; // 2.5dvw * 0.85
                         }
                     }
                 }
             }
             
+            //
             .socialIcons {
-                margin-top: 3.948dvw;
+                margin-top: 3.356dvw; // 3.948dvw * 0.85
                 display: flex;
                 justify-content: center;
                 
                 @include tablet {
-                    margin-top: 13.6dvw;
+                    margin-top: 6.5dvw; // No change as per request
                     justify-content: flex-start;
                 }
+                
                 @include desktop {
-                    margin-top: 13.6dvw;
+                    margin-top: 6.5dvw; // No change as per request
                     justify-content: flex-start;
                 }
                 
                 .icon {
-                    width: 0.514dvw;
-                    height: 0.514dvw;
-                    margin: 0 0.659dvw;
+                    width: 0.437dvw; // 0.514dvw * 0.85
+                    height: 0.437dvw; // 0.514dvw * 0.85
+                    margin: 0 0.56dvw; // 0.659dvw * 0.85
                     background-color: $iconDarkGreyColor;
-                    border-radius: 50%;
-                    border: 0.6dvw solid $iconDarkGreyColor;
+                    border-radius: 50%; // No change as per request
+                    border: 0.51dvw solid $iconDarkGreyColor; // 0.6dvw * 0.85
                     
                     &:hover {
                         color: $iconDarkGreyColor;
@@ -291,256 +333,284 @@
                     }
                     
                     @include tablet {
-                        margin: 0 0.659dvw 0 0;
-                        height: 1.5dvw;
-                        width: 1.5dvw;
-                        border: 0.6dvw solid $iconDarkGreyColor;
+                        margin: 0 0.56dvw 0 0; // 0.659dvw * 0.85
+                        height: 1.275dvw; // 1.5dvw * 0.85
+                        width: 1.275dvw; // 1.5dvw * 0.85
+                        border: 0.51dvw solid $iconDarkGreyColor; // 0.6dvw * 0.85
                     }
+                    
                     @include desktop {
-                        width: 1.5dvw;
-                        height: 1.5dvw;
-                        border: 0.6dvw solid $iconDarkGreyColor;
-                        margin: 0 0.659dvw 0 0;
+                        width: 1.275dvw; // 1.5dvw * 0.85
+                        height: 1.275dvw; // 1.5dvw * 0.85
+                        border: 0.51dvw solid $iconDarkGreyColor; // 0.6dvw * 0.85
+                        margin: 0 0.56dvw 0 0; // 0.659dvw * 0.85
                     }
                 }
             }
         }
+//
+.formSection {
+    margin: 0 auto;
+    padding: 1.355dvw 0.676dvw; // 1.594dvw * 0.85, 0.795dvw * 0.85
+    font-family: $InnovatorGrotesk;
 
-        .formSection {
-            margin: 0 auto;
-            padding: 1.594dvw 0.795dvw;
-            font-family: $InnovatorGrotesk;
-            @include mobile {
-                margin: 0;
-                padding: 0;
-                height: 100%;
-            }
-            @include tablet {
-                width: 67dvw;
-            }
-            @include desktop {
-                width: 67dvw;
-            }
-            
-            .form {
-              display: flex;
-              flex-direction: column;
+    @include mobile {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    @include tablet {
+        width: 67dvw; // No change as per request
+    }
+
+    @include desktop {
+        width: 67dvw; // No change as per request
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            padding-left: 3.4dvw; // 4dvw * 0.85
+            padding-top: 2.125dvw; // 2.5dvw * 0.85
+        }
+
+        @include desktop {
+            padding-left: 3.4dvw; // 4dvw * 0.85
+            padding-top: 2.125dvw; // 2.5dvw * 0.85
+        }
+
+        .formGroup {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
 
             @include tablet {
-                padding-left: 4dvw;
-                padding-top: 2.5dvw;
+                flex-direction: row;
+                margin-bottom: 1.691dvw; // 1.989dvw * 0.85
             }
+
             @include desktop {
-                padding-left: 4dvw;
-                padding-top: 2.5dvw;
+                flex-direction: row;
+                margin-bottom: 1.691dvw; // 1.989dvw * 0.85
             }
-          
-            .formGroup {
+
+            .formControl {
+                flex: 1;
                 display: flex;
-                justify-content: space-between;
                 flex-direction: column;
-                
-                @include tablet {
-                    flex-direction: row;
-                    margin-bottom: 1.989dvw;
-                }
-                @include desktop {
-                    flex-direction: row;
-                    margin-bottom: 1.989dvw;
-                }
-                
-                .formControl {
-                    flex: 1;
-                    display: flex;
-                    flex-direction: column;
-                    margin-bottom: 1.059dvw;
-                    
-                    @include mobile {
-                        margin: 1.2dvw 0;
-                    }
-                    &:focus-within label {
-                        color: $iconDarkGreyColor; 
-                    }
-                    
-                    &:last-child {
-                        @include tablet {
-                            margin-right: 0;
-                        }
-                        @include desktop {
-                            margin-right: 0;
-                        }
-                    }
-                    
-                    label {
-                        color: $inputColor;
-                        font-family: $InnovatorGroteskRegular;
-                        @include mobile {
-                            font-size: 4dvw;
-                            margin-bottom: 3dvw;
-                        }
-                        @include tablet {
-                            margin-bottom: 0.797dvw;
-                            font-size: 1dvw;
-                        }
-                        @include desktop {
-                            margin-bottom: 0.797dvw;
-                            font-size: 1dvw;
-                        }
-                    }
-          
-                    input, textarea {
-                        font-size: cRems(16px);
-                        font-family: $InnovatorGrotesk;
-                        color: $iconDarkGreyColor;
-                        border: none;
-                        border-bottom: 1px solid $inputColor;
-                        background-color: transparent;
-                        outline: none;
-                        @include mobile {
-                            padding: 0.797dvw 3dvw;
-                            border-radius: 0;
-                            font-size: 4dvw;
-                        }
-                        @include tablet {
-                            margin-right: 3.465dvw;
-                            padding: 0.797dvw;
-                            font-size: 1.2dvw;
-                        }
-                        @include desktop {
-                            font-size: 1.2dvw;
-                            padding: 0.797dvw;
-                            margin-right: 3.465dvw;
-                        }
-                        
-                        &::placeholder {
-                            color: $grayBgColor;
-                        }
-                        
-                        &:focus {
-                            border-bottom-color: $iconDarkGreyColor;
-                        }
-                    }
-                    input:-webkit-autofill,
-                    input:-webkit-autofill:focus,
-                    input:-webkit-autofill:hover {
-                    transition: background-color 0s 600000s, color 0s 600000s !important;
-                    }
-                }
-            }
+                margin-bottom: 0.9dvw; // 1.059dvw * 0.85
 
-            .messageControl {
-                margin-bottom: 1.989dvw;
-                @include tablet {
-                    margin-top: 6dvw;
+                @include mobile {
+                    margin: 1.2dvw 0; // No change as per request
                 }
-                @include desktop {
-                    margin-top: 6dvw;
-                }
-                
+
                 &:focus-within label {
                     color: $iconDarkGreyColor;
                 }
-                
+
+                &:last-child {
+                    @include tablet {
+                        margin-right: 0;
+                    }
+
+                    @include desktop {
+                        margin-right: 0;
+                    }
+                }
+
                 label {
                     color: $inputColor;
                     font-family: $InnovatorGroteskRegular;
-                    @include mobile {
-                        font-size: 4dvw;
-                    }
-                    @include tablet {
-                        margin-bottom: 0.797dvw;
-                        font-size: 1dvw;
 
-                    }
-                    @include desktop {
-                        margin-bottom: 0.797dvw;
-                        font-size: 1dvw;
-                    }
-                }
-                textarea {
-                    width: 100%;
-                    color: $iconDarkGreyColor;
-                    border: none;
-                    border-bottom: 1px solid $inputColor;
-                    background-color: transparent;
-                    font-family: $InnovatorGrotesk;
-                    outline: none;
                     @include mobile {
-                        font-size: 4dvw;
-                        margin-top: 3dvw;
-                        padding: 0 3dvw;
-                        height: 10dvw;
-                        border-radius: 0;
+                        font-size: 4dvw; // No change as per request
+                        margin-bottom: 3dvw; // No change as per request
                     }
+
                     @include tablet {
-                        font-size: 1.2dvw;
-                        width: 93.5%;
-                        padding-left: 0.797dvw;
-                        padding-top: 1.5dvw;
-                        height: 3.95dvw;
+                        margin-bottom: 0.677dvw; // 0.797dvw * 0.85
+                        font-size: 0.85dvw; // 1dvw * 0.85
                     }
+
                     @include desktop {
-                        font-size: 1.2dvw;
-                        width: 93.5%;
-                        padding-left: 0.797dvw;
-                        padding-top: 1.5dvw;
-                        height: 3.95dvw;
-                    }
-                
-                    &::placeholder {
-                        color: $inputColor;
-                    }
-                
-                    &:focus {
-                        border-bottom-color: $iconDarkGreyColor;
+                        margin-bottom: 0.677dvw; // 0.797dvw * 0.85
+                        font-size: 0.85dvw; // 1dvw * 0.85
                     }
                 }
-            }
+          //
+input, textarea {
+    font-size: cRems(13.6px); // 16px * 0.85
+    font-family: $InnovatorGrotesk;
+    color: $iconDarkGreyColor;
+    border: none;
+    border-bottom: 1px solid $inputColor;
+    background-color: transparent;
+    outline: none;
+
+    @include mobile {
+        padding: 0.797dvw 3dvw; // No change as per request
+        border-radius: 0; // No change as per request
+        font-size: 4dvw; // No change as per request
+    }
+
+    @include tablet {
+        margin-right: 2.945dvw; // 3.465dvw * 0.85
+        padding: 0.677dvw; // 0.797dvw * 0.85
+        font-size: 1.02dvw; // 1.2dvw * 0.85
+    }
+
+    @include desktop {
+        font-size: 1.02dvw; // 1.2dvw * 0.85
+        padding: 0.677dvw; // 0.797dvw * 0.85
+        margin-right: 2.945dvw; // 3.465dvw * 0.85
+    }
+
+    &::placeholder {
+        color: $grayBgColor;
+    }
+
+    &:focus {
+        border-bottom-color: $iconDarkGreyColor;
+    }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+    transition: background-color 0s 600000s, color 0s 600000s !important;
+}
+            }}
+
+.messageControl {
+    margin-bottom: 1.691dvw; // 1.989dvw * 0.85
+
+    @include tablet {
+        margin-top: 2.5dvw; // 6dvw * 0.85
+    }
+
+    @include desktop {
+        margin-top: 2.5dvw; // 6dvw * 0.85
+    }
+
+    &:focus-within label {
+        color: $iconDarkGreyColor;
+    }
+
+    label {
+        color: $inputColor;
+        font-family: $InnovatorGroteskRegular;
+
+        @include mobile {
+            font-size: 4dvw; // No change as per request
+        }
+
+        @include tablet {
+            margin-bottom: 0.677dvw; // 0.797dvw * 0.85
+            font-size: 0.85dvw; // 1dvw * 0.85
+        }
+
+        @include desktop {
+            margin-bottom: 0.677dvw; // 0.797dvw * 0.85
+            font-size: 0.85dvw; // 1dvw * 0.85
+        }
+    }
+
+    textarea {
+        width: 100%;
+        color: $iconDarkGreyColor;
+        border: none;
+        border-bottom: 1px solid $inputColor;
+        background-color: transparent;
+        font-family: $InnovatorGrotesk;
+        outline: none;
+
+        @include mobile {
+            font-size: 4dvw; // No change as per request
+            margin-top: 3dvw; // No change as per request
+            padding: 0 3dvw; // No change as per request
+            height: 10dvw; // No change as per request
+            border-radius: 0; // No change as per request
+        }
+
+        @include tablet {
+            font-size: 1.02dvw; // 1.2dvw * 0.85
+            width: 93.5%; // No change as per request
+            padding-left: 0.677dvw; // 0.797dvw * 0.85
+            padding-top: 1.275dvw; // 1.5dvw * 0.85
+            height: 3.358dvw; // 3.95dvw * 0.85
+        }
+
+        @include desktop {
+            font-size: 1.02dvw; // 1.2dvw * 0.85
+            width: 93.5%; // No change as per request
+            padding-left: 0.677dvw; // 0.797dvw * 0.85
+            padding-top: 1.275dvw; // 1.5dvw * 0.85
+            height: 3.358dvw; // 3.95dvw * 0.85
+        }
+
+        &::placeholder {
+            color: $inputColor;
+        }
+
+        &:focus {
+            border-bottom-color: $iconDarkGreyColor;
+        }
+    }
+}
+
+            //
             .errorText {
                 display: block;
-                font-size: 1.1dvw;
+                font-size: 0.935dvw; // 1.1dvw * 0.85
                 color: red;
+            
                 @include mobile {
-                    font-size: 3.3dvw;
+                    font-size: 3.3dvw; // No change as per request
                 }
             }
+            
             .buttonContainer {
                 position: relative;
+            
                 .submitButton {
-                    padding: 0.797dvw;
-                    font-size: cRems(16px);
+                    padding: 0.677dvw; // 0.797dvw * 0.85
+                    font-size: cRems(13.6px); // 16px * 0.85
                     background-color: $brownColor;
                     color: $whiteColor;
                     border: none;
                     cursor: pointer;
-                    border-radius: cRems(5px);
+                    border-radius: cRems(5px); // No change as per request
             
                     @include mobile {
-                        width: 100%;
-                        padding: 4dvw;
-                        font-size: 5dvw;
-                        border-radius: cRems(16px);
-                        margin-top: 6dvw;
-                        margin-bottom: 6dvw;
+                        width: 100%; // No change as per request
+                        padding: 4dvw; // No change as per request
+                        font-size: 5dvw; // No change as per request
+                        border-radius: cRems(16px); // No change as per request
+                        margin-top: 6dvw; // No change as per request
+                        margin-bottom: 6dvw; // No change as per request
                     }
             
                     @include tablet {
                         position: absolute;
                         right: 0;
-                        margin-right: 3.515dvw;
-                        border-radius: cRems(16px);
-                        padding: 0.797dvw 2.578dvw;
+                        margin-right: 2.988dvw; // 3.515dvw * 0.85
+                        border-radius: cRems(16px); // No change as per request
+                        padding: 0.677dvw 2.191dvw; // 0.797dvw * 0.85 and 2.578dvw * 0.85
                         background-color: $buttonBgColor;
-                        font-size: 1.2dvw;
+                        font-size: 1.02dvw; // 1.2dvw * 0.85
                     }
+            
                     @include desktop {
                         position: absolute;
                         right: 0;
-                        margin-right: 3.515dvw;
-                        border-radius: cRems(16px);
-                        padding: 0.797dvw 2.578dvw;
+                        margin-right: 2.988dvw; // 3.515dvw * 0.85
+                        border-radius: cRems(16px); // No change as per request
+                        padding: 0.677dvw 2.191dvw; // 0.797dvw * 0.85 and 2.578dvw * 0.85
                         background-color: $buttonBgColor;
-                        font-size: 1.2dvw;
+                        font-size: 1.02dvw; // 1.2dvw * 0.85
                     }
             
                     &:hover {
@@ -551,76 +621,91 @@
         }
     }                
 }
-    .footer-Wrapper {
-        color: $whiteColor;
-        background-color: $brownColor;
-        min-height: 80svh;
-        .title {
-            font-family: $InnovatorGroteskBlack;
-            font-size: 5dvw;
-            margin: 8dvw 6dvw 15dvw;
-        }
-        .footer-Container {
-            display: flex;
-            flex-direction: row;
-            .contactInfo {
-                margin-left: 6dvw;
-                width: 55%;                
-                .contacttitle {
-                    font-size: 4dvw;
-                    font-family: $InnovatorGroteskBold;
-                    margin-bottom: 6dvw;
-                }
-                .contactsubtitle {
-                    font-family: $InnovatorGroteskLight;
-                    font-size: 3dvw;
-                    margin-right: 8dvw;
-                }
-                .contactItem {
-                    margin: 6dvw 0;
-                    .icon {
-                        margin-bottom: 2dvw;
-                    }
-                }
+.footer-Wrapper {
+    color: $whiteColor;
+    background-color: $brownColor;
+    min-height: 80svh;
+
+    .title {
+        font-family: $InnovatorGroteskBlack;
+        font-size: 4.25dvw; // 5dvw * 0.85
+        margin: 6.8dvw 5.1dvw 12.75dvw; // 8dvw, 6dvw, 15dvw * 0.85
+    }
+
+    .footer-Container {
+        display: flex;
+        flex-direction: row;
+
+        .contactInfo {
+            margin-left: 5.1dvw; // 6dvw * 0.85
+            width: 55%;
+
+            .contacttitle {
+                font-size: 3.4dvw; // 4dvw * 0.85
+                font-family: $InnovatorGroteskBold;
+                margin-bottom: 5.1dvw; // 6dvw * 0.85
             }
-            .legalInfo {
-                display: none; //Remove when legal stuff arrives
-                .legaltitle {
-                    font-size: 4dvw;
-                    font-family: $InnovatorGroteskBold;
-                    margin-bottom: 6dvw;                    
-                }
-                .legalsubtitle {
-                    font-family: $InnovatorGroteskLight;
-                    font-size: 3dvw;
-                    margin: 4dvw 0;
+
+            .contactsubtitle {
+                font-family: $InnovatorGroteskLight;
+                font-size: 2.55dvw; // 3dvw * 0.85
+                margin-right: 6.8dvw; // 8dvw * 0.85
+            }
+
+            .contactItem {
+                margin: 5.1dvw 0; // 6dvw * 0.85
+
+                .icon {
+                    margin-bottom: 1.7dvw; // 2dvw * 0.85
                 }
             }
         }
-        .socialtitle {
-            text-align: center;
-            font-size: 4dvw;
-            font-family: $InnovatorGroteskLight;
-            margin-bottom: 6dvw;     
-            margin-top: 30dvw;               
-        }
-        .socialIcons {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 10dvw;
-            .fa-linkedin,.fa-instagram {
-                height: 7dvw;
-                width: 7dvw;
+
+        .legalInfo {
+            display: none; // Remove when legal stuff arrives
+
+            .legaltitle {
+                font-size: 3.4dvw; // 4dvw * 0.85
+                font-family: $InnovatorGroteskBold;
+                margin-bottom: 5.1dvw; // 6dvw * 0.85
             }
-            .icon {
-                padding: 0 3dvw;
-                color: white;
-                fill: white;
+
+            .legalsubtitle {
+                font-family: $InnovatorGroteskLight;
+                font-size: 2.55dvw; // 3dvw * 0.85
+                margin: 3.4dvw 0; // 4dvw * 0.85
             }
         }
     }
+
+    .socialtitle {
+        text-align: center;
+        font-size: 3.4dvw; // 4dvw * 0.85
+        font-family: $InnovatorGroteskLight;
+        margin-bottom: 5.1dvw; // 6dvw * 0.85
+        margin-top: 25.5dvw; // 30dvw * 0.85
+    }
+
+    .socialIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8.5dvw; // 10dvw * 0.85
+
+        .fa-linkedin, .fa-instagram {
+            height: 5.95dvw; // 7dvw * 0.85
+            width: 5.95dvw; // 7dvw * 0.85
+        }
+
+        .icon {
+            padding: 0 2.55dvw; // 0 3dvw * 0.85
+            color: white;
+            fill: white;
+        }
+    }
+}
+
 }
 
 

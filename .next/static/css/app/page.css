@@ -955,6 +955,7 @@
 .whatWeDoContainer .wwdContent-Container .wwd-Content .wwd-item .wwd-info {
   font-family: "Innovator Grotesk Regular";
   margin-top: 0.829dvw;
+  font-size: 3dvw;
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .whatWeDoContainer .wwdContent-Container .wwd-Content {
@@ -1179,7 +1180,7 @@
 }
 
 .contactContainer {
-  min-height: 100dvh;
+  min-height: 85dvh;
   width: 100%;
   display: flex;
   position: relative;
@@ -1202,16 +1203,16 @@
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .page-Wrapper {
-    max-width: 100dvw;
+    max-width: 85dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .page-Wrapper {
-    max-width: 100dvw;
+    max-width: 85dvw;
   }
 }
 .contactContainer .text-Container {
-  width: 50%;
+  width: 42.5%;
   margin: 0 auto;
 }
 @media only screen and (max-width: 639px) {
@@ -1222,9 +1223,9 @@
 }
 .contactContainer .text-Container .header {
   width: 100%;
-  margin-top: 5.397dvw;
+  margin-top: 4.587dvw;
   text-align: center;
-  font-size: 4.354dvw;
+  font-size: 3.701dvw;
   font-weight: bold;
   color: #4f4138;
   font-family: "Innovator Grotesk";
@@ -1237,14 +1238,14 @@
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .text-Container .header {
-    margin-top: 4dvw;
-    font-size: 2.8dvw;
+    margin-top: 3.4dvw;
+    font-size: 2.38dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .text-Container .header {
-    margin-top: 4dvw;
-    font-size: 2.8dvw;
+    margin-top: 3.4dvw;
+    font-size: 2.38dvw;
   }
 }
 .contactContainer .text-Container .subheader {
@@ -1261,26 +1262,26 @@
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .text-Container .subheader {
-    margin: 1.594dvw 0;
-    font-size: 1.1dvw;
+    margin: 1.355dvw 0;
+    font-size: 0.935dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .text-Container .subheader {
-    font-size: 1.1dvw;
-    margin: 1.594dvw 0;
+    font-size: 0.935dvw;
+    margin: 1.355dvw 0;
   }
 }
 .contactContainer .contactWrapper {
   height: 100%;
   background-color: #ffffff;
-  padding: 1.059dvw;
+  padding: 0.9dvw;
   border-radius: 0.3125rem;
   display: flex;
-  width: 90%;
-  margin: 0 1.931dvw;
+  width: 76.5%;
+  margin: 0 1.641dvw;
   flex-direction: column;
-  margin: 2.653dvw auto;
+  margin: 2.255dvw auto;
 }
 @media only screen and (max-width: 639px) {
   .contactContainer .contactWrapper {
@@ -1291,76 +1292,76 @@
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper {
-    margin-top: 4.237dvw;
-    margin-left: 2.122dvw;
-    min-height: 38.555dvw;
+    margin-top: 3.601dvw;
+    margin-left: 1.804dvw;
+    min-height: 32.772dvw;
     flex-direction: row;
     margin: 0 auto;
-    margin-bottom: 2dvw;
+    margin-bottom: 1.7dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper {
-    margin-top: 4.237dvw;
-    margin-left: 2.122dvw;
-    min-height: 38.555dvw;
+    margin-top: 3.601dvw;
+    margin-left: 1.804dvw;
+    min-height: 32.772dvw;
     flex-direction: row;
     margin: 0 auto;
-    margin-bottom: 2dvw;
+    margin-bottom: 1.7dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection {
-  width: 100%;
+  width: 85%;
   background-color: #4f4138;
   color: #ffffff;
   border-radius: 0.3125rem;
-  padding: 2.544dvw;
+  padding: 2.162dvw;
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .infoSection {
-    width: 30dvw;
+    width: 25.5dvw;
     text-align: left;
-    height: 45dvw;
+    height: 33dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection {
-    width: 30dvw;
+    width: 25.5dvw;
     text-align: left;
-    height: 45dvw;
+    height: 33dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection .title {
-  font-size: 2.827dvw;
+  font-size: 2.403dvw;
   font-family: "Innovator Grotesk Bold";
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .infoSection .title {
-    font-size: 1.6dvw;
+    font-size: 1.36dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .title {
-    font-size: 1.6dvw;
+    font-size: 1.36dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection .subtitle {
-  margin-top: 1.989dvw;
+  margin-top: 1.691dvw;
   font-family: "Innovator Grotesk Regular";
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .infoSection .subtitle {
-    margin-top: 1.328dvw;
-    font-size: 1.1dvw;
+    margin-top: 1.129dvw;
+    font-size: 0.935dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .subtitle {
-    margin-top: 1.328dvw;
-    font-size: 1.1dvw;
+    margin-top: 1.129dvw;
+    font-size: 0.935dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection .contactInfo {
@@ -1371,19 +1372,19 @@
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .infoSection .contactInfo {
-    margin-top: 8dvw;
+    margin-top: 4dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo {
-    margin-top: 8dvw;
+    margin-top: 4dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.328dvw;
+  gap: 1.128dvw;
   font-family: "Innovator Grotesk Regular";
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
@@ -1391,7 +1392,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
-    font-size: 1.1dvw;
+    font-size: 0.935dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
@@ -1399,7 +1400,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
-    font-size: 1.1dvw;
+    font-size: 0.935dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(1) {
@@ -1407,32 +1408,32 @@
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(1) {
-    font-size: 1.1dvw;
+    font-size: 0.935dvw;
     justify-content: flex-start;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(1) {
     justify-content: flex-start;
-    font-size: 1.1dvw;
+    font-size: 0.935dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(2) a {
   color: #ffffff;
   display: flex;
   align-items: center;
-  gap: 1.328dvw;
+  gap: 1.128dvw;
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(2) a {
-    font-size: 1.1dvw;
+    font-size: 0.935dvw;
     flex-direction: row;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(2) a {
     flex-direction: row;
-    font-size: 1.1dvw;
+    font-size: 0.935dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(3) {
@@ -1440,13 +1441,13 @@
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(3) {
-    font-size: 1.1dvw;
+    font-size: 0.935dvw;
     text-align: left;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem:nth-child(3) {
-    font-size: 1.1dvw;
+    font-size: 0.935dvw;
     text-align: left;
   }
 }
@@ -1460,64 +1461,64 @@
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem .phone {
-    height: 1.5dvw;
-    width: 1.5dvw;
+    height: 1.275dvw;
+    width: 1.275dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem .phone {
-    height: 1.5dvw;
-    width: 1.5dvw;
+    height: 1.275dvw;
+    width: 1.275dvw;
   }
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem .lucide-mail {
-    height: 1.5dvw;
-    width: 1.5dvw;
+    height: 1.275dvw;
+    width: 1.275dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem .lucide-mail {
-    height: 1.5dvw;
-    width: 1.5dvw;
+    height: 1.275dvw;
+    width: 1.275dvw;
   }
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem .lucide-map-pin {
-    height: 1.5dvw;
-    width: 2.5dvw;
+    height: 1.275dvw;
+    width: 2.125dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .contactInfo .contactItem .lucide-map-pin {
-    height: 1.5dvw;
-    width: 2.5dvw;
+    height: 1.275dvw;
+    width: 2.125dvw;
   }
 }
 .contactContainer .contactWrapper .infoSection .socialIcons {
-  margin-top: 3.948dvw;
+  margin-top: 3.356dvw;
   display: flex;
   justify-content: center;
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .infoSection .socialIcons {
-    margin-top: 13.6dvw;
+    margin-top: 6.5dvw;
     justify-content: flex-start;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .socialIcons {
-    margin-top: 13.6dvw;
+    margin-top: 6.5dvw;
     justify-content: flex-start;
   }
 }
 .contactContainer .contactWrapper .infoSection .socialIcons .icon {
-  width: 0.514dvw;
-  height: 0.514dvw;
-  margin: 0 0.659dvw;
+  width: 0.437dvw;
+  height: 0.437dvw;
+  margin: 0 0.56dvw;
   background-color: #262626;
   border-radius: 50%;
-  border: 0.6dvw solid #262626;
+  border: 0.51dvw solid #262626;
 }
 .contactContainer .contactWrapper .infoSection .socialIcons .icon:hover {
   color: #262626;
@@ -1526,23 +1527,23 @@
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .infoSection .socialIcons .icon {
-    margin: 0 0.659dvw 0 0;
-    height: 1.5dvw;
-    width: 1.5dvw;
-    border: 0.6dvw solid #262626;
+    margin: 0 0.56dvw 0 0;
+    height: 1.275dvw;
+    width: 1.275dvw;
+    border: 0.51dvw solid #262626;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .infoSection .socialIcons .icon {
-    width: 1.5dvw;
-    height: 1.5dvw;
-    border: 0.6dvw solid #262626;
-    margin: 0 0.659dvw 0 0;
+    width: 1.275dvw;
+    height: 1.275dvw;
+    border: 0.51dvw solid #262626;
+    margin: 0 0.56dvw 0 0;
   }
 }
 .contactContainer .contactWrapper .formSection {
   margin: 0 auto;
-  padding: 1.594dvw 0.795dvw;
+  padding: 1.355dvw 0.676dvw;
   font-family: "Innovator Grotesk";
 }
 @media only screen and (max-width: 639px) {
@@ -1568,14 +1569,14 @@
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .formSection .form {
-    padding-left: 4dvw;
-    padding-top: 2.5dvw;
+    padding-left: 3.4dvw;
+    padding-top: 2.125dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .form {
-    padding-left: 4dvw;
-    padding-top: 2.5dvw;
+    padding-left: 3.4dvw;
+    padding-top: 2.125dvw;
   }
 }
 .contactContainer .contactWrapper .formSection .form .formGroup {
@@ -1586,24 +1587,24 @@
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .formSection .form .formGroup {
     flex-direction: row;
-    margin-bottom: 1.989dvw;
+    margin-bottom: 1.691dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .form .formGroup {
     flex-direction: row;
-    margin-bottom: 1.989dvw;
+    margin-bottom: 1.691dvw;
   }
 }
 .contactContainer .contactWrapper .formSection .form .formGroup .formControl {
   flex: 1 1;
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.059dvw;
+  margin-bottom: 0.9dvw;
 }
 @media only screen and (max-width: 639px) {
   .contactContainer .contactWrapper .formSection .form .formGroup .formControl {
-    margin: 2dvw 0;
+    margin: 1.2dvw 0;
   }
 }
 .contactContainer .contactWrapper .formSection .form .formGroup .formControl:focus-within label {
@@ -1631,18 +1632,18 @@
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .formSection .form .formGroup .formControl label {
-    margin-bottom: 0.797dvw;
-    font-size: 1dvw;
+    margin-bottom: 0.677dvw;
+    font-size: 0.85dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .form .formGroup .formControl label {
-    margin-bottom: 0.797dvw;
-    font-size: 1dvw;
+    margin-bottom: 0.677dvw;
+    font-size: 0.85dvw;
   }
 }
 .contactContainer .contactWrapper .formSection .form .formGroup .formControl input, .contactContainer .contactWrapper .formSection .form .formGroup .formControl textarea {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-family: "Innovator Grotesk";
   color: #262626;
   border: none;
@@ -1659,16 +1660,16 @@
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .formSection .form .formGroup .formControl input, .contactContainer .contactWrapper .formSection .form .formGroup .formControl textarea {
-    margin-right: 3.465dvw;
-    padding: 0.797dvw;
-    font-size: 1.2dvw;
+    margin-right: 2.945dvw;
+    padding: 0.677dvw;
+    font-size: 1.02dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .form .formGroup .formControl input, .contactContainer .contactWrapper .formSection .form .formGroup .formControl textarea {
-    font-size: 1.2dvw;
-    padding: 0.797dvw;
-    margin-right: 3.465dvw;
+    font-size: 1.02dvw;
+    padding: 0.677dvw;
+    margin-right: 2.945dvw;
   }
 }
 .contactContainer .contactWrapper .formSection .form .formGroup .formControl input::placeholder, .contactContainer .contactWrapper .formSection .form .formGroup .formControl textarea::placeholder {
@@ -1684,16 +1685,16 @@
   transition: background-color 0s 600000s, color 0s 600000s !important;
 }
 .contactContainer .contactWrapper .formSection .form .messageControl {
-  margin-bottom: 1.989dvw;
+  margin-bottom: 1.691dvw;
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .formSection .form .messageControl {
-    margin-top: 6dvw;
+    margin-top: 2.5dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .form .messageControl {
-    margin-top: 6dvw;
+    margin-top: 2.5dvw;
   }
 }
 .contactContainer .contactWrapper .formSection .form .messageControl:focus-within label {
@@ -1710,14 +1711,14 @@
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .formSection .form .messageControl label {
-    margin-bottom: 0.797dvw;
-    font-size: 1dvw;
+    margin-bottom: 0.677dvw;
+    font-size: 0.85dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .form .messageControl label {
-    margin-bottom: 0.797dvw;
-    font-size: 1dvw;
+    margin-bottom: 0.677dvw;
+    font-size: 0.85dvw;
   }
 }
 .contactContainer .contactWrapper .formSection .form .messageControl textarea {
@@ -1734,26 +1735,26 @@
     font-size: 4dvw;
     margin-top: 3dvw;
     padding: 0 3dvw;
-    height: 15dvw;
+    height: 10dvw;
     border-radius: 0;
   }
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .formSection .form .messageControl textarea {
-    font-size: 1.2dvw;
+    font-size: 1.02dvw;
     width: 93.5%;
-    padding-left: 0.797dvw;
-    padding-top: 1.5dvw;
-    height: 3.95dvw;
+    padding-left: 0.677dvw;
+    padding-top: 1.275dvw;
+    height: 3.358dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .form .messageControl textarea {
-    font-size: 1.2dvw;
+    font-size: 1.02dvw;
     width: 93.5%;
-    padding-left: 0.797dvw;
-    padding-top: 1.5dvw;
-    height: 3.95dvw;
+    padding-left: 0.677dvw;
+    padding-top: 1.275dvw;
+    height: 3.358dvw;
   }
 }
 .contactContainer .contactWrapper .formSection .form .messageControl textarea::placeholder {
@@ -1764,20 +1765,20 @@
 }
 .contactContainer .contactWrapper .formSection .form .errorText {
   display: block;
-  font-size: 1.1dvw;
+  font-size: 0.935dvw;
   color: red;
 }
 @media only screen and (max-width: 639px) {
   .contactContainer .contactWrapper .formSection .form .errorText {
-    font-size: 4dvw;
+    font-size: 3.3dvw;
   }
 }
 .contactContainer .contactWrapper .formSection .form .buttonContainer {
   position: relative;
 }
 .contactContainer .contactWrapper .formSection .form .buttonContainer .submitButton {
-  padding: 0.797dvw;
-  font-size: 1rem;
+  padding: 0.677dvw;
+  font-size: 0.85rem;
   background-color: #4f4138;
   color: #ffffff;
   border: none;
@@ -1791,28 +1792,29 @@
     font-size: 5dvw;
     border-radius: 1rem;
     margin-top: 6dvw;
+    margin-bottom: 6dvw;
   }
 }
 @media only screen and (min-width: 640px) and (max-width: 1140px) {
   .contactContainer .contactWrapper .formSection .form .buttonContainer .submitButton {
     position: absolute;
     right: 0;
-    margin-right: 3.515dvw;
+    margin-right: 2.988dvw;
     border-radius: 1rem;
-    padding: 0.797dvw 2.578dvw;
+    padding: 0.677dvw 2.191dvw;
     background-color: #DD6545;
-    font-size: 1.2dvw;
+    font-size: 1.02dvw;
   }
 }
 @media only screen and (min-width: 1141px) {
   .contactContainer .contactWrapper .formSection .form .buttonContainer .submitButton {
     position: absolute;
     right: 0;
-    margin-right: 3.515dvw;
+    margin-right: 2.988dvw;
     border-radius: 1rem;
-    padding: 0.797dvw 2.578dvw;
+    padding: 0.677dvw 2.191dvw;
     background-color: #DD6545;
-    font-size: 1.2dvw;
+    font-size: 1.02dvw;
   }
 }
 .contactContainer .contactWrapper .formSection .form .buttonContainer .submitButton:hover {
@@ -1825,64 +1827,66 @@
 }
 .contactContainer .footer-Wrapper .title {
   font-family: "Innovator Grotesk Black";
-  font-size: 5dvw;
-  margin: 6dvw;
-  margin-bottom: 12dvw;
+  font-size: 4.25dvw;
+  margin: 6.8dvw 5.1dvw 12.75dvw;
 }
 .contactContainer .footer-Wrapper .footer-Container {
   display: flex;
   flex-direction: row;
 }
 .contactContainer .footer-Wrapper .footer-Container .contactInfo {
-  margin-left: 6dvw;
+  margin-left: 5.1dvw;
   width: 55%;
 }
 .contactContainer .footer-Wrapper .footer-Container .contactInfo .contacttitle {
-  font-size: 4dvw;
+  font-size: 3.4dvw;
   font-family: "Innovator Grotesk Bold";
-  margin-bottom: 6dvw;
+  margin-bottom: 5.1dvw;
 }
 .contactContainer .footer-Wrapper .footer-Container .contactInfo .contactsubtitle {
   font-family: "Innovator Grotesk Light";
-  font-size: 3dvw;
-  margin-right: 8dvw;
+  font-size: 2.55dvw;
+  margin-right: 6.8dvw;
 }
 .contactContainer .footer-Wrapper .footer-Container .contactInfo .contactItem {
-  margin: 6dvw 0;
+  margin: 5.1dvw 0;
 }
 .contactContainer .footer-Wrapper .footer-Container .contactInfo .contactItem .icon {
-  margin-bottom: 2dvw;
+  margin-bottom: 1.7dvw;
+}
+.contactContainer .footer-Wrapper .footer-Container .legalInfo {
+  display: none;
 }
 .contactContainer .footer-Wrapper .footer-Container .legalInfo .legaltitle {
-  font-size: 4dvw;
+  font-size: 3.4dvw;
   font-family: "Innovator Grotesk Bold";
-  margin-bottom: 6dvw;
+  margin-bottom: 5.1dvw;
 }
 .contactContainer .footer-Wrapper .footer-Container .legalInfo .legalsubtitle {
   font-family: "Innovator Grotesk Light";
-  font-size: 3dvw;
-  margin: 4dvw 0;
+  font-size: 2.55dvw;
+  margin: 3.4dvw 0;
 }
 .contactContainer .footer-Wrapper .socialtitle {
   text-align: center;
-  font-size: 4dvw;
+  font-size: 3.4dvw;
   font-family: "Innovator Grotesk Light";
-  margin-bottom: 6dvw;
-  margin-top: 30dvw;
+  margin-bottom: 5.1dvw;
+  margin-top: 25.5dvw;
 }
 .contactContainer .footer-Wrapper .socialIcons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4dvw;
+  margin-bottom: 8.5dvw;
 }
 .contactContainer .footer-Wrapper .socialIcons .fa-linkedin, .contactContainer .footer-Wrapper .socialIcons .fa-instagram {
-  height: 7dvw;
-  width: 7dvw;
+  height: 5.95dvw;
+  width: 5.95dvw;
 }
 .contactContainer .footer-Wrapper .socialIcons .icon {
-  padding: 0 3dvw;
+  padding: 0 2.55dvw;
   color: white;
   fill: white;
 }
